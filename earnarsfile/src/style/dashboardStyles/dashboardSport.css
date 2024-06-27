@@ -1,0 +1,331 @@
+.Sporthead{
+    display:flex;
+    max-width: 800px;
+    width:800px;
+    position:relative;
+    overflow-x: hidden;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 auto;
+    text-align: center;
+}
+.coverPan{
+    width:100%;
+    overflow-x: scroll;
+}
+.coverPan::-webkit-scrollbar{
+    display:none
+}
+.Sport12{
+    padding:10px 5px;
+    background-color:  #ffffff1c;;
+    width:23%;
+    /* border-radius: 8px; */
+    background: #ffffff1f;
+border-radius: 26px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+color:#fff;
+cursor: pointer;
+}
+.Sport12:hover{
+background-color: #fff;
+color:#000
+}
+.spaf{
+    background-color: #6a7aa8;
+    color:#fff
+}
+.GamEType{
+    margin-top: 20px;
+background: rgba(255, 255, 255, 0.01);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid #51499f;
+padding:15px 15px;
+margin-bottom: 20px!important;
+
+}
+.selectDiv{
+    width:100%;
+    padding:10px;
+    outline: none;
+    border:0;
+    background-color: inherit;
+    color:#fff;
+    font-size: 18px;
+}
+.juji{
+    padding:0 !important
+}
+.GamEType1{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.GamEType2{
+    padding: 10px 20px;
+width:28%;
+
+background-color:inherit;
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid #504893;
+border-radius: 6px;
+font-size: 18px;
+color:#fff
+}
+.GamEType3{
+    padding:10px 5px;
+    background-color:inherit;
+    border-radius: 6px;
+    width:68%; 
+    
+
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid #504893; 
+}
+.dashboardAdd{
+    text-align: center;
+    color:#ebe5e5;
+    font-size: 16px;
+    font-weight: 600;
+    padding:10px 5px;
+    background-color: #342a85;
+    border-radius: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    cursor:pointer;
+
+
+}
+.dashboardAdd:hover{
+    background-color: #fff;
+    color:#000
+}
+.RomaDAs{
+    display:flex;
+    align-items: center;
+    padding:6px 10px;
+
+}
+.RomaDAs:hover{
+    background-color: #1c2b564f;
+}
+.GEoniPad{
+    display:flex;
+    align-items: center;
+  justify-content: space-between;
+  color:#fff;
+   
+}
+.GEoniPad li{
+    text-align: center;
+    width:16%
+}
+.amaF{
+    background-color: #120b4a;
+    padding: 15px 1px;
+    border-radius: 5px;
+}
+.Asaa{
+    width:120px;
+    padding:10px 5px;
+    /* background-color: red; */
+    background-color: #1c2b56;
+    margin: 0 auto;
+    border-radius: 50px;
+    cursor:pointer ;
+}
+.Asaa:hover{
+    background-color: #fff;
+    color:#000;
+}
+.opst{
+    color:#efebeb;
+    text-align: center;
+    width:15%;
+    margin:15px auto;
+    background-color: #455b96;
+    padding:12px 2px;
+    border-radius: 5px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.opst:hover{
+    background-color: #fff;
+    color:#000;
+}
+.ResultTa{
+    color:#fff;
+    margin-right: 8px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.resultCla{
+    display:flex;
+    align-items: center;
+}
+.diappear{
+    display: none;
+}
+.resultClass{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    background-color:#120b4a;
+    padding:20px 0;
+    border-radius: 6px;
+}
+.activeBg{
+    background-color: #fff;
+    color:#000
+}
+.inputAdd{
+    width: 100%;
+    padding:10px 10px;
+    background-color: inherit;
+    border-radius: inherit;
+    border:0;
+    outline:0;
+    color:#fff
+
+}
+.amm{
+    width:30px;
+    height:30px
+}
+.coderm{
+    color:#fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.Entre{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;  
+}
+.format{
+    padding:0px 0px;
+    
+    width:300px;
+    
+   
+    background-color: inherit;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid #504893;
+    border-radius: 6px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.kiglim{
+    padding:10px 15px;
+    width:10%;
+    text-align: center;
+    cursor:pointer
+}
+.kiglim:hover{
+    background-color: #fff;
+    color:#000
+}
+.pade{
+    width:100%;
+    background-color: inherit !important;
+    outline: 0;
+    border:none;
+    color:#fff;
+    font-size: 18px;
+}
+.daro{
+    margin-bottom: 40px;
+}
+.packsa{
+ background-color: #fff!important;
+ color:#000
+}
+.chuksInput{
+    position:absolute;
+    padding:14px 10px;
+    background-color:#4e9479;
+    color:#fff;
+    z-index: 20;
+    left:50%;
+    top:30%;
+    border-radius:8px;
+    
+}
+.SuccessInfoM{
+   
+    color:#fff;
+position: absolute;
+ left:40%;
+ right:40%;
+ top:50%;
+ 
+    padding:8px 10px;
+   margin:auto;
+    width:15%;
+    text-align: center;
+    z-index: 20;
+    transform:translate(-50%,-50%)
+}
+.suc1{
+    background-color: #4e9479;
+}
+.suc2{
+    background-color: #79b5e6;
+}
+@media(max-width:768px){
+    .GamEType1 {
+       flex-direction: column; 
+       gap:10px;
+
+    }
+    .GamEType2,.GamEType3{
+        width:100%;
+    
+    }
+
+.opst {
+    width: 40%;
+    padding: 10px 2px;
+
+}
+.format {
+ 
+    max-width: 300px;
+    width: 100%;
+
+}
+.inputAdd {
+    width: 100%;
+}
+.kiglim {
+    padding: 10px 15px;
+    width: 40%;
+}
+.Entre {
+    flex-direction: column;
+    gap: 10px;
+   
+}
+   
+     
+}

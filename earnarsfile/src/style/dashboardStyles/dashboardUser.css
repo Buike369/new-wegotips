@@ -1,0 +1,231 @@
+.lagak{
+    height:100vh;
+    background-color: #3c476e;
+}
+.userRo{
+    display:flex;
+    align-items: center;
+    gap:20px;
+    margin:2px auto 20px auto
+}
+.helpin{
+    width:80%
+}
+
+.posit{
+    position:relative
+}
+.positIcon{
+    position:absolute;
+    right:10px;
+    top:32%;
+    color:gray;
+    font-size: 18px;
+    cursor:pointer;
+
+    transform: translateY(-50%,-50%);
+}
+.helpin1{
+    width:18%  
+}
+.phoneNu{
+    width:20% !important;
+}
+.phone{
+    width:5% !important;
+}
+.Searchh{
+    width:100px;
+    background-color: #fff;
+    color:#000;
+    padding:10px 6px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+}
+.forr{
+    width:100%;
+    padding:10px 8px;
+    border-radius: 6px;
+}
+.PHONENUM{
+    margin-top: 20px;
+}
+.ApprovedButton{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #001041;
+    padding: 6px 14px;
+    border-radius: 4px;
+}
+.yesp{
+    padding: 8px 9px;
+    background-color: #fff;
+    color:#000;
+    border-radius: 4px;
+}
+.yesp:hover{
+    background-color: gray;
+    color:#fff
+
+}
+.Nop{
+    background-color: red !important; 
+    color:#fff; 
+}
+.Nop:hover{
+    background-color:#be5a5f !important; 
+    color:#fff; 
+}
+.work{
+    padding:4px !important;
+}
+.ikeli{
+    background-color: #3c476e;
+    color:#fff;
+    padding:10px 10px;
+    font-weight: 800;
+    font-size: 16px;
+    border-radius: 4px;   
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.linema {
+    font-family: "Fraunces", serif;
+    font-size: 16px;
+    white-space: nowrap;
+    margin: 0;
+    border: none;
+    border-collapse: separate;
+    border-spacing: 0;
+    table-layout: fixed;
+     background-color: #0d0740;
+    padding:10px 10px;
+ 
+    /* border: 1px solid black; */
+}
+
+.linema td,
+.linema th {
+    border: none;
+    padding: 0.5rem 1rem;
+}
+
+.linema thead th {
+    padding: 10px 3px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    font-size: 16px;
+    width: 10vw;
+        background-color: #171054;
+}
+
+
+.linema td {
+    /* background: #fff; */
+    padding: 4px 5px;
+    text-align: center;
+}
+
+.linema tbody th {
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+    position: relative;
+    font-size: 14px;
+}
+
+.linema thead th:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 5;
+   
+    background-color: #171054;
+    backdrop-filter: blur(5px);
+    
+    
+}
+
+.linema thead tr,
+.linema body tr{
+    overflow-x: scroll;
+}
+
+.linema tbody th {
+    position: sticky;
+    left: 0;
+    /* background-color: #3c476e; */
+   
+    z-index: 1;
+}
+.linema tbody td {
+    font-size: 14px;
+    color:#b0aebd;
+}
+
+.linema tbody tr {
+    border-bottom: 1px solid #302b6e;
+}
+/* tbody tr :hover{
+  
+    cursor: pointer;
+} */
+.gapUp{
+    margin-top: 12px;
+}
+
+[role="region"][aria-labelledby][tabindex] {
+    width: 100%;
+    max-height: 98vh;
+    overflow: scroll;
+}
+
+[role="region"][aria-labelledby][tabindex]::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+[role="region"][aria-labelledby][tabindex] {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+[role="region"][aria-labelledby][tabindex]:focus {
+    /* box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5); */
+    outline: 0;
+}
+
+
+@media(max-width:768px){
+    .linema thead th {
+            font-size: 14px;
+        }
+                .linema tbody td {
+                    font-size: 12px;
+                }
+
+     .linema tbody th {
+        font-size: 12px;
+                                }
+   .linema {
+                                                                    
+                                                                    padding: 10px 4px;
+                                
+                                                                    /* border: 1px solid black; */
+                                                                }
+}

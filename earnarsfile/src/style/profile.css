@@ -1,0 +1,256 @@
+
+*{
+    margin:0
+}
+.PpDiv{
+    /* background-color: #1f326c; */
+    width:100%;
+    height: 100vh !important;
+    overflow-y: scroll;
+   /* max-height:100vh !important; */
+    padding:20px 0 20px 0;
+}
+.Profile_Div{
+    width:100%;
+    max-width: 800px;
+    margin:70px auto;
+        background: #757b95;
+    /* box-shadow: rgb(68 76 105) 0px 2px 18px; */
+background: linear-gradient(360deg, rgb(71 85 135) 25%, rgb(88 108 155 / 95%) 54%, rgb(60 71 110 / 68%) 84%);
+    /* box-shadow: rgb(62 75 116) 0px 2px 18px; */
+    box-shadow: rgb(110 120 155) 0px 2px 18px;
+    /* background: #4e64a8;
+    box-shadow: rgb(78 100 168) 0px 5px 15px; */
+    padding: 8px 8px;
+}
+
+.ProfilePp{
+    color: #dccd14;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.Country1{
+    color:#d2d4d9;
+    margin-bottom: 5px;
+}
+.ProfilePp_PP{
+    display:flex;
+    background-color:#2d395a;
+    padding:20px 10px;
+    border-radius: 5px;
+
+}
+.linkCopied{
+    position:absolute;
+    color:#000;
+    top:10%;
+    left:50%;
+    right:50%;
+    transform: translate(-50%,-50%);
+    padding:5px 10px;
+    background-color: #fff;
+    width:250px;
+    text-align: center;
+}
+
+.ProfilePp_P2P{
+    width:120px;
+    height:120px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.Conty{
+    border-left: 1px solid #fff;
+    padding-left: 15px;
+}
+.EditInfo{
+    color:#fff;
+    margin:25px 0 15px 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+.WentSon{
+    display:flex;
+    justify-content: space-between;
+}
+.UserEm{
+    width:49%;
+}
+.Profile_Dente{
+    width:100%;
+    padding:10px 6px;
+    border-radius: 5px;
+    outline: 0;
+    border: 0;
+}
+.nameFin{
+    color:#fff;
+    margin-bottom: 5px;
+}
+.upon{
+    margin-top: 22px;
+}
+.UpDatePls{
+  background-color: #001041;  
+  color:#fff;
+  width:150px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  padding:10px 5px;
+  text-align: center;
+  cursor: pointer;
+  /* box-shadow: 0px 2px 5px #0b0b3d; */
+ box-shadow: 0px 3px 19px 3px #48547e;
+  border-radius: 5px;
+  margin:20px auto 10px auto;
+
+}
+
+.UpDatePls:hover{
+    /* box-shadow: 0px 3px 5px 3px #171e36; */
+    box-shadow: 0px 3px 5px 3px #929ab4cc;
+    background-color: #fff; 
+    color:#000;
+
+}
+.WithDec{
+    border:0.5px solid #909090;
+    padding:0 12px 5px 12px;
+    border-radius: 4px;
+}
+.AddBankAccount{
+    margin-top: 30px;
+    color:#fdf816;
+    margin-bottom: 10px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+.InEdit{
+    display:flex;
+    justify-content: space-between;
+    margin:10px 0;
+    align-items: center;
+}
+.FimeOp{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ppCopy{
+    display:flex;
+    align-items: center;
+}
+.copyCode1{
+    margin-left: 6px;
+    cursor: pointer;
+    border-radius: 6px;
+    padding:4px 6px;
+    background-color: #001041;
+}
+.copyCode2{
+    background-color: #000 !important;
+    padding:8px 12px !important;
+}
+.copyCode{
+    cursor: pointer;
+    color:#fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding:0 6px;
+    background-color: inherit;
+    outline:0;
+    border:none;
+}
+.copyCode4{
+    max-width: 150px;
+    width:100%;
+}
+.EditProfileButtoon{
+    width:150px;
+   padding:6px 5px;
+ 
+    color:#000;
+    font-size: 18px;
+    font-weight: 600;
+    background-image: linear-gradient(to right, #1A2980 0%, #9ca8ec 51%, #1a298094 100%);
+    text-align: center;
+    box-shadow: 0px 2px 10px #0d0d2f82;
+    border-radius:50px;
+    cursor:pointer;
+}
+.EditProfileButtoon:hover{
+    /* background-color: #001041; */
+    background-image: linear-gradient(to right,  #1a298094 0%, #9ca8ec 51%,  #1A2980 100%);
+    color:#fff;
+}
+.NoteRote{
+    color:#d9c935;
+}
+.NoteDDiv{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:40px 0 10px 0;
+
+}
+.RoteDiv{
+    width:45%;
+    border-bottom: 0.5px solid #909090;
+}
+.CopyCode90{
+    cursor:pointer;
+}
+.mustbebak{
+    color:#fff;
+    margin-bottom: 17px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+}
+@media(max-width:425px){
+    .ProfilePp_PP {
+       
+        flex-direction: column;
+
+    }
+    .WentSon {
+        flex-direction: column;
+        
+    }
+    .UserEm {
+        width: 100%;
+    }
+    .ProfilePp_P2P {
+    
+        margin-right: 0;
+    }
+    .yink{
+        text-align: center;
+    }
+}
+@media(max-width:768px){
+    .pet{
+    padding:0 8px !important;
+    }
+    .Profile_Div{
+        margin: 0px auto !important;
+    }
+    .FimeOp{
+        flex-direction: column;
+    }
+    .ProfilePp{
+        font-size: 18px !important;
+        margin-bottom: 10px !important;
+    }
+    .ppCopy{
+        justify-content: space-between;
+            width: 100%;
+            margin-bottom: 5px;
+    }
+    .copyCode4{
+  max-width:121px
+    }
+    .copyCode{
+        padding: 6px 12px !important;
+    }
+}

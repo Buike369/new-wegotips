@@ -1,0 +1,522 @@
+.ParentDivNewHod {
+    width: 100%;
+    padding: 20px 10px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.tipsterProfile {
+    font-size: 35px;
+    font-weight: 800;
+    color: #fff;
+}
+
+.profileCoverDiv {
+    border: 1px solid #32278b;
+    border-radius: 8px;
+    background-color: #221c5a;
+}
+
+.Kn1 {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.point {
+    position: relative;
+    width: 200px;
+    height: 200px;
+
+    margin-top: -70px;
+    margin-left: 20px;
+}
+
+.ImgPicMan {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+.ImgPicMan1 {
+    position: absolute;
+    right: 1px;
+    bottom: 42px;
+
+}
+
+.namePad {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.AmosD {
+    display: flex;
+    align-items: center;
+
+}
+
+.holder2 {
+    display: flex;
+    width: 100%;
+    max-width: 460px;
+    justify-content: space-between;
+}
+
+.holder3 {
+    margin-left: 10px;
+
+}
+
+.IPYT {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.ENGLand {
+    color: gold;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.TipsActiveBu {
+    border: 0;
+    outline: 0;
+    background-color: #5d569b;
+    border: 1px solid #89899d;
+    border-radius: 20px;
+    padding: 6px 18px;
+    color: #fff;
+
+}
+
+.TipsActiveBu:hover {
+    background-color: #0d0740;
+    color: gold;
+    cursor: pointer;
+}
+
+.holder5 {
+    color: #fff;
+    margin-left: 10px;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.holder6 {
+    border: 0;
+    outline: 0;
+    padding: 6px 20px;
+    border-radius: 7px;
+    background-color: #171054;
+    border: 1px solid #5853a7;
+    /* box-shadow: 0px 0px 8px #08051ede; */
+}
+
+.holder7 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.holder8 {
+    padding: 2px 10px;
+}
+
+.msg {
+    padding: 6px 10px;
+    border: 1px solid #5853a7;
+    width: 110px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #171054;
+}
+
+.msg1 {
+    margin: 10px 0;
+}
+
+.msg3 {
+    color: greenyellow;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 10px;
+
+}
+.Bubuking{
+ font-weight: 700;
+ font-size: 16px;
+}
+
+.oddNum80{
+    color:#7f829d;
+  
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.ImageTip {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.msg4 {
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.divDEDE {
+    border: 1px solid #343387;
+    padding: 15px 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.IP {
+    color: #fff;
+    cursor: pointer
+}
+
+.IP1 {
+    padding: 10px 8px 20px 8px;
+    margin-right: 15px;
+}
+
+/* .IP1:hover {
+    border-bottom: 1px solid red;
+} */
+
+.Above {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.myDivb1 {
+    width: 60%;
+}
+
+.bkInT {
+    color: #fff;
+    margin-left: 3px;
+
+
+}
+
+.fireMan {
+    background-color: #221c5a;
+    border: 1px solid #32278b;
+    padding: 20px 15px;
+    border-radius: 10px;
+}
+
+.subscribeToThis {
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+
+    font-weight: 700;
+}
+
+.cic {
+    /* position: absolute; */
+    left: 20px;
+    height: 15px;
+    width: 15px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.paw {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0 25px 0;
+}
+
+.paw1 {
+    display: flex;
+    align-items: center;
+    padding: 8px 8px;
+    border: 1px solid #32278b;
+    border-radius: 6px;
+    background-color: #0d0740;
+}
+
+.pY {
+    border-bottom: 1px solid #343387;
+    margin-bottom: 20px;
+}
+
+.cicK {
+    display: flex;
+}
+
+.cicK1 {
+    color: #fff;
+    margin-left: 6px;
+}
+
+.tuya {
+    margin-left: 5px;
+}
+
+.SubMan {
+    margin-left: 10px;
+}
+
+.SubMan1 {
+    color: #fff;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.circleTT {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #3d328f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circleTT1 {
+    display: flex;
+    padding: 16px 15px;
+    margin-top: 20px;
+    background-color: #221c5a;
+    border-radius: 8px;
+    border: 1px solid #32278b;
+    align-items: center;
+}
+
+.buttonBu {
+    padding: 10px 15px;
+    background-color: #171054;
+    border-radius: 20px;
+    text-align: center;
+    color: #fff;
+    margin-top: 15px;
+    border: 1px solid #5b5ea7
+}
+
+.buttonBu:hover {
+    background-color: #0d0740;
+    color: gold;
+    /* border:1px solid gray; */
+    cursor: pointer;
+}
+
+.ppinkl {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 10px;
+    border-radius: 5px;
+    align-items: center;
+    background-color: #0d0740;
+    margin-bottom: 10px;
+}
+
+.name1 {
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.paw2 {
+    display: flex;
+    align-items: center;
+}
+
+.moneyColor {
+    color: #00ff66
+}
+
+.cic:after {
+    content: "";
+    /* position: absolute; */
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.myDivb2 {
+    width: 36%;
+}
+
+.TY33 {
+    width: 100%;
+    max-width: 48%;
+    margin-top: 0 !important;
+    margin-bottom: 20px;
+}
+
+.subSubC {
+    color: gold
+}
+
+.IfUNA {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.AC {
+    background-color: #fff;
+    color: #000;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 10px;
+    cursor:pointer;
+}
+.AC:hover{
+    background-color: #221c5a;
+    color:#fff;
+}
+.tipsterProfile{
+    margin-bottom: 10px;
+}
+.MMM{
+    margin-top: 16px;
+}
+.lookUp {
+    margin-top: 70px;
+}
+
+.Oct {
+    color: greenyellow;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 34px 0 15px 0;
+}
+
+
+@media(max-width:768px) {
+    .profileCoverDiv {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+       
+    }
+        .tipsterProfile{
+            margin-left: 20px;
+        }
+        .likeMEBr{
+            font-size: 8px;
+            color:#fff;
+            margin-left: 3px;
+        }
+
+       
+
+    .ImgPicMan,
+    .point {
+        width: 100px;
+        height: 100px
+    }
+
+    .point {
+        margin-top: -36px;
+    }
+
+    .ImgPicMan1 {
+        bottom: -8px;
+        right: -14px;
+    }
+
+    .holder7 {
+        flex-direction: column;
+    }
+    .lookUp {
+        margin-top: 20px;
+    }
+
+    .namePad {
+        font-size: 18px;
+    }
+
+    .holder5 {
+        font-size: 14px;
+
+    }
+    .IP1{
+    flex-direction: column;
+    margin-right: 0;
+    }
+    .IP{
+     
+            font-size: 10px;
+                text-align: center;
+    }
+
+    .Um {
+        margin-left: 0;
+    }
+
+    .msg {
+        margin-bottom: 10px;
+    }
+
+    .Above {
+        flex-direction: column;
+        width: 100%;
+        max-width: 500px;
+        margin: 50px auto 10px auto;
+        padding:6px 8px;
+    }
+        .TY33{
+            max-width: 100%;
+        }
+
+    .myDivb1 {
+        width: 100%;
+    }
+
+    .myDivb2 {
+        width: 100%;
+    }
+
+
+    .holder8 {
+
+        width: 100%;
+        max-width: 320px;
+        margin: 20px auto 0 auto;
+        justify-content: space-between;
+    }
+
+    .holder2 {
+        justify-content: left;
+    }
+
+    .kingManU {
+        margin-left: 18px;
+    }
+
+    .mikeTin {
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: 10px auto 10px auto;
+    }
+}
+
+@media(min-width:769px){
+    .likeMEBr{
+        display:none
+    }
+}

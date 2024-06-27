@@ -1,0 +1,26 @@
+.simi{
+    width:100%;
+    max-width: 1050px;
+    margin:0 auto;
+    background-color: #536bb1;
+    padding:4px 10px
+}
+.simi2{
+    width:72px;
+    height:26px;
+    background-color: cornflowerblue;
+    border-top-left-radius: 50%;
+    border-top-right-radius:50% ;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
+    color:#fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+.Nopm{
+    padding:8px 4px;
+    background-color: #fff;
+    display:flex;
+}

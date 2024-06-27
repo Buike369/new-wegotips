@@ -1,0 +1,935 @@
+.userD {
+    width: 100%;
+    max-width: 1200px;
+    margin: 100px auto 0 auto;
+
+    background-color: #221c5a;
+    border: 1px solid #32278b;
+
+    border-radius: 10px;
+    display: flex;
+
+}
+
+.userD3 {
+
+    width: 25%;
+    background-color: #120b4a;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow-y: auto;
+    /* position: fixed;
+    top:0;
+    left:0;
+    bottom: 0;
+    overflow-y: auto; */
+}
+
+.emekaUs {
+    position: relative;
+    z-index: 10;
+}
+
+.userD4 {
+    width: 75%;
+
+    overflow-y: auto;
+    /* position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        overflow-y: auto; */
+}
+
+/* .userD3 */
+
+.userD4 {
+    /* Hide the scrollbar track */
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer 11 */
+    scrollbar-color: transparent transparent;
+    /* Firefox */
+}
+.AreWere{
+    justify-content: space-between;
+}
+
+.userD3::-webkit-scrollbar{
+ background: #30296c;
+ padding:2px 5px;
+}
+.userD3::-webkit-scrollbar-thumb {
+    background: #4a4293;
+    border-radius:8px
+}
+
+.userD4::-webkit-scrollbar {
+    width: 0.2em;
+}
+
+/* .userD3::-webkit-scrollbar-thumb */
+.userD4::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.dvd {
+    text-align: center;
+}
+
+.userD5 {
+    background-color: #120b4a;
+
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.userD50 {
+    padding: 10px 10px;
+}
+
+.dvd1 {
+    padding: 14px 10px;
+
+    color: #fff;
+    cursor: pointer
+}
+
+.MainVm {
+    font-size: 20px;
+    font-weight: 800;
+    color: #9c9ae1;
+}
+
+.jd {
+    margin-bottom: 10px;
+}
+
+.jd1 {
+    border-bottom: 1px solid #282672;
+    width: 70%;
+    margin: 20px auto 10px auto;
+}
+
+/* .jd3{
+        border: 1px solid #51499f;
+            background-color: #221a62;
+            border-radius: 10px;
+} */
+.StartDate {
+    color: #babed3;
+    line-height: 30px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.MainVm1 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.TY44 {
+    width: 100%;
+    max-width: 31%;
+}
+
+.mainVm34 {
+    display: flex;
+    align-items: center;
+    height: 150px;
+    justify-content: center;
+}
+
+.eretYem {
+    flex-grow: 1;
+    flex-basis: 32%;
+}
+
+.wereAre {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.EarningBolo {
+    font-size: 14px;
+    font-weight: 300;
+    color: #b5b3f3;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.EarningBolo1 {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+}
+
+.sactions {
+    color: gold;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+
+}
+
+.dvd1:hover {
+    background-color: #0d0740;
+    border-left: 2px solid #5157ab;
+}
+
+.dvd3 {
+    padding: 10px 10px;
+}
+
+.dvd2 {
+    padding: 30px;
+    background: #221A62;
+    border: 1px dashed #6358CB;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.dvd23 {
+    margin-top: 3px !important;
+}
+
+.userD6 {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: blueviolet;
+    margin: 10px auto;
+}
+
+.profileDImg {
+    width: 100%;
+    border-radius: 50%;
+
+}
+
+.JohnKen1 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.JohnKen2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.JohnKen3 {
+    color: #aca4d9;
+    margin-left: 5px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.JohnKen4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.JohnKen5 {
+    display: flex;
+    align-items: center;
+
+}
+.minYU{
+    border: none !important;
+    
+}
+.minYU:hover{
+ border-bottom: 1px solid gray !important;
+}
+
+.EMMAN {
+    border: none;
+    outline: 0;
+    padding: 10px 18px;
+    border-radius: 80px;
+    background-color: #120b4a;
+    border: 1px solid #50498f;
+    color: #fff;
+    margin: 5px auto 10px auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.JohnKen7 {
+    margin-left: 8px;
+}
+
+.JohnKen8 {
+    margin-bottom: 8px;
+}
+
+.JohnKen6 {
+    color: #fff;
+}
+
+.kenJohn {
+    width: 80%;
+    margin: 10px auto;
+    border-bottom: 1px solid gray;
+}
+
+.Fa1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px;
+    background-color: #0d0740;
+    border-top-right-radius: 10px;
+   
+}
+.figi{
+    margin-left: 8px;
+}
+.Fa4 {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 8px 20px;
+
+    border-top-right-radius: 10px;
+
+}
+
+.subsub{
+    color:gold;
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 10px;
+}
+.Fa41{
+    margin-right: 20px;
+}
+.lom{
+    background-color: inherit !important;
+}
+
+.Fa2 {
+    width: 55%;
+}
+
+.Fa3 {
+    width: 20%;
+    text-align: right;
+    color: #fff;
+}
+
+.Fa4 {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 6px;
+    background-color: inherit;
+    border: 1px solid #32278b;
+    color:#fff;
+    outline:0;
+
+}
+
+.Fa10 {
+    padding: 20px
+}
+.Fa110{
+    margin-top: 15px;
+}
+
+.ManB {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+.ManB1 {
+    flex-grow: 1;
+    flex-basis: 200;
+    height: 150px;
+
+    border-radius: 8px;
+}
+
+.ManB30 {
+    background-color: #0d0740;
+    border: 1px solid #534a9d;
+    background-image: linear-gradient(to bottom right, #302876, #100b3c);
+    box-shadow: rgb(10 11 54 / 31%) 0px 15px 25px, rgb(59 50 124 / 54%) 0px 5px 10px;
+}
+
+.ManMMb {
+    width: 22%
+}
+
+.ManMMb1 {
+    width: 50%
+}
+
+.ManMMb2 {
+    padding: 10px 15px;
+}
+
+.vimvi {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-y: hidden;
+    padding: 0px 0px;
+    /* overflow: hidden; */
+}
+
+.UnLockAff {
+    color: #c2bee3;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 15px;
+    width:250px;
+    margin:0 auto;
+}
+
+.uderDD {
+
+    max-width: 1440px;
+
+    margin: 0px auto 0 auto;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    border: none !important;
+    
+}
+
+.UnlockAff1 {
+    color: #fff;
+    padding: 10px 10px;
+    border-radius: 25px;
+    text-align: center;
+    background-color: #221c5a;
+    border: 1px solid #32278b;
+    width: 170px;
+    margin: 0 auto;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.OfReferral2 {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.UponT35 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #0d0740;
+    margin-bottom: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.ManB2 {
+    flex-grow: 1;
+    flex-basis: 200;
+    height: 70px;
+    background-color: #0d0740;
+    border: 1px solid #534a9d;
+    border-radius: 8px;
+    background-image: linear-gradient(to bottom right, #302876, #100b3c);
+    box-shadow: rgb(10 11 54 / 31%) 0px 15px 25px, rgb(59 50 124 / 54%) 0px 5px 10px;
+}
+
+.DataBoundle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+
+}
+
+.DataBoundle2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+
+}
+
+.tipWall {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+
+}
+
+.tipUp {
+    margin-top: 10px;
+}
+
+.TransferTip {
+    padding: 7px 14px;
+    border-radius: 30px;
+    text-align: center;
+    width: 100px;
+    color: #fff;
+    background-color: #575095;
+    margin: 15px auto 0 auto
+}
+.TransferTip:hover{
+        background-color: #120b4a;
+}
+.DataTo {
+    color: #b7b4f1;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.ManB5 {
+    flex-direction: column;
+}
+
+.BKOver {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  
+    margin:0 auto 10px auto;
+    overflow: hidden;
+}
+.BKOver2{
+    width:100%;
+    overflow: scroll;
+}
+.BKOver2::-webkit-scrollbar {
+    display: none;
+}
+
+.BkOver1 {
+    padding: 10px 10px;
+    border-radius: 50px;
+    width: 48%;
+    background-color: #0d0740;
+    color: gold;
+    text-align: center;
+    cursor: pointer;
+    background-image: linear-gradient(to bottom right, #0d074038, #4e4789);
+    box-shadow: rgb(10 11 54 / 31%) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+.ManUm {
+    margin-top: 20px;
+}
+
+.ManUm1 {
+    border-radius: 10px;
+}
+
+.pricing {
+    background-color: #171054;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.pricingL {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.PR {
+    margin: 20px 0;
+}
+
+.PR1 {
+    width: 20%
+}
+
+.PR2 {
+    width: 60%;
+
+}
+
+.Sel {
+    width: 100%;
+    padding: 8px 10px;
+    background-color: inherit;
+    border: 1px solid #3b347e;
+    border-radius: 6px;
+    color: #fff;
+}
+
+.PR3 {
+    width: 15%
+}
+
+.HelpMe {
+    display: flex;
+    justify-content: center;
+}
+
+.helpMe1 {
+    color: #bdb7d5;
+    text-align: center;
+    margin-top: 5px;
+}
+.pKFin{
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    width:100%;
+    background-color: #120b4a;
+}
+.usContact {
+    text-align: center;
+    color: gold;
+
+    margin-top: 10px;
+}
+
+.PriceN {
+    width: 100%;
+    padding: 8px 10px;
+    outline: 0;
+    border-radius: 6px;
+    background-color: inherit;
+    border: 1px solid #3b347e;
+    color: #fff;
+}
+.prIconCl{
+    padding: 5px;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    color: #fff;
+    margin-right: 8px;
+    border: 1px solid #32278b;
+    cursor:pointer;
+display:flex;
+justify-content: center;
+align-items: center;
+}
+.NameBB{
+    color:#a3a6b7;
+    margin-top:5px;
+}
+
+.MembershipP {
+    color: gold;
+    font-weight: 800;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.Pnum{
+    color:#9897b3;
+    margin-top: 5px;
+}
+
+.PriceButton {
+    padding: 8px 20px;
+    outline: 0;
+    border: 1px solid #4c518d;
+    border-radius: 28px;
+    background-color: inherit;
+    color: #fff;
+}
+
+.Sel~option {
+    background-color: inherit !important;
+}
+
+.pricingL1 {
+    width: 32%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 10px;
+    background-color: #0d0740;
+    border-radius: 8px;
+
+}
+
+.RemoveButton {
+    padding: 6px 10px;
+    border: 1px solid #6358cb;
+    background: #221a62;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.gameDay {
+    color: #bbbce5;
+    font-size: 16px;
+    font-weight: 600;
+}
+.ffDay{
+    color:#fff;
+}
+
+.SetAE {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    line-height: 40px;
+    margin-top: 20px;
+}
+.goms40{
+    width:100%;
+    overflow-x: auto;
+}
+.goms40::-webkit-scrollbar{
+    display:none;
+}
+.goms{
+    width:500px;
+    margin:1px auto;
+    overflow: hidden;
+}
+
+.Mu1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bAcount {
+    background-color: #0d0740;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+.SetAE1 {
+    background-color: #221a62;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+}
+
+.ddE1 {
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 5px;
+    background-color: inherit;
+    color: #fff;
+    border: 1px solid #504893;
+    margin: 6px 0 12px 0;
+    outline: 0;
+}
+
+.ddE {
+    color: #aeadc7;
+}
+
+.Ch {
+    padding: 8px 15px;
+    outline: 0;
+    border-radius: 10px;
+    color: gold;
+    background-color: #0d0740;
+    border: 1px solid #4e4e83;
+
+}
+.KOMKN{
+    margin-bottom: 4px;
+}
+
+.JohnKMKM {
+    color: #c3c3db;
+    font-size: 12px;
+}
+.jum{
+    width:48%;
+}
+
+.uploadText {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.uploadText1 {
+    color: #fff;
+}
+
+
+.Ch45 {
+    justify-content: flex-start;
+    padding: 2px 20px;
+}
+
+.ch21 {
+    display: inline;
+    border: 1px solid #5C61C8;
+    padding: 20px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+.y45{
+    cursor: pointer;
+}
+
+@media(max-width:768px){
+    .userD3{
+        display:none;
+    }
+    .userD4{
+        width:100%;
+    }
+    .carU{
+  padding:0px 0px !important;
+    }
+        .Fa10 {
+            margin-top: 60px;
+        }
+        .eretYem {
+          
+            flex-basis: 100%;
+        }
+     .TY44 {
+   
+    max-width: 500px;
+    margin: 20px auto 1px auto;
+    }
+    .youpin{
+            padding: 3px 5px;
+    }
+    .OfReferral2{
+        text-align: center;
+    }
+    .UponT{
+     margin-bottom: 5px;
+    }
+    .Fa1 {
+       
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1200;
+    }
+    .UponT{
+    padding: 20px 4px;
+    }
+
+        .Great {
+         
+            margin-top: 15px;}
+    .ManMMb {
+        width: 45%;
+    }
+        .MainVm {
+            font-size: 17px;
+            text-align: center;
+           
+        }
+
+        .PR1 {
+           display:none
+        }
+        .pricingL12 {
+            flex-direction: column;
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+      
+        
+        .pricingL1{
+            width:100%;
+                margin-bottom: 3px;
+        }
+                .pricing {
+                    padding: 10px 8px;  
+                }
+        .PriceButton {
+            width: 100%;
+        }
+              
+     .PR3 {
+         width: 30%;
+    }
+ .PR2 {
+     width: 65%;
+}
+.SetAE {
+    font-size: 17px;
+    margin-bottom: 10px;
+    line-height: 22px
+}
+.UponT {
+   
+    margin-bottom: 2px;
+   
+}
+.ManUm1 {
+    border-radius: 10px;
+}
+
+.allNewTips {
+    
+    padding: 2px 2px;
+}
+
+}
+
+@media(max-width:425px){
+    .jum{
+        width:100%;
+    }
+        .WonDiv {
+    
+            flex-direction: column;
+        }
+
+                .BKOver {
+                  
+                    width: 600px;
+                 
+                }
+}
+@media(min-width:769px){
+    .prIconCl{
+        display:none;
+    }
+        .pKFin {
+            display: none;
+        }
+                .PR17 {
+                    display:none;
+                }
+}

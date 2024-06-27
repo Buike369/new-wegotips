@@ -1,0 +1,75 @@
+.spaceHod{
+    font-size: 36px!important;
+    width:50%;
+    margin:0 auto
+}
+.Epiny{
+    text-decoration: none;
+}
+.asss{
+    color:#000
+}
+.BecomeAgent{
+    background-color:inherit;
+    margin-top: 20px;
+    padding:35px 10px;
+    border:0.5px solid #cec7c7;
+    border-radius: 4px;
+    margin-bottom: 50px;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.BecomeBecome{
+    font-size: 27px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color:#fff;
+    text-align: center;
+    width:42%
+}
+.ClickToToD{
+    border:none;
+    outline:none;
+    padding:10px 15px;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+    background-color:cyan;
+
+}
+.ClickToToD:hover{
+    background-color:#fff;
+
+}
+@media(max-width:768px){
+    .spaceHod {
+        font-size: 24px!important;
+        width: 80%;
+   
+    }
+    .trMonth1 {
+        width: 96%;
+        
+    }
+    .BecomeAgent {
+        flex-direction: column;
+        width: 100%;
+        margin: 20px auto 0 auto;
+    }
+    .BecomeBecome {
+        font-size: 24px;
+        width: 76%;
+        margin-bottom: 12px;
+    }
+    .OddWk_Div li {
+        
+        width: auto;
+      
+    }
+    .FollowUh {
+        margin-top: 2px;
+   
+    }
+}

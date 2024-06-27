@@ -1,0 +1,814 @@
+.AffliateDiv34{
+ width:100%;
+ /* max-width: 1500px; */
+ margin:0 auto;
+ height: auto;
+ background-color:inherit;
+}
+.AffDD{
+    max-width: 1100px;
+}
+
+
+/* .AffliateBanner{
+    margin: 46px auto 0 auto;
+    width:100%;
+    max-width: 1500px;
+} */
+.affiliateImage{
+  
+    display:flex;
+    align-items:self-start; 
+    width: 100%;
+    max-width: 1150px;
+    margin: 120px auto  auto;
+    justify-content: space-between;
+    /* height: 100vh; */
+    padding-bottom: 20px;
+    position: relative;
+}
+.headerAffiliateI{
+    position: absolute;
+    left:-3%;
+    bottom: 2%;
+    width: 150px;
+    z-index: -1;
+}
+
+.headerAffiliate2 {
+    position: absolute;
+    left: 45%;
+    top: -10%;
+    width: 150px;
+    z-index: 0;
+}
+.Aka{
+    font-size: 54px;
+    color:#fff;
+    font-weight: 500;
+    letter-spacing: 3px;
+        margin-top: 30px;
+        position:relative;
+        z-index: 6;
+}
+.ghFi{
+        
+            margin-top: 10px !important;
+            padding:30px  15px 100px 15px;
+            width:100%;
+            max-width: 1120px;
+            margin: 10px auto 10px  auto
+            
+}
+.ghFii1{
+    color:#fff;
+    font-size: 24px !important;
+}
+.ghFii12{
+    min-height: 100px;
+}
+.goods{
+    font-size: 51px !important;
+}
+.goods1{
+    position: relative;
+}
+.goods2{
+    position: relative;
+    z-index: 5;
+}
+.goods3{
+position: absolute;
+    width: 150px;
+    /* height: 402px; */
+    background-color: #362d83;
+    filter: blur(190px);
+   
+    top: 0;
+    bottom: 0;
+}
+.goods4{
+    left: 0;
+}
+.goods5{
+    right: 0;
+}
+.goods6{
+    width:100%;
+    max-width:1120px;
+  
+    margin: 0 auto;
+}
+.ghFii13{
+    width: 140px;
+        height: 140px;
+        margin: 0 auto;
+        background: #857dcd9c;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+}
+.homeSpan{
+    color:gray
+}
+.weAre{
+    margin-top: 30px;
+    font-size: 50px;
+    font-weight: 600;
+    color:gold;
+}
+.inviteFr{
+    font-size: 42px;
+        font-weight: 500;
+        color:#f9d511;
+        line-height: 50.1px;
+        width: 100%;
+        max-width: 620px;
+        margin:0 auto;
+        text-align: center;
+        margin-bottom: 16px;
+        margin-top: 30px;
+}
+.earnPMN{
+    background-color:#171054 ;
+    padding: 20px  10px 36px;
+}
+.newsInput{
+    width: 100%;
+    max-width: 500px;
+    margin: 30px auto 20px auto;
+    position:relative;
+    z-index: 10;
+}
+.newsBro{
+    width: 100%;
+        padding: 18px 18px 18px 24px;
+        font-size: 16px;
+        background-color: #0d0740;
+        border: 0;
+        outline: 0;
+        border: 1px solid #2d2476;
+        border-radius: 200px;
+        position: relative;
+        z-index: 14;
+        color:#fff;
+}
+.alap{
+    font-size: 41px;
+    font-weight: 800;
+    color:gold;
+    text-align: center;
+    width:100%;
+    max-width: 72%;
+    margin: 20px auto 36px auto;
+}
+.ExcitedShare{
+    color:#e1ca3b;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 28px;
+    text-align: center;
+    font-weight: 700;
+}
+.EarnNaira{
+    color:#c4c8d5;
+    font-size: 24px;
+    text-align: center;
+
+}
+.Watch_Now25{
+    border:none;
+    background-color: #536cb9;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color:#fff;
+    padding:10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+      box-shadow: 0px 2px 2px 2px #2e3142e3;
+}
+.Watch_Now25:hover{
+    background-color: #fff;
+    box-shadow: 0px 2px 2px 2px #232324de;
+    color:#000; 
+}
+.ButtonT{
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.SimpleLet{
+    color:#ffffff;
+    text-align: center;
+    padding:15px 8px;
+    /* border-bottom:0.5px solid #948a8a; */
+    width: 32%;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin:0 auto;
+}
+.Create_account_Div{
+     
+     position:relative;
+     width: 200px;
+}
+.AccountPTag{
+    /* padding:5px 5px; */
+    width:30px;
+    height:30px;
+    text-align: center;
+    background-color:#455b98;
+    color:#fff;
+    font-size: 20px;
+    position:absolute;
+    top:45%;
+    right:-12px;
+    border-radius: 50%;
+    border:1px solid #fff;
+}
+.Create_account_Div1{
+    /* width:100%; */
+    width:200px;
+     height:200px;
+     /* border-radius: 50%; */
+     
+    
+}
+.Create_account_holder_Div{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+ 
+    max-width: 1050px;
+    width: 100%;
+    margin: 100px auto 0 auto;
+}
+.Create_AccountD{
+    color:#abadb9;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 20px;
+
+}
+.logoM{
+    color:#fff;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 16px;
+    cursor: pointer;
+}
+.Promo_Div2{
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+    max-width: 990px;
+    margin:15px auto 30px auto;
+}
+
+.Promo_Div{
+    width:32%;
+    height:200px;
+    background-color:#546cb9;
+    color:#fff;
+    border-radius: 5px;
+
+}
+
+.Your_Earning_never_Stop{
+    color:#e1ca3b;
+    padding:10px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 70px auto 0 auto;
+    border-bottom:0.5px solid #948a8a;
+    width:26%;
+}
+.Package_Up{
+            background-color: #171054;
+                /* background-image: linear-gradient(41deg, #6e7ba9 0%, #172a686e 100%); */
+                width: 66%;
+                margin: 90px auto 75px auto;
+                padding: 30px 10px;
+                border-radius: 24px;
+                border: 1px solid #2d2476;
+                box-shadow: 0px 2px 12px #0f0d328c;
+                position: relative;
+                z-index: 5;
+
+}
+.EmailSentIcon{
+    position: absolute;
+    top:24%;
+    right:27px;
+    color:#bcbad7;
+    font-size: 26px;
+    z-index: 18;
+
+}
+
+.MessageDivCov{
+    position:relative;
+    z-index: 0;
+}
+.papag{
+    position: absolute;
+    left: 2%;
+    bottom: -15%;
+    width: 250px;
+    z-index: -8;
+}
+.papag3{
+    position: absolute;
+    left: 2%;
+    bottom: -15%;
+    width: 250px;
+    z-index: -8;
+   
+}
+.papag1{
+    position: absolute;
+    right: 2%;
+    top: -15%;
+    width: 250px;
+    z-index: -8;
+    transform: rotate(180deg);
+}
+.papag4 {
+    position: absolute;
+    right: 2%;
+    top: -15%;
+    width: 250px;
+    z-index: -8;
+    transform: rotate(180deg);
+    
+}
+
+.messageImg{
+ position: absolute;
+ left:4%;
+ bottom: 35%;
+ width:150px;
+ z-index: -1;
+}
+
+.gracePic{
+    width: 100%;
+}
+.Each_Time_your{
+    text-align: center;
+    color:#fff;
+    width:48%;
+    margin:10px auto;
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 0.8px;
+}
+.Start_Now_Button{
+    color:#fff;
+    padding:10px;
+    background-color:#354269 ;
+    font-size: 16px;
+    letter-spacing: 2px;
+    width:150px;
+    text-align: center;
+    margin:0 auto;
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px #45537d;
+    cursor: pointer;
+
+}
+
+.Start_Now_Button:hover{
+     background-color: #505476;
+    box-shadow: 0px 2px 12px #464a6a;
+}
+.header_list li a{
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+.Promotional_Material{
+    text-align: center;
+    color:#fff;
+    margin-top: 70px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+.PromoTv{
+    margin-bottom: 70px;
+}
+.DefBets{
+    padding:5px 5px 8px 10px;
+    margin: 10px 9px ;
+    border-left: 1px solid #fff;
+}
+.AffButton{
+    text-decoration: none;
+}
+.cap{
+    margin-bottom: 70px;
+}
+.InviteBI{
+    width:100%;
+    max-width: 280px;
+    margin: -56px  auto 0 auto;
+    padding:40px 10px;
+    background-color: #2d2476;
+    border-radius: 10px;
+    text-align: center;
+}
+.TheyAre{
+    color:gold;
+    text-align: center;
+    padding:0 10px;
+   margin-top: 40px;
+   font-size: 16px;
+   font-weight: 600;
+   margin-bottom: 20px;
+}
+.seeWhat{
+    font-size: 16px;
+    color:#c9cadd;
+    text-align: center;
+    padding:0 10px;
+    margin-bottom:25px;
+    font-weight: 200;
+}
+.DonTake{
+    font-size: 28px;
+    padding:0 10px;
+    font-weight: 800;
+    width:100%;
+    max-width: 350px;
+    margin: 0 auto 15px auto;
+    text-align: center;
+    color:#fff;
+}
+
+.gos{
+    
+    width:100%;
+    max-width: 1200px;
+    margin:0 auto;
+
+}
+.gos1{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.gos7{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:300px;
+    border:1px solid #7567c9;
+    border-radius:6px;
+   
+}
+.gos2{
+    width:68%;
+    height:300px;
+    padding:2px;
+}
+.earnarC{
+    padding:8px 20px;
+    border:1px solid gray;
+    border-radius: 5px;
+ cursor: pointer;
+    outline:0;
+width:100%;
+    
+}
+.earnarC1{
+width:150px;
+ margin:10px auto 0 auto;
+}
+
+.gos3{
+    
+                height: auto;
+                    background: linear-gradient(206deg, #171054 20%, rgb(13 7 62) 62%, rgb(13 7 62) 76%);
+                    /* border: 1px solid #7567c9; */
+                    -webkit-backdrop-filter: blur(60px);
+                    backdrop-filter: blur(60px);
+                    width: 30%;
+                   
+                    margin: 0 auto;
+                padding: 10px 2px 15px 2px;
+                border-radius: 8px;
+}
+.jimk{
+   
+}
+.gos4{
+    color:#f7f7f7;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+.goemJK{
+    color:#b8c0ff
+}
+.limba{
+height: 500px;
+    display: flex;
+    padding: 40px 10px;
+    justify-content: center;
+    align-items: center
+}
+.ET{
+    font-size: 30px;
+    font-weight: 600;
+    color:gold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.limba2{
+    width:100%;
+    max-width:300px;
+    margin:0 auto
+
+}
+.gos5{
+    width:100%;
+    height:100%;
+}
+
+.inviteFrs{
+ display:flex;
+ align-items: center;
+ justify-content: space-between;
+ width:100%;
+ max-width: 200px;
+ margin: 0 auto;
+}
+.PInvite{
+    color:#fff;
+    font-size: 15px;
+    font-weight: 500;
+}
+.bscY{
+    color:#fff !important;
+}
+.bscY:hover{
+    color: gray !important;
+}
+.grace{
+    width:50%;
+}
+
+
+@media(min-width:1250px){
+.AffDD {
+        max-width: 1200px;
+    }
+}
+@media(max-width:1024px){
+    .header_list li a{
+        font-size: 14px;
+    }
+    .AffliateDiv34 {
+        max-width: 760px;
+    }
+
+    .FREE1 {
+        max-width: 768px; 
+    }
+    .WE1 {
+        width: 72%;
+    }
+    .OUR_P {
+        width:auto;
+        font-size: 22px;
+    }
+    .SapDiv {
+        width: 180px;
+    }
+   
+
+    
+    .SapImg {
+        height: 143px;
+    }
+    .Nigerian {
+        font-size: 14px;
+       
+        margin-top: 10px;
+    }
+    
+    .Emeka {
+        margin: 2px auto 0 auto;
+    }
+    .Read {
+     
+        margin-bottom: 10px;
+        margin-top: 2px;
+    }
+    .IMGS {
+     
+        height: 142px;
+    }
+   
+
+    .WEME {
+       
+        width: 37%;
+    }
+    .SimpleLet {
+       
+        width: 39%;
+       
+    }
+    .Create_account_holder_Div {
+        max-width: 100%;
+    }
+    .Package_Up {
+        width: 76%;
+           
+       
+    }
+    .Promo_Div2 {
+       
+        max-width: 760px;
+        
+    }
+}
+
+@media(max-width:768px){
+    .ExcitedShare {
+        width: 94%;
+        margin: 0 auto;
+        font-size: 24px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+    }
+        .limba {
+            height: auto;
+            display: flex;
+            padding: 40px 10px;
+            justify-content: center;
+            align-items: center
+        }
+    .goods{
+        font-size: 32px !important;
+    }
+    .gos1{
+  flex-direction: column;
+    }
+    .jimk{
+     height: 380px;
+    }
+    .gos3{
+        height: auto;
+            background: linear-gradient(206deg, #171054 20%, rgb(13 7 62) 62%, rgb(13 7 62) 76%);
+            border: 1px solid #7567c9;
+            -webkit-backdrop-filter: blur(60px);
+            backdrop-filter: blur(60px);
+            width: 100%;
+            /* max-width: 530px; */
+            padding:10px 8px 15px 8px;
+            margin: 0 auto;
+    }
+    .papag3{
+    left: -33%;
+        bottom: 24%;
+    }
+        .papag4 {
+            right: -26%;
+                top: -5%;
+        }
+
+    .headerAffiliateI{
+    left: -27%;
+        bottom: 31%;
+    }
+.weAre{
+    margin-top: 6px;
+    font-size: 26px;
+    text-align: center;
+    padding:0px 20px;
+}
+.messageImg{
+    display:none
+}
+    .Aka{
+        font-size: 30px;
+        text-align: center;
+        margin-top: 5px;
+        position: relative;
+        z-index: 4;
+    }
+    .Create_account_holder_Div {
+        flex-direction: column;
+        margin: 46px auto 0 auto;
+    }
+.Package_Up {
+   
+    padding: 15px 10px;
+    margin: 20px auto 20px auto;
+    
+   
+}
+.alap {
+    font-size: 26px;
+    margin: 20px auto 14px auto;
+    /* max-width:100% */
+}
+ .grace {
+     width: 100%
+ }
+
+ .affiliateImage {
+     flex-direction: column;
+     margin: 35px auto 5px auto;
+ }
+
+ .affiliateImage {
+     flex-direction: column;
+     margin: 35px auto 5px auto;
+ }
+.inviteFr {
+    line-height: 45.1px;
+    font-size: 34px;
+}
+.likl {
+    padding: 28px 15px 0px 15px !important;
+}
+  
+    .AffliateBanner {
+        margin: 5px auto 0 auto !important;
+        
+    }
+.AffliateBanner6{
+ margin: 5px auto 0 auto !important;
+ width: 100%;
+        
+                }
+    .EarnNaira {
+        width: 85%;
+        margin: 0 auto;
+        font-size: 20px;
+    }
+    .SimpleLet {
+        width: 94%;
+    }
+    .cap{
+        margin-bottom: 36px;
+    }
+
+    .Your_Earning_never_Stop {
+        margin: 6px auto 0 auto;
+        width: 80%;
+      
+    }
+   
+  
+   
+    .Each_Time_your {
+        width: 99%;
+       
+    }
+    .Promo_Div2 {
+        flex-direction: column;
+        padding: 0 8px;
+        width: 100%;
+      
+    }
+   
+    .Create_AccountD {
+      
+        margin-top: 0px;
+    }
+
+}
+
+@media only screen and (min-width: 501px) and (max-width: 768px)  {
+    .Package_Up {
+         width: 70%;
+     }
+     .Promo_Div {
+         width: 70%;
+         margin: 0 auto 8px auto;
+         /* margin-bottom: 8px; */
+     }
+    
+     }
+     @media(max-width:500px){
+        .Package_Up {
+            width: 96%;
+        }
+        .Promo_Div {
+            width: 100%;
+            margin-bottom: 8px;
+        }
+       
+     }
+

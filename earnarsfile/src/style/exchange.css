@@ -1,0 +1,467 @@
+.Am1n{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+   
+ 
+}
+.Am1n1{
+    width:300px;
+    height:300px;
+    border: 1px solid #2d24769e;
+    /* background-color: #fff; */
+    border-radius:50%;
+    position:relative;
+
+}
+.nimni2{
+    color:#fff;
+}
+
+.kate1 {
+    position: absolute;
+    text-align: center;
+    
+}
+.nimni{
+ 
+bottom: 55px;
+    right: 45px;
+}
+.nimni1 {
+  
+    top: 55px;
+    right: 45px;
+}
+.nimni12 {
+    
+    top: 55px;
+    left: 45px;
+}
+.nimni13 {
+
+    bottom: 55px;
+    left: 45px;
+}
+.nimni3{
+ color:#2fed0e;
+ font-size: 12px;
+ font-weight: 300;
+}
+.dfdff{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.BuyEn{
+    padding:5px 10px;
+    color:#fff;
+    /* border:1px solid gray; */
+    width:49%;
+    border-radius: 35px;
+    text-align: center;
+    cursor:pointer;
+    font-size: 18px;
+    font-weight: 500;
+}
+.BuyEn22{
+    border: 1px solid #11ef19;
+        color: #11ef19;
+}
+
+.popoUy{
+    padding:50px 10px;
+    margin-top: 50px;
+    background-color: #171054;
+}
+.dfdff22 {
+    display: flex;
+    justify-content: space-between;
+
+}
+.lifMm{
+    width:100%;
+    margin:0 auto;
+
+    max-width: 400px;
+}
+.AsasL{
+    padding:10px 15px;
+    background-color: #100b3c;
+    color:#fff;
+    font-weight: 600;
+    cursor:pointer;
+    border-radius: 5px;
+    border: 1px solid #2e3983
+}
+.buySELL{
+    font-size: 48px;
+    margin-bottom: 15px;
+    color:#d1cef5;
+}
+.letsGo{
+    margin-top: 15px;
+}
+
+.dfdff1{
+  width:30%;
+  border:1px solid #5d53af;
+  padding:5px;
+    border-radius: 5px
+}
+.dfdff2 {
+    width: 65%
+}
+.detailInfo{
+   width:100%;
+   max-width: 1000px; 
+   margin:0 auto;
+}
+.Ena1{
+    width:100%;
+    max-width: 300px;
+    border:1px solid #6156bd;
+    border-radius: 8px;
+        background-image: linear-gradient(to bottom right, #302876, #100b3c);
+    box-shadow: rgb(10 11 54 / 31%) 0px 15px 25px, rgb(13 7 68) 0px 5px 10px;
+}
+.LLLM{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.LLLM1{
+    color:#9294cb;
+    font-size: 13px;
+        font-weight: 400;
+}
+.LLLM2{
+    color: gold;
+        font-size: 13px;
+        font-weight: 400;
+}
+.BuyNUME{
+    padding:5px 15px;
+    
+    border: 1px solid #3ddf67;
+    color:#11ef19;
+    font-weight: 600;
+    border-radius: 38px;
+    cursor:pointer;
+}
+.LLLM3{
+    color: gray;
+        font-size: 13px;
+        font-weight: 400;
+}
+.Ena21{
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+    max-width: 650px;
+    margin:0 auto;
+    position:absolute;
+    top:32%;
+left: 50%;
+    right: 50%;
+    transform: translate(-50%);
+}
+.cncnc{
+    display:flex;
+
+    height:100px
+}
+.bbAs{
+    color:gray;
+    text-align: center;
+    line-height: 30px;
+}
+a{
+    text-decoration: none;
+}
+.bbAs1{
+    border-bottom: 1px solid #3e3d85;
+    width:80%;
+    margin:0 auto;
+    margin-bottom: 8px;
+}
+.cncnc1{
+    width:25%;
+    padding:5px 10px;
+    background-color: #302876;
+    color:#f2cc04;
+    height: 100%;
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 8px;
+}
+.cncnc3{
+    color:gray;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    padding:1px 10px;
+}
+.bbAs2{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:8px 10px;
+   
+}
+.cccmn{
+       color: #c1c1c1;
+    font-weight: 300;
+}
+.earnarsCoin{
+    
+    font-size: 18px;
+    font-weight: 600;
+}
+.earnarsCoin1 {
+    color: #0af148;
+   
+}
+.earnarsCoin2 {
+    color: #fff;
+   
+}
+.kikiay{
+    color:#fff;
+    font-size: 22px;
+    font-weight: 600px;
+}
+
+.cncnc34{
+    font-size: 26px;
+    font-weight: 600;
+    display:flex;
+    align-items: center;
+    height: 80px;
+    padding:2px 10px;
+    color:#fff;
+}
+.remot{
+    font-size: 12px;
+    font-weight: 200;
+    color:gray;
+    margin-top: 10px;
+    margin-left: 3px;
+}
+.pode23{
+    display:flex
+}
+.pode{
+    font-size: 14px;
+    font-weight: 400;
+    color:#fff;
+    width:33.3%;
+    padding:5px 5px;
+    text-align: center;
+    cursor: pointer;
+}
+.pode2{
+    background-color:#171054;
+    border-bottom-left-radius: 8px;
+}
+.pode3 {
+    background-color: #4e4691;
+}
+.pode4{
+    background-color: #302876;
+    border-bottom-right-radius: 8px;
+}
+.Am1nAd{
+    position:relative;
+    margin-top: 150px;
+}
+.Am1n2{
+    width:350px;
+    height:350px;
+   
+            background-image: linear-gradient(to bottom right, #302876, #100b3c);
+                box-shadow: rgb(10 11 54 / 31%) 0px 15px 25px, rgb(13 7 68) 0px 5px 10px;
+    border-radius: 50%;
+}
+.BuyEn20 {
+    border: 1px solid #df4b4b;
+    color: #ef4848;
+}
+.bubuA{
+    color:#ef4848;
+       
+}
+.dfde{
+    background-color: #ffda1a;
+    color:#000;
+}
+.dep{
+    position:fixed;
+    overflow: hidden;
+    top:0;
+    left:0;
+    bottom:0 ;
+    right:0;
+    background-color: #1f1958d6;
+    z-index: 19000;
+}
+.eTi{
+    margin-top: 6px;
+}
+.houne{
+    overflow:hidden
+}
+.epv{
+    width:100%;
+    max-width:600px;
+    padding:10px 10px;
+    position:absolute;
+    left:50%;
+    /* right:50%; */
+    z-index: 20000;
+    top:50%;
+   
+    transform: translate(-50%,-50%)
+}
+.warnE{
+    color:#ed8e88;
+    font-size: 13px;
+    font-weight: 300;
+}
+.vipn{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ravs{
+    color:#fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+.ravs:hover{
+    color:gray;
+}
+.vipn1{
+    width:49%;
+}
+.ning{
+    font-size: 14px;
+    font-weight: 400;
+}
+.epv1{
+    background-color: #100b3c;
+  padding:5px 10px;
+ 
+        border-radius: 8px;
+            border: 1px solid #6156bd;
+            background-image: linear-gradient(to bottom right, #302876, #100b3c);
+            box-shadow: rgb(10 11 54 / 31%) 0px 15px 25px, rgb(13 7 68) 0px 5px 10px;
+}
+.epv2{
+    color:#ada5a5;
+    line-height: 30px;
+}
+.epv3{
+    color: #d3d0e7;
+    margin:6px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.epv4{
+    width:100%;
+    padding:8px 10px;
+    background-color: inherit;
+    border-radius: 5px;
+    border:1px solid #6156bd;
+    color:#fff;
+    margin-bottom: 8px;
+    outline:0;
+}
+.epv5{
+    margin:10px 0;
+    padding:10px 15px ;
+    color:#fff;
+    border-radius: 30px;
+    text-align: center;
+    cursor:pointer;
+    border: 1px solid #6156bd;
+        background-image: linear-gradient(to bottom right, #302876, #100b3c);
+            box-shadow: rgb(10 11 54 / 31%) 0px 15px 25px, rgb(13 7 68) 0px 5px 10px;
+
+}
+
+.dfde1{
+        color: #afb7df;
+            margin-bottom: 9px;
+            text-align: center;
+}
+@media(max-width:768px){
+    .Am1n{
+        display:none;
+    }
+    .Ena21{
+        flex-direction: column;
+          padding:2px 15px;
+          max-width: 500px;
+          margin:0 auto;
+            position:relative;
+                 transform: translate(0); 
+                 left:0;
+                 right:0;
+    }
+    .Ena1{
+    max-width: 500px;
+     margin-bottom: 10px;
+    }
+    .buySELL{
+         font-size: 20px;
+        text-align: center;
+
+    }
+    .dfdff{
+flex-direction: column;
+    }
+    .dfdff1{
+ width:100%;
+ flex-direction: row;
+ border-radius: 30px;
+    }
+        .dfdff2 {
+            width: 100%;
+            margin-top:15px ;
+        }
+                .Am1nAd {
+                    margin-top: 20px;
+                }
+  .popoUy{
+    margin-top: 30px;
+   padding:24px 10px;
+  } 
+  .kikiay{
+    font-size: 18px;
+  }
+  .earnarsCoin{
+    font-size: 16px;
+  }
+  .cncnc34{
+    font-size: 22px;
+  }
+}
+
+@media(min-width:769px) and (max-width:835px){
+    .Am1n1{
+        width:270px;
+        height:270px
+    }
+    .Am1n2{
+        width:300px;
+        height:300px;
+    }
+        .Am1nAd {
+          
+            margin-top: 100px;
+        }
+}

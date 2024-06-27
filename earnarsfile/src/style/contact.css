@@ -1,0 +1,103 @@
+.For_general_Advert {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.For_General_Div {
+    width: 48%;
+    border: 1px solid #6c6ba5;
+    box-shadow: 0 21px 17px 1px rgb(0 0 0 / 10%);
+
+    background: linear-gradient(190deg, rgb(13 7 64) 31%, rgb(13 7 64) 62%, rgb(13 7 64) 76%);
+    border-radius: 18px;
+    padding: 15px 20px;
+    margin: 35px 0;
+}
+
+.contact_p_c {
+    padding: 10px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 700;
+    border-bottom: 1px solid #303052;
+
+    margin-bottom: 15px;
+}
+
+.infoTrY {
+    margin-bottom: 8px;
+    color: #d7d8db;
+}
+
+.monday {
+    color: #f3f3f3;
+}
+
+.foodI {
+    color: #fff !important;
+}
+
+.hereTo {
+    color: gray !important
+}
+
+.hereTo:hover {
+    color: #fff !important
+}
+
+.phoneNm {
+    color: gray
+}
+
+.phoneNm:hover {
+    color: #fff;
+}
+
+.fontWW {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.We_areF {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    color: #e8e8e9;
+
+}
+
+.ClickHereMe {
+    color: #590795;
+    text-decoration: none;
+}
+
+.ClickHereMe:hover {
+    color: #0417a7;
+}
+
+.WhattsZ {
+    color: #7c0b0bd4;
+}
+
+@media(max-width:594px) {
+    .For_general_Advert {
+        flex-direction: column;
+    }
+
+    .For_General_Div {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
+@media(max-width:768px) {
+    .We_areF {
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0.1px;
+    }
+}

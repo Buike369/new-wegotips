@@ -1,0 +1,135 @@
+.trMonth{
+    background-color:#1f326d;
+}
+.trMonth1{
+    width:100%;
+    max-width: 1200px;
+    margin:0 auto
+}
+.InTHREEM{
+    font-size: 42px;
+    font-weight: 700;
+    color:#fff;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 120px 0 20px 0;
+}
+.littlelittle{
+    color:#fff;
+    font-size: 38px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.SimpleAndf{
+    color:#fff;
+    font-size: 20px;
+    padding:10px 0 8px 0;
+    border-bottom: 0.5px solid #939191;
+    text-align: center;
+    width:40%;
+    margin:0 auto
+}
+.Thanks_DivU{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.FollowUh{
+    margin-top: 65px;
+    margin-bottom: 40px;
+}
+
+.OddWk_Div{
+    display:flex;
+    justify-content: space-between;
+    background-color: #001041;
+    
+}
+.OddWk_Div li{
+    padding:12px 8px;
+    width:16.6%;
+    color:#fff;
+    text-align: center;
+}
+.OddWk_Div23{
+    display:flex;
+    justify-content: space-between;
+    background-color: #27428e;
+    border-bottom: 0.5px solid #9d9898;
+}
+.addCM24{
+background-color:#3250a4;
+}
+.OddWk_Div23:hover{
+    background-color: #1f326c; 
+    border-bottom: 0.5px solid #9d9898;
+}
+.OddWk_Div23 li{
+    width:16.6%;
+    color:#fff;
+    text-align: center;
+    padding:10px 2px;
+}
+.TotalProfits{
+    background-color: #001041;
+    padding:12px 5px;
+    color:#fff;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+.reserveT{
+    color:greenyellow;
+    font-size: 16px;
+    font-weight: 600;
+}
+.Explanation_Of_Term{
+    display:flex;
+    justify-content: space-evenly;
+    color:#fff;
+    padding:12px 5px;
+}
+.WknoM{
+    background-color: #758bc9;
+    padding:20px 10px;
+}
+.Des_Color{
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+.ftee{
+font-weight: 800;
+font-size: 15px;
+text-transform: uppercase;
+}
+
+@media(max-width:768px){
+    .InTHREEM {
+        font-size: 24px;
+    }
+    .littlelittle {
+        font-size: 22px;
+    }
+    .SimpleAndf {
+        width: 43%;
+    }
+    .Thanks_DivU {
+        margin-bottom: 20px;
+    }
+    .Explanation_Of_Term {
+        flex-direction: column;
+        padding: 5px 5px;
+    }
+    .ready{
+        line-height: 20px;
+    }
+    .ready1{
+      font-size: 14px;
+      font-weight: 500;
+     
+    }
+   
+}

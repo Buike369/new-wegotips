@@ -1,0 +1,690 @@
+.sportPa {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-top: 5px;
+}
+
+.MakingMoney {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto 20px auto;
+    font-size: 24px;
+    position:relative;
+    z-index: 2;
+    /* background-color: #0f084e; */
+        
+    text-align: center;
+    color: #fff;
+        font-weight: 800;
+}
+
+.NowUpSign {
+    padding: 10px 5px;
+    margin: 15px auto;
+    width: 170px;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 32px;
+    backdrop-filter: blur(4.3px);
+
+    box-shadow: 0 4px 44px rgb(0 0 0 / 0%);
+    border: 1px solid rgba(133, 164, 229, 0.32);
+    background: #0d0740;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+
+
+}
+
+.ifi {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.ifi:hover {
+    color: #000;
+}
+
+.NowUpSign:hover {
+    background: #fff;
+    color: #000 !important;
+}
+
+
+.SportBetting {
+    /* color: #e0be00; */
+    color:gold;
+    
+    /* margin: 45px auto 20px auto; */
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+        z-index: 2;
+}
+
+.outcomeBeen1 {
+    padding: 0 10px;
+}
+
+.outcomeBeen{
+
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    color: #e5e7ef;
+    -webkit-backdrop-filter: blur(4.3px);
+    backdrop-filter: blur(4.3px);
+
+        border: 1px solid rgb(57 53 133);
+    background: radial-gradient(circle, #0f084e57 0%, #0f084e 100%);
+
+    box-shadow: rgb(20 20 62 / 25%) 0px 13px 27px -5px, rgb(14 13 70) 0px 8px 16px -8px;
+    
+    padding: 30px 10px;
+    border-radius: 14px;
+    font-size: 18px;
+        position: relative;
+            z-index: 2;
+}
+
+.cardTin{
+display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 885px;
+    margin: 0 auto;
+    align-items: center;
+
+}
+.spIm{
+    width:100%;
+   height: 100%;
+}
+.cardTin1{
+    /* width:50%; */
+    
+}
+.cardTin2{
+    color:#c6c3df;
+    font-size: 14px;
+    text-align:center ;
+    
+}
+.cardTin3 {
+height: 300px;
+    width: 300px;
+    border-radius: 50%;
+        border: 10px solid #110a4e;
+    padding: 20px;
+    background-color: #2a2172f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: -60px;
+    margin-top: 100px;
+
+}
+.nDi{
+    height: 430px;
+        width: 430px;
+        border-radius: 50%;
+        background-color: #0f084e;
+}
+
+.WhyStart {
+    text-align: center;
+    color: gold;
+        
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 60px;
+    margin-bottom: 8px;
+
+}
+.mainDe{
+    position: relative;
+    z-index: 9;
+}
+.mainMa{
+    width:100%;
+    color:#ffd804;
+}
+.weAre4{
+    color:gold;
+    font-size: 54px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    position:relative;
+    z-index: 6;
+}
+.everyWhere{
+    color:#dadfe7;
+    font-size: 26px;
+    letter-spacing: 0.8px;
+}
+.football{
+color:gold;
+padding: 10px 8px;
+width:300px;
+margin-top: 10px;
+background-color: #111153;
+}
+.sportsPageColorBg{
+    background-color: #171054;
+    padding:20px 0;
+    position: relative;
+    z-index: 4;
+    overflow: hidden;
+}
+.withUpto{
+    font-size: 54px;
+    color:#6c63ff;
+}
+.imgFloatSport{
+    width:100%;
+}
+
+.EasyTi {
+    display: flex;
+    height: auto;
+    padding: 0 10px;
+    align-items: stretch;
+    justify-content: space-between;
+
+}
+.Ems{
+    width:200px;
+    height: 200px;
+    position:absolute;
+    background-color: #0f084e;
+    
+    border-radius: 50%;
+        /* filter: blur(50px); */
+
+}
+.Ems1{
+    left: 2%;
+        top: 3%;
+        z-index: 1;
+}
+.Ems2 {
+    right: 2%;
+    top: 13%;
+    z-index: 1;
+}
+.Ems3 {
+    left: -2%;
+    top: 50%;
+}
+.Ems4 {
+    right: -70px;
+    bottom: 3%;
+}
+.posTMa{
+    width:200px;
+    height:200px;
+    position: absolute;
+    background-color: #150e4cdb;
+      
+        z-index: -1;
+      
+
+}
+
+.ad{
+    left: -20%;
+        top: 0%;
+        transform: rotate(149deg);
+        background-color: #292268;
+}
+
+.ab{
+    right: 3%;
+    top: -20%;
+        transform: rotate(145deg);
+            background-color: #2a2368;
+                filter: blur(100px);
+}
+.EasyTim {
+    width: 32%;
+    box-shadow: 0 4px 17px rgb(15 24 52 / 82%);
+    -webkit-backdrop-filter: blur(4.3px);
+    backdrop-filter: blur(4.3px);
+    border: 1px solid #4a459d;
+    backdrop-filter: blur(100px);
+    background-color: #0d0740;
+    color: #b8bcc7;
+    padding: 30px 15px 15px 15px;
+
+    border-radius: 5px;
+   
+     border-radius: 20px;
+     position: relative;
+     z-index: 4;
+     overflow: hidden;
+}
+
+.fora {
+    margin-bottom: 10px;
+}
+
+.everyDay {
+    font-size: 15px;
+    
+    line-height: 20px;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+}
+
+.startedf {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    /* text-align: center; */
+}
+
+.AgenciesTy {
+    /* color:#fff; */
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 0 6px;
+    color: gold;
+}
+.yoofKin{
+    width:100%;
+    max-width: 1440px;
+    padding:2px 10px;
+    margin:0 auto;
+    position: relative;
+}
+
+.everyDay {
+    width: 100%;
+    max-width: 700px;
+    padding: 0 8px;
+   
+    color: #b0bbd3;
+    margin: 0 auto 40px auto;
+
+}
+
+.wemerYt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.papaf1 {
+    width: 100%;
+}
+
+.papaf12 {
+    width: 186px
+}
+
+.papaf13 {
+    width: 250px;
+
+}
+
+.papaf14 {
+    width: 50px;
+
+}
+
+.papaf15 {
+    width: 90px;
+
+}
+
+.BettingTu {
+    text-align: center;
+    width: 40%;
+    padding: 6px 2px;
+    color: #ffffff;
+    margin: 40px auto 20px auto;
+  
+    font-size: 24px;
+    font-weight: 700;
+    
+}
+
+.firey {
+    display: flex;
+    padding: 0 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+.gomas{
+display: flex;
+    padding: 0 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.firey1 {
+    width: 32%;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.faqSports {
+    color: #fff;
+}
+
+.faqSportMa {
+    margin-bottom: 50px;
+}
+
+.imghi {
+    width: 100%;
+    height: auto
+}
+
+.ifNi {
+    width: 24%;
+    margin: 0 auto 30px auto;
+    height: 2px;
+     background-color: #1a265c;
+}
+
+.forexy {
+    color: gold;
+    font-size: 24px;
+    font-weight: 700;
+}
+.forexy1 {
+    color: gold;
+    font-size: 18px;
+   
+}
+
+.SportsImg {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    justify-content: space-between;
+    overflow-x: hidden;
+
+}
+
+.onV {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.everyday {
+    width: 50px
+}
+
+/* .rengma::-webkit{
+scrollbar-color: #007 #bada55 !important;
+} */
+
+
+
+
+.SportsImg1 {
+    width: 100%;
+    padding: 0 10px;
+    max-width: 100%;
+    overflow-x: scroll;
+    background-color: #505782;
+    padding: 10px 6px;
+    border-radius: 1px;
+}
+
+
+.Dayword {
+    text-align: center;
+}
+
+@media(min-width:500px) and (max-width:768px) {
+
+    .outcomeBeen1,
+    .Dayword {
+        padding: 0px 60px !important;
+    }
+
+    .BettingTu {
+        width: 84% !important;
+    }
+
+    .firey {
+        padding: 0 60px !important;
+    }
+
+    .EasyTi {
+
+        padding: 0 60px !important;
+
+    }
+
+}
+
+@media(max-width:768px) {
+    .MakingMoney {
+        padding: 0 15px;
+    }
+          .NMPM{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 6;
+          }
+
+                  .cardTin3{
+                    margin-left: 0;
+                  }
+    .weAre4, .everyWhere, .football{
+        text-align: center;
+    }
+    .everyWhere{
+        padding:1px 10px;
+        font-size: 24px;
+    }
+    .weAre4, .withUpto{
+        font-size: 30px;
+    }
+    .cardTin{
+        display:none;
+    }
+    .weAre4{
+        padding:0 10px;
+    }
+        .Ems1 {
+            left: -40%;
+                top: 8%;
+           
+        }
+.football{
+    margin-bottom: 25px;
+    margin: 10px auto 25px auto;
+}
+
+.withUpto {
+    font-size: 30px;
+   
+}
+    .EasyTi {
+        display: flex;
+        align-items: stretch;
+        flex-direction: column;
+        padding: 0 10px;
+        /* gap: 15px; */
+    }
+
+    .outcomeBeen {
+        font-size: 15px;
+    }
+
+        .ifNi {
+           
+            margin: 0 auto 20px auto;
+           
+        }
+
+    .everyDay {
+        font-size: 15px;
+    }
+
+    .SportsImg {
+        width: 1050px
+    }
+
+    .EasyTim {
+        margin-bottom: 15px;
+    }
+
+    .AgenciesTy {
+        font-size: 22px;
+        margin-top: 22px;
+    }
+
+    .Dayok {
+        padding: 0 8px
+    }
+
+    .BettingTu {
+        width: 86%;
+        font-size: 22px;
+        margin: 22px auto 8px auto;
+    }
+
+    .faqSportMa {
+        margin-bottom: 18px;
+        padding: 0 8px;
+    }
+
+    .figma {
+        width: 100%;
+        max-width: 100%;
+        /* position:relative; */
+        overflow-x: scroll;
+
+    }
+.figma::-webkit-scrollbar{
+    display:none;
+}
+    .firey {
+        /* flex-direction: column;
+        gap: 12px; */
+        display: flex;
+        justify-content: space-between;
+        width: 1840px;
+        position: relative;
+        overflow-x: hidden;
+        padding: 0 8px;
+    }
+
+    .how {
+        width: 930px !important;
+    }
+
+    .firey1 {
+        width: 300px;
+margin-right: 8px;
+        border-radius: 5px;
+    }
+
+    .pn {
+        border-radius: 5px;
+    }
+
+    .EasyTim {
+        height: 100%;
+        width: 100%;
+    }
+
+    .outcomeBeen1 {
+        padding: 0 8px;
+    }
+
+    .SportBetting {
+        font-size: 24px;
+         margin: 10px auto 14px auto;
+    }
+    .WhyStart{
+        margin-top: 32px;
+    }
+
+    .cap3 {
+        width: 44px !important;
+    }
+
+    .cap5 {
+        width: 62px !important;
+    }
+
+    .cap4 {
+        width: 38px !important;
+    }
+
+    .wemerYt {
+        padding: 0 8px
+    }
+
+    .startedf {
+        font-size: 20px;
+    }
+
+
+
+}
+
+@media(min-width:1250px) {
+    .sportPa {
+        max-width: 1200px;
+    }
+   
+}
+@media(max-width:320px){
+    .cardTin3{
+        border-radius: 10%;
+    }
+}
+
+@media(min-width:769px) {
+  
+    .rengma {
+        width: 100%;
+        position: relative;
+        overflow-x: scroll;
+    }
+
+
+.rengma::-webkit-scrollbar {
+    display: none;
+}    
+    .NMPM{
+        display:none;
+    }
+
+    .rengma1 {
+        width: 600px !important;
+        max-width: 16% !important;
+    }
+
+    .rengma2 {
+        width: 2400px;
+        overflow: hidden;
+        position: relative;
+    }
+}

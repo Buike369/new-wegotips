@@ -1,0 +1,142 @@
+.AdDe {
+    width: 100%;
+    max-width: 1000px;
+    margin: 150px auto 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.AdDe1 {
+    width: 45%;
+
+}
+
+.AdDe2 {
+    width: 1px;
+    height: 240px;
+    background-color: #3a3278;
+}
+
+.Tail {
+    border: 1px solid #6258b1;
+    background-color: #171054;
+    border-radius: 8px;
+    /* line-height: 40px; */
+}
+
+.IFAE {
+    width: 100%;
+    max-width: 1000px;
+    margin: 45px auto 20px auto;
+}
+
+.Tail1 {
+    padding: 5px 10px;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #3c3572;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    line-height: 40px;
+}
+
+.Tail2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4px 0;
+
+}
+
+.Tail3 {
+    padding: 8px 10px;
+    width: 35%;
+    line-height: 30px;
+
+    color: #fff;
+    border-right: 1px solid #33297e;
+}
+
+.Tail4 {
+    padding: 8px 10px;
+    width: 65%;
+    line-height: 30px;
+
+    color: #fff;
+}
+
+.laiT {
+    width: 90%;
+    border: 1px solid #33297e73;
+    margin: 8px auto;
+}
+
+.pof {
+    padding: 10px 10px;
+}
+
+.pof1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sarem {
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 5px;
+    outline: 0;
+    background-color: inherit;
+    border: 1px solid #4b4d93c7;
+    color: #fff;
+}
+
+.aoE {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 8px 0 6px 0;
+    color: #e2e4f7;
+}
+
+.clickBoxd {
+    margin: 8px;
+}
+
+.clickBoxd1 {
+    color: #bbbbc9;
+    margin-left: 8px;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.clickBoxd2 {
+    width: 90%;
+    text-align: center;
+    margin: 10px auto;
+    padding: 8px 10px;
+    color: gold;
+    cursor: pointer;
+    border-radius: 35px;
+    border: 1px solid #5d5ca5;
+    background-image: linear-gradient(to bottom right, #302876, #100b3c);
+    box-shadow: rgb(10 11 54 / 31%) 0px 15px 25px, rgb(13 7 68) 0px 5px 10px;
+
+}
+
+@media(max-width:768px){
+    .AdDe{
+            margin: 30px auto 0 auto;
+         flex-direction: column-reverse;
+    }
+        .AdDe1 {
+            width: 100%;
+            padding: 2px 15px;
+        }
+        .AdDe2 {
+            width: 2px;
+            margin: 10px 0;
+            height: 40px;
+        }
+}

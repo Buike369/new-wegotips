@@ -1,0 +1,85 @@
+.credit {
+width:45%
+}
+.remey{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+}
+.timimg{
+   width:350px;
+}
+.kim{
+    width:100%;
+    border-bottom: 1px solid #362d7c;
+    /* overflow-x: scroll; */
+}
+.do{
+    width: 100%;
+        max-width: 1500px;
+        overflow: hidden;
+}
+
+.do li{
+    width:200px;
+}
+.Infomat{
+    border:0;
+    padding:10px 6px;
+    border-radius: 4px;
+    width:100%;
+    
+    outline:0;
+}
+.SeconT{
+ 
+    margin:20px auto 10px auto;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+  
+}
+@media(max-width:768px){
+    .Sporthead {
+       
+        /* flex-direction: column; */
+        gap: 10px;
+    }
+    .fortCredit{
+        overflow-x: scroll;
+        width:100%;
+    }
+    .fortCredit::-webkit-scrollbar{
+        display:none;
+    }
+    .TexT,.credit{
+       width:100%;
+
+    }
+    .headSport{
+        width:400px;
+        max-width: 400px;
+    }
+    .fort{
+        width:45% !important;
+    }
+    .timimg{
+        width:100%;
+     }
+    .SeconT{
+        width:40%
+    }
+    .remey {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+       
+        gap: 30px;
+    }
+    /* .timimg {
+        width: 100%;
+        max-width:
+    } */
+
+}

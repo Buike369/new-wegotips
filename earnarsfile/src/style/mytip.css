@@ -1,0 +1,290 @@
+
+
+.Mysee{
+    /* background-color: #1f326d; */
+    width:100%;
+    height:100vh;
+    overflow-y: scroll;
+}
+.MyTip{
+    width:100%;
+    max-width: 1200px;
+    margin:auto;
+    padding:50px 0 20px 0;
+}
+.tipHeightDiv{
+    height:auto !important;
+}
+.tippo{
+font-size: 16px;
+font-weight: 500;
+
+}
+.TatotalResult{
+    background-color: #29226873 !important;
+}
+.TatotalResult:hover{
+    background-color:#19115c;
+}
+.ImportantRep{
+    background-color:#001041 ;
+    padding:20px 5px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+
+}
+
+.tomh{
+    display:flex
+}
+.tomh67{
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.tomh1{
+    padding:10px 15px;
+    background-color: #fff;
+    color:#000;
+    margin-right: 8px;
+    border-radius: 5px;
+}
+.tomh1:hover{
+    background-color: #001041;
+    color:#fff
+}
+.spaceMargiN{
+    margin-top: 0;
+    /* border-top-left-radius: 4px;
+    border-top-right-radius: 4px; */
+}
+
+/* style={{ backgroundImage: "linear-gradient(to right, rgb(106 116 167 / 34%), rgb(119 135 182 / 95%))"}} */
+/* 
+style={{backgroundImage:"url(/img/save.svg)",backgroundRepeat:"no-repeat ", backgroundPosition: 'center',
+    backgroundSize: 'cover',
+    padding:0,margin:0,}} */
+
+.NoteImportant{
+    color:#fff;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.MyTipUp{
+    margin-top: 78px;
+}
+.MyPity{
+    padding:0
+}
+.deee{
+    margin: 40px auto 100px auto;
+}
+.MoreRiskMore{
+    color:#a8a8a8;
+    width:50%;
+    margin:0 auto;
+    text-align: center;
+}
+.finding{
+   padding: 13px 10px;
+   text-align: center;
+   text-transform: uppercase;
+   background-color:#11a762;
+   color:#fff;
+   font-size: 18px;
+   font-weight: 600;
+ width:100%;
+   border-radius: 10px;
+   cursor:pointer;
+       max-width: 500px;
+    margin: 10px auto;
+}
+.finding:hover{
+    background-color:#fff;
+    color:#000
+}
+
+.greenDiv{
+    width:30px;
+    height:15px;
+    background-color: green;
+}
+.sped{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.Dop{
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+    color:gold;
+}
+.GameN{
+    display:flex;
+    justify-content: space-between;
+    padding:10px 16px;
+    background-color: #0d0740;
+ 
+    
+}
+.kim{
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.gamings{
+    background-color: #fff !important;
+    color:#000 !important
+}
+.NoGame{
+    color:#fff
+}
+.pipi{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.pytim{
+    text-align: center;
+}
+.gt{
+    background-color: #fff;
+}
+.pays{
+    background-color: #0d0740;
+    color:#fff;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding:10px 2px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+.Sports23{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    max-width: 1200px;
+    margin: 78px auto 0 auto;
+}
+.sportsAt{
+    width:23%;
+    padding:12px 2px;
+    text-align: center;
+}
+.people2{
+    background-color: #0d0740;
+        border-radius: 30px;
+        border: 1px solid #321383;
+    color:#fff;
+    cursor:pointer;
+}
+.Name1{
+    display:none
+}
+.people2:hover{
+    background-color: #afadd9;
+        color: #000000;
+}
+.Clas{
+    padding:10px 15px;
+    width: 200px;
+    margin: -30px auto 15px auto;
+    background-color: #292268;
+    color:#d38b8b;
+    font-weight: 600;
+    font-size: 16px;
+
+}
+.domt{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 6px;
+    color:#c7c3c3;
+}
+.eachG{
+    color:#11a762;
+}
+.ifiy{
+    color:#d38b8b
+}
+.colVs{
+    color:red;
+}
+.riskin{
+width:50%;
+margin:0 auto;
+color:#c7c3c3;
+}
+/* .gt1{
+    border-top:1px solid #8f99b8;
+} */
+@media(max-width:1200px){
+    .MyTip {
+        width: 96%;
+    }
+
+}
+
+@media(max-width:500px){
+    /* .EngLan{
+        display:none
+    } */
+    
+    .Total_Odd{
+        width:40%
+    }
+    .MoreRiskMore {
+        width: 70%;
+    }
+    .Leaque {
+        padding: 9px 6px;
+    }
+    .header_Date {
+        margin-right: 0px;
+    }
+    .deee {
+        margin: 39px auto 0px auto;
+    }
+}
+@media(max-width:768px){
+    .MyTip {
+        padding: 22px 0 20px 0;
+    }
+    .Sports23 {
+        margin: 24px auto 0 auto;
+        padding: 0 8px;
+    }
+    .Name1{
+        display:block;
+    }
+    .riskin {
+        width: 86%;
+    }
+    .pays {
+        margin-bottom: 4px;
+    }
+    .Name{
+        display:none
+    }
+    .MyTipUp {
+        margin-top: 18px;
+    }
+    .TimeDiv1 li{
+        width:24.6%;
+    }
+    .ggLive{
+       width:100% !important
+    }
+    .ResultTip{
+        padding-left: 8px;
+        padding-right:8px;
+        gap:10px;
+    }
+}

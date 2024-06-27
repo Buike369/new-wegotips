@@ -1,0 +1,21 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: 'Mulish', sans-serif;
+  
+}
+.kingsley_the_coder{
+  position: relative;
+  overflow-x: hidden !important;
+}
+
+body{
+  background-color:#0d0740;
+  overflow-x: hidden;
+  /* background: linear-gradient(90deg, rgba(13, 11, 48, 1) 0%, rgba(18, 18, 88, 1) 35%, rgba(40, 37, 119, 1) 70%, rgba(75, 70, 182, 1) 100%); */
+}
+

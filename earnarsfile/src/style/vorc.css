@@ -1,0 +1,574 @@
+.Cover_BackgroundColor {
+
+    width: 100%;
+ 
+}
+
+.Enter_Expected_Profit {
+    width: 100%;
+
+    margin: 1px auto;
+
+
+    background-color: #171054;
+    border: 1px solid rgb(61, 62, 126);
+    padding: 10px 15px 20px 15px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+}
+
+.addWin {
+    background-color: #0d0740;
+    color:#00f300;
+    border:1px solid #258125 !important
+
+}
+
+.addWin12 {
+    background-color: #0d0740;
+    color: red;
+        border: 1px solid #b73636 !important
+}
+.infu42{
+    background-color: inherit;
+    border:0;
+    outline:0;
+    width:100%;
+    text-align: center;
+    color:#fff;
+
+}
+.ExposeMass {
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+
+}
+
+.Total56 {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.Streak_Loss {
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.NumLosDiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.DivNumbering {
+    width: 49%;
+    padding: 8px 5px;
+    color: #fff;
+    text-align: center;
+
+}
+
+.Wefe {
+    text-align: center;
+    color: #fff;
+    padding: 8px 5px;
+    width: 49%;
+    background-color: #3c3483;
+    margin-top: 5px;
+       
+}
+
+.InvestTotal {
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 8px 3px;
+    margin-top: 13px;
+}
+
+.ExposeMass1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    border: 1px solid #595a9d;
+    border-radius: 5px;
+}
+
+.Editj {
+    color: #a9aac7;
+}
+
+.moneyInBank {
+    padding: 8px 5px;
+    text-align: center;
+    color: #fff;
+    background-color: #3c3483;
+
+}
+
+.addingOne {
+    background-color: #56508f;
+}
+
+.infu1 {
+    width: 20%;
+    color: #000;
+    background-color: inherit;
+    text-align: center;
+    padding: 8px 5px;
+}
+
+.nfu2 {
+    width: 60%
+}
+
+.infu3 {
+    width: 100%;
+    padding: 8px 5px;
+    text-align: center;
+    outline: 0;
+    border: 0;
+    color:#fff;
+    border-radius: 5px;
+    background-color: inherit;
+    border: 1px solid #595a9d;
+}
+
+.Team_Odd_Tip {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Win_Loss {
+    width: 49.7%;
+}
+
+.Win_Loss1 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.school245 {
+    width: 49%;
+}
+
+.Win_ButTON {
+    outline: 0;
+    border: 0;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    width: 100%;
+    margin-top: 10px;
+    padding: 8px 5px;
+    border-radius: 7px;
+}
+
+.New_Month {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    position:relative;
+    z-index: 10;
+}
+
+.backBet {
+
+    width: 100%;
+
+    border: 1px solid rgb(61, 62, 126);
+    margin: 0 auto 100px auto;
+    background-color: #171054;
+
+    padding: 10px 15px 20px 15px;
+    color: #fff;
+    border-radius: 4px;
+
+}
+
+.betBackF {
+    display: flex;
+    justify-content: space-between;
+}
+
+.betBackFIN {
+    width: 49%;
+
+}
+.thisR{
+    color:#d4d1e5;
+}
+
+.cityTouch {
+    width: 100%;
+    padding: 6px 4px;
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color:#fff;
+        background-color: inherit;
+            border: 1px solid #595a99;
+}
+
+.cityTouch::-webkit-outer-spin-button,
+.cityTouch::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.cityTouch[type=number] {
+    -moz-appearance: textfield;
+}
+
+.bottomMargin {
+    margin-bottom: 10px;
+}
+
+.marTop {
+    margin-top: 15px;
+}
+
+.boldFont {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.bolding {
+    font-weight: 700;
+    /* color:#001041; */
+}
+
+.bottomMargin1 {
+    margin-bottom: 3px;
+    color: #cbcac5;
+}
+
+.betTotalDiv {
+   
+    background-color: #3c3483;
+    margin-top: 25px;
+    border-radius: 4px;
+    padding: 8px 5px
+}
+
+.ratesAt {
+    padding: 8px 4px;
+    border: 0.4px solid #dddddd;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.DeciFac {
+    padding: 10px 8px;
+    border: 0.5px solid #3d3e7e;
+    border-radius: 3px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.AMQ::-webkit-outer-spin-button,
+.AMQ::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.AMQ[type=number] {
+    -moz-appearance: textfield;
+}
+
+.AMQ {
+    outline: 0;
+    border: none;
+    background-color: inherit;
+    border-bottom: 1px solid #7879b3;
+    max-width: 100%;
+    width: 100%;
+    color: #fff;
+}
+
+/* .outYre45{
+    font-size: 16px;
+} */
+
+
+
+.deciNum_Input::-webkit-outer-spin-button,
+.deciNum_Input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.deciNum_Input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.deciNum_Input {
+    background-color: inherit;
+    border: none;
+    outline: 0;
+    border-bottom: 1px solid #7879b3;
+    width: 100%;
+    padding: 8px 4px;
+    font-size: 16px;
+    margin-top: 35px;
+    color: #fff
+}
+
+.FracDeci {
+    background-color: #3c3483;
+    padding: 20px 8px;
+    border-radius: 5px;
+}
+
+.outYre2 {
+    position: relative;
+    width: 31%;
+
+}
+
+.foorms {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.foorms_input {
+    background-color: inherit;
+    border: none;
+    outline: 0;
+    border-bottom: 1px solid #7879b3;
+    width: 100%;
+    color: #fff;
+    padding: 4px 0px
+}
+
+.Du {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Bet_CC {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.VirtualP {
+    padding: 6px 7px;
+    font-size: 14px;
+
+    background-color: #171054;
+    border: 1px solid rgb(61, 62, 126);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.VirtualP:hover {
+        background-color: #0d0740;
+            color: gold;
+
+}
+
+.lin {
+    padding: 2px 0;
+}
+
+.toty {
+    width: 40%
+}
+
+.Stake_Dive {
+    width: 48%
+}
+
+.Div_Stake {
+    padding: 0 4px;
+    border-bottom: 1px dotted #7879b3;
+}
+
+.outYre {
+    position: absolute;
+    margin-bottom: -10px !important;
+}
+
+.calB {
+    padding: 9px 12px;
+    border: none;
+    outline: 0;
+    font-size: 16px;
+    border-radius: 8px;
+    background-color: #171054;
+    border: 1px solid #5a5b91;
+    color: #fff
+}
+
+.Deci_DivButton {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px
+}
+
+.ButtonShift {
+    display: flex;
+    justify-content: right;
+}
+
+.ChangeFracDi {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0 15px 0
+}
+
+.diviveNax {
+    margin: 0px auto 25px auto !important;
+}
+
+.Car {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.Car2 {
+    width: 100%;
+    padding: 6px 4px;
+    outline: none;
+    border: 0;
+    border-radius: 2px;
+    background-color: #171054;
+    border: 1px solid #3d3e7e;
+    color: #fff;
+    border-radius: 2px;
+}
+
+
+.Mobile_menu1 {
+    color: #fff;
+
+}
+
+
+
+.Closeme {
+    font-size: 25px;
+    margin-top: -10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1010px) {
+    .Du {
+        display: none;
+    }
+
+    .Car {
+        margin-top: 100px;
+    }
+}
+
+@media(max-width:768px) {
+    .Car {
+        margin-top: 22px;
+    }
+
+    .backBet {
+        margin: 0 auto 22px auto;
+        padding: 10px 8px 20px 8px;
+    }
+        .Wefe{
+            font-size: 13px;
+        }
+}
+
+@media(min-width:769px) and (max-width:1010px) {
+    .Car {
+        margin-top: 88px;
+    }
+}
+
+@media (min-width:616px) and (max-width:1010px) {
+    .pink {
+        width: 100%;
+        max-width: 619px;
+        margin: 0 auto;
+    }
+}
+
+@media(min-width:1011px) {
+    .Car {
+        display: none;
+    }
+}
+
+
+@media(max-width:610px) {
+    .New_Month {
+
+        max-width: 100%;
+        padding: 0 8px;
+
+    }
+
+    .infu1 {
+        width: 93%;
+
+    }
+}
+
+@media(max-width:768px) {
+    .Win_ButTON {
+        font-size: 13px;
+    }
+
+
+    .InvestTotal {
+        font-size: 15px;
+    }
+
+    .infu13 {
+        font-size: 12px;
+    }
+
+    .Enter_Expected_Profit {
+        margin-bottom: 17px !important;
+    }
+
+}

@@ -1,0 +1,64 @@
+.Have_An {
+    color: #c8c2c2;
+    text-align: center;
+}
+
+.FofD {
+    color: #c8c2c2;
+}
+
+.ClickMe {
+    color: #0bf921;
+    cursor: pointer;
+}
+
+.welcome4 {
+    text-align: center;
+    color: #fff;
+    margin: 15px 0 10px 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.Form_Divbb {
+    padding: 15px 8px;
+}
+
+.loginn {
+    color: #fff;
+    text-align: center;
+    padding: 10px 10px;
+    background-color: #0d0740;
+    margin-bottom: 6px;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #7670d1;
+    transition: ease all 0.5s;
+
+}
+
+.sers {
+    position: relative
+}
+
+.ser1 {
+    position: absolute;
+    top: 40%;
+    right: 3.5%;
+    bottom: 60%;
+    transform: translate(50%, -50%)
+}
+
+
+
+.loginn:hover {
+    background-color: #00e35e !important;
+    color: #000 !important;
+    border: 1px solid #00e35e !important;
+}
+
+.errorP {
+    color: red
+}

@@ -1,0 +1,157 @@
+
+
+.dashboardItem{
+    display:flex;
+  
+}
+
+.menuDiv{
+    flex:1;
+    background-color: #3c476e;
+    height: 100vh;
+    overflow-y: scroll;
+    padding:30px 4px 2px 4px;
+}
+.menuDiv::-webkit-scrollbar{
+    display:none;
+}
+
+.itemDiv{
+    flex:5;
+    padding:30px 20px 2px 20px;
+    overflow-y: scroll;
+    background-color: #192854;
+    height: 100vh;
+    
+}
+
+.itemDiv::-webkit-scrollbar{
+    display:none;
+}
+.by{
+    background-color: #fff;
+    color:#000
+}
+.chartDiv{
+    width:100% !important;
+    height:600px !important;
+    margin:10px 30px 0 0 !important;
+}
+
+  
+
+  
+
+.dashList li{
+    padding:24px 5px;
+    background-color: #192854;
+    margin-bottom: 2px;
+    font-size: 18px;
+    font-weight: 500;
+    color:#fff;
+    cursor:pointer
+
+}
+.param{
+    background-color: #fff !important; 
+    color:#000 !important;
+}
+.dashList li:hover{
+    background-color: #1f326b;
+ 
+}
+.dashOverView{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.Users{
+  
+    width: 32%;
+    text-align: center;
+    background: #ffffff12;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+    backdrop-filter: blur(4.3px);
+    -webkit-backdrop-filter: blur(4.3px);
+    border: 1px solid rgba(133, 164, 229, 0.32);
+    padding: 20px 2px;
+    border-radius: 10px;
+    color: #fff;
+}
+.Userstext{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.Userstext1{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.UserNum{
+    font-size: 20px;
+    font-weight: 700;
+}
+.UserNum1{
+    font-size: 32px;
+    font-weight: 800;
+}
+.iconDash{
+    font-size: 30px;
+    color:#abbbe9;
+    /* margin-right: 18px;
+    margin-left:10px */
+}
+.backC{
+    background-color:#ffffff !important;
+    color:#000 !important
+}
+.totalBot{
+    margin-top: 30px;
+}
+ .dashboardIcon{
+        font-size: 18px;
+    }
+    .Homdash{
+        display:flex;
+        align-items: center;
+        gap:10px;
+        padding-left: 10px;
+       
+       
+    }
+/* }
+.dashboardMegaMenu{
+} */
+@media(max-width:768px){
+    .itemDiv{
+        padding:40px 10px 2px 10px;
+    }
+    .dashOverView {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .Users {
+        width: 100%;
+
+    }
+    .UserNum1 {
+        font-size: 24px;
+       
+    }
+    .menuDiv{
+        padding: 40px 4px 2px 4px;
+    }
+    .dashboardIcon{
+        display:none
+    }
+    .Homdash{
+    
+        justify-content:center;
+        padding-left: 2px;
+           
+        }
+}
+
