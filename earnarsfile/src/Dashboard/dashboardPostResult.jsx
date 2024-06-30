@@ -120,7 +120,7 @@ const feed3 =[inputsIn3,{earned:earned},{loss:loss}]
               }, 5000);
            }
            else{
-         await axios.post("https://tea.earnars.com/api/post/postResult",feed)
+         await axios.post("/post/postResult",feed)
 
          setSuccess('Succesful upload')
           setTimeout(() => {
@@ -143,7 +143,7 @@ const feed3 =[inputsIn3,{earned:earned},{loss:loss}]
         const handleSumit2 = async (e) =>{
             e.preventDefault()
            try{
-             await axios.post("https://tea.earnars.com/api/post/postResultForex",feed1)
+             await axios.post("/post/postResultForex",feed1)
               setSuccess('Succesful upload')
           setTimeout(() => {
             setSuccess('')
@@ -164,7 +164,7 @@ const feed3 =[inputsIn3,{earned:earned},{loss:loss}]
             const handleSumit3 = async (e) =>{
                 e.preventDefault()
                try{
-                 await axios.post("https://tea.earnars.com/api/post/postResultCrypto",feed2)
+                 await axios.post("/post/postResultCrypto",feed2)
                  
                }catch(err){
                 setError("internal server error") 
@@ -174,7 +174,7 @@ const feed3 =[inputsIn3,{earned:earned},{loss:loss}]
                 const handleSumit4 = async (e) =>{
                     e.preventDefault()
                    try{
-                     await axios.post("https://tea.earnars.com/api/post/postResultBinary",feed3)
+                     await axios.post("/post/postResultBinary",feed3)
                      
                     
                    }catch(err){

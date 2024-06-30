@@ -29,38 +29,42 @@ function generateReferralCode(length) {
 }
 
 const referralCode = generateReferralCode(8);
-const port = process.env.PORT || 8080
+const port = process.env.PORT || 5000
 app.use(express.json())
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(bodyParser.json())
-app.use(express.static(path.join(__dirname,"/client/earnarsfile/build")))
+app.use(express.static(path.join(__dirname,"/earnarsfile/build")))
 
 
-var allowedOrigins = [
-  "http://localhost:3000",
-  "https://www.wegotips.com",
-  "https://wegotips.com"
-];
-app.use(
-  cors({
-    origin: function (origin, callback) {
-      if (!origin) return callback(null, true);
-      if (allowedOrigins.indexOf(origin) === -1) {
-        var msg =
-          "The CORS policy for this site does not " +
-          "allow access from the specified Origin." +
-          origin;
-        return callback(new Error(msg), false);
-      }
-      return callback(null, true);
-    },
-  })
-);
+// var allowedOrigins = [
+//   "http://localhost:3000",
+
+//   "https://www.wegotips.com",
+//   "https://wegotips.com"
+// ];
+// app.use(
+//   cors({
+//     origin: function (origin, callback) {
+//       if (!origin) return callback(null, true);
+//       if (allowedOrigins.indexOf(origin) === -1) {
+//         var msg =
+//           "The CORS policy for this site does not " +
+//           "allow access from the specified Origin." +
+//           origin;
+//         return callback(new Error(msg), false);
+//       }
+//       return callback(null, true);
+//     },
+//   })
+// );
 
 // app.use(cors({
 //     origin:"http://localhost:3000",
 
 // }))
+
+app.use(cors())
+
 app.use(cookieParser())
 app.use((req,res,next)=>{
     res.header("Access-Control-Allow-Credentials",true)

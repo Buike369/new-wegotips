@@ -13,7 +13,7 @@ const Profile = () =>{
  
     const {currentUser} = useContext(AuthContext);
 
-    const resetLink = `https://earnars.com/referral/${currentUser?.referral_code}`;
+    const resetLink = `http://localhost:3000/referral/${currentUser?.referral_code}`;
     const [message, setMessage] = useState('')
     const [err,setError] = useState("")
     const [text,setText]= useState(resetLink)
@@ -85,7 +85,7 @@ const Profile = () =>{
               setError(" ")
           },3000)
         }else{
-           axios.put("https://tea.earnars.com/api/post/"+ currentUser.id,inputs).then((response)=>{
+           axios.put("/post/"+ currentUser.id,inputs).then((response)=>{
                setMessage("Update Was Successful")
                  setTimeout(()=>{
               setMessage(" ")
@@ -101,7 +101,7 @@ const Profile = () =>{
             const disk = async()=>{
  
                 try {
-               const res = await axios.get("https://tea.earnars.com/api/user/info/"+ currentUser.id)
+               const res = await axios.get("/user/info/"+ currentUser.id)
                 setYou(res.data[0])
              
             }catch(err){

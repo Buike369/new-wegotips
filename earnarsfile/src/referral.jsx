@@ -48,7 +48,7 @@ const Referral =()=>{
     const handleSumit = (e)=>{
     e.preventDefault()
 
-    axios.post("https://tea.earnars.com/api/auth/register1",rap).then((response)=>{
+    axios.post("/auth/register1",rap).then((response)=>{
              navigate('/login')
     }).catch((err)=>{
 setError(err)

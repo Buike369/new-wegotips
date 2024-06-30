@@ -26,7 +26,7 @@ const DashboardUser = () => {
   useEffect(()=>{
     const userInfom = async ()=>{
       try{
-        const res = await axios.get('https://tea.earnars.com/api/post')
+        const res = await axios.get('/post')
  
         setUserInfo(res.data)
       
@@ -41,7 +41,7 @@ const DashboardUser = () => {
    useEffect(()=>{
         const activeUserCount5 = async()=>{
             try{
-   const res = await axios.get(`https://tea.earnars.com/api/user/active-count`)
+   const res = await axios.get(`/user/active-count`)
    
      setSap(res.data[0].active_count)
    

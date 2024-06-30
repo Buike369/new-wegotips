@@ -271,7 +271,7 @@ const files =[list2,{gameType:type1}]
         e.preventDefault()
  
        try{
-            await axios.post("https://tea.earnars.com/api/post/sports", files)
+            await axios.post("/post/sports", files)
             setSuccess('Succesful upload')
             setTimeout(() => {
                 setSuccess('')
@@ -290,7 +290,7 @@ const files =[list2,{gameType:type1}]
         const handleSumit9 = async e =>{
             e.preventDefault()
            try{
-             await axios.post("https://tea.earnars.com/api/post/forex",list1)
+             await axios.post("/post/forex",list1)
              console.log(list1) 
            }catch(err){
             console.log(err)
@@ -304,7 +304,7 @@ const files =[list2,{gameType:type1}]
                 e.preventDefault()
          
                try{
-                 await axios.post("https://tea.earnars.com/api/post/crypto",file2)
+                 await axios.post("/post/crypto",file2)
                 //  console.log(list2)
                 setSuccess2('Succesful upload')
             setTimeout(() => {
@@ -328,7 +328,7 @@ const fill =[list3,{tradeType:type3}]
                     e.preventDefault()
              
                    try{
-                     await axios.post("https://tea.earnars.com/api/post/binary",fill)
+                     await axios.post("/post/binary",fill)
                     //  console.log(list2)
                       setSuccess3('Succesful upload')
             setTimeout(() => {
@@ -352,7 +352,7 @@ const fill =[list3,{tradeType:type3}]
             e.preventDefault()
      
            try{
-             await axios.post("https://tea.earnars.com/api/post/coupon",coupons)
+             await axios.post("/post/coupon",coupons)
              console.log(coupons)
              
            }catch(err){
@@ -369,7 +369,7 @@ const files1 =[list1,{tradeType:type}]
     const handleSumit1 = async (e) =>{
         e.preventDefault()
        try{
-         await axios.post("https://tea.earnars.com/api/post/forex",files1)
+         await axios.post("/post/forex",files1)
          setSuccess('Succesful upload')
             setTimeout(() => {
                 setSuccess('')
@@ -390,7 +390,7 @@ const files1 =[list1,{tradeType:type}]
         useEffect(()=>{
             const userInfoma = async ()=>{
                 try{
-                  const res = await axios.get('https://tea.earnars.com/api/post/register')
+                  const res = await axios.get('/post/register')
             
                   setUserInfo1(res.data)
                 }catch(err){

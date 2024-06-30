@@ -77,7 +77,7 @@ const Register =()=>{
             setError("")
            },3000)
      }else{
-        await axios.post("/api/auth/register",inputs).then((response)=>{
+        await axios.post("http://localhost:5000/api/auth/register",inputs).then((response)=>{
             // console.log(response.data)
             // setMessage(response.data.msg)
             if(response.data === "User already exist"){

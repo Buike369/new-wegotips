@@ -38,6 +38,7 @@ const register1 =(req, res) => {
     const checkV = req.body[1].code;
     // CHECK EXISTING USER
     const email = req.body[0].email;
+   
     const p2 = validator.validate(`${email}`)
     const name = req.body[0].username;
     const referralCode = generateReferralCode(8);
@@ -105,6 +106,7 @@ const register1 =(req, res) => {
 const register =  (req, res) => {
     // CHECK EXISTING USER
     const email = req.body.email;
+    
     const p1 = validator.validate(`${email}`)
     const referralCode = generateReferralCode(8);
     if (p1 === true) {
@@ -131,6 +133,7 @@ const register =  (req, res) => {
                         })
                     } else {
                         res.json("user has been created")
+                        console.log("user has been created")
                     }
 
                 })

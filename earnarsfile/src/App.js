@@ -108,7 +108,8 @@ function App() {
           <Route path="/buy-and-sell-enar" element={< BuyAndSellEnar />} />
           <Route path="/market-predictions" element={<MarketPrediction />} />
           <Route path="/recent-predictions" element={<RecentPrediction />} />
-          {currentUser ? <Route path="/user-dashboard" element={<UserDashBoard />} /> : <Route path="/" element={<SampleHome />} />}
+          {/* {currentUser ? <Route path="/user-dashboard" element={<UserDashBoard />} /> : <Route path="/" element={<SampleHome />} />} */}
+          <Route path="/user-dashboard" element={<UserDashBoard />} /> 
 
 
 

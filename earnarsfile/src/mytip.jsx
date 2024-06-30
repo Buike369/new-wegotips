@@ -54,7 +54,7 @@ const Mytip =()=>{
        useEffect(()=>{
         const userInfom = async ()=>{
           try{
-            const res = await axios.get('https://tea.earnars.com/api/post/sports/tip/daily')
+            const res = await axios.get('/post/sports/tip/daily')
      
             setSportInfo(res.data)
             // console.log(res.data)
@@ -71,7 +71,7 @@ const Mytip =()=>{
        useEffect(()=>{
         const userInfomM = async ()=>{
           try{
-            const res = await axios.get('https://tea.earnars.com/api/post/sports/tip/mid')
+            const res = await axios.get('/post/sports/tip/mid')
      
             setSportInfoM(res.data)
             // console.log(res.data)
@@ -89,7 +89,7 @@ const Mytip =()=>{
        useEffect(()=>{
         const userInfom1 = async ()=>{
           try{
-            const res = await axios.get('https://tea.earnars.com/api/post/forex/tip')
+            const res = await axios.get('/post/forex/tip')
      
             setForexInfo(res.data)
             // console.log(res.data)
@@ -107,7 +107,7 @@ const Mytip =()=>{
         useEffect(()=>{
         const userInfom2 = async ()=>{
           try{
-            const res = await axios.get('https://tea.earnars.com/api/post/crypto/tip')
+            const res = await axios.get('/post/crypto/tip')
      
             setCryptoInfo(res.data)
             console.log(res.data)
@@ -124,7 +124,7 @@ const Mytip =()=>{
        useEffect(()=>{
         const userInfom6 = async ()=>{
           try{
-            const res = await axios.get('https://tea.earnars.com/api/post/crypto/tip/d')
+            const res = await axios.get('/post/crypto/tip/d')
      
             setCryptoInfoD(res.data)
             console.log(res.data)
@@ -141,7 +141,7 @@ const Mytip =()=>{
       useEffect(()=>{
         const userInfom9 = async ()=>{
           try{
-            const res = await axios.get('https://tea.earnars.com/api/post/crypto/tip/m')
+            const res = await axios.get('/post/crypto/tip/m')
      
             setCryptoInfoM(res.data)
             console.log(res.data)

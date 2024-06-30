@@ -12,7 +12,7 @@ const DashboardWithdrawal = () => {
     const fetchWithdrawal = async ()=>{
     
        try{ 
-        const res =   await axios.get("https://tea.earnars.com/api/user/withdrawal")
+        const res =   await axios.get("/user/withdrawal")
 
          setWithdrawalList(res.data)
        }catch(err){

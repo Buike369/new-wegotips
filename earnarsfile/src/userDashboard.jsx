@@ -290,7 +290,7 @@ const airtimePurchase2=(e)=>{
                         const mainWallet1 = mainWallet;
                         const mon1 = [withdrawalInfo,{main:mainWallet1,id:currentUser.id}]   
          
-                   axios.post("https://tea.earnars.com/api/user/withdrawal",mon1).then((response)=>{
+                   axios.post("/user/withdrawal",mon1).then((response)=>{
                               setMessage5(response.data.msg)
                     setTimeout(()=>{
                          setMessage5("")
@@ -324,7 +324,7 @@ const airtimePurchase2=(e)=>{
                         },3000)
                     }else{
                        
-                    axios.post("https://tea.earnars.com/api/user/transfer",{amountTransferred:amount1,main:mainWallet,affliateAmount:affliateWallet,id:currentUser.id}).then((response)=>{
+                    axios.post("/user/transfer",{amountTransferred:amount1,main:mainWallet,affliateAmount:affliateWallet,id:currentUser.id}).then((response)=>{
 
                     }).catch((err)=>{
                             console.log(err)
@@ -355,7 +355,7 @@ const airtimePurchase2=(e)=>{
              console.log("main Wallet cannot be empty")
      }else{
           
-            axios.post("https://tea.earnars.com/api/user/subscription",{
+            axios.post("/user/subscription",{
             id:currentUser.id,amount:subscriptionAmount,mainWallet:mainWallet
            }).then((response)=>{
              setMessage("Subscription was successful")
@@ -412,7 +412,7 @@ const airtimePurchase2=(e)=>{
 
     useEffect(()=>{
     const handleDeposit = () =>{
-                      axios.post("https://tea.earnars.com/api/user/deposit-money",ego ).then((response)=>{
+                      axios.post("/user/deposit-money",ego ).then((response)=>{
 
                       }).catch((err)=>{
                           console.log(err)
@@ -426,7 +426,7 @@ const airtimePurchase2=(e)=>{
 
    useEffect(()=>{
     const pala = ()=>{
-  axios.get(`https://tea.earnars.com/api/user/main-wallet/${currentUser?.id}`).then((response)=>{
+  axios.get(`/user/main-wallet/${currentUser?.id}`).then((response)=>{
      setMainWallet(response.data[0].amount)
   }).catch((err)=>{
     // setError(err)
@@ -439,7 +439,7 @@ const airtimePurchase2=(e)=>{
      useEffect(()=>{
     const pala1 =()=>{
    
-  axios.get(`https://tea.earnars.com/api/user/affiliate-wallet/${currentUser?.id}`).then((response)=>{
+  axios.get(`/user/affiliate-wallet/${currentUser?.id}`).then((response)=>{
    setAffliateWallet(response.data[0].amount)
   }).catch((err)=>{
 //   setError(err)
@@ -451,7 +451,7 @@ const airtimePurchase2=(e)=>{
 
    useEffect(()=>{
     const pala2 = ()=>{
-  axios.get(`https://tea.earnars.com/api/user/referral-user/${currentUser?.id}`).then((response)=>{
+  axios.get(`/user/referral-user/${currentUser?.id}`).then((response)=>{
    setReferrals2(response.data)
   }).catch((err)=>{
      setError(err)
@@ -464,7 +464,7 @@ const airtimePurchase2=(e)=>{
   useEffect(()=>{
     const pala3 = ()=>{
       
-    axios.get(`https://tea.earnars.com/api/user/wallet-overview/${currentUser.id}`).then((response)=>{
+    axios.get(`/user/wallet-overview/${currentUser.id}`).then((response)=>{
      setWalletOverview(response.data)
     }).catch((err)=>{
  setError(err)
@@ -476,7 +476,7 @@ const airtimePurchase2=(e)=>{
 
   useEffect(()=>{
       const getSubscriptionStatus =()=>{
-    axios.get(`https://tea.earnars.com/api/user/subscription-status/${currentUser.id}`).then((response)=>{
+    axios.get(`/user/subscription-status/${currentUser.id}`).then((response)=>{
    setSubActive(response.data.pop().status)
     }).catch((err)=>{
  console.log(err)
@@ -1795,7 +1795,7 @@ const airtimePurchase2=(e)=>{
                             <p style={{marginTop:"8px"}}>Amount</p>
                             <div className="ProccedRent fback"><input type="number" placeholder="₦  0.00"
                             className="ProccedRent1 loo" name="amount" value={airtimeInfo.amount} onChange={handleChanges4}/></div>
-                            <div className="MMMYE" onClick={airtimePurchase2}>Continue</div>
+                            <div className="MMMYE" >Continue</div>
                         
                         </form>
                      </div>
@@ -1833,7 +1833,7 @@ const airtimePurchase2=(e)=>{
                             <p style={{marginTop:"8px"}}>Amount</p>
                             <div className="ProccedRent fback"><input type="number" placeholder="₦  0.00"
                             className="ProccedRent1 loo" name="amount" value={airtimeInfo.amount} onChange={handleChanges4}/></div>
-                            <div className="MMMYE" onClick={airtimePurchase2}>Continue</div>
+                            <div className="MMMYE" >Continue</div>
                         
                         </form>
                      </div>

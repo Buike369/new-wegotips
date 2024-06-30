@@ -242,7 +242,7 @@ const Sports1 =()=>{
 useEffect(()=>{
   const fetchData4 = async ()=>{
 
-  await axios.get(`/api/post/binary/tip3`).then((response)=>{
+  await axios.get(`/post/binary/tip3`).then((response)=>{
 setPosts4(response.data)
 setLoading(false)
   }).catch((err)=>{
@@ -269,7 +269,7 @@ setLoading(false)
 
 useEffect(()=>{
   const fetchData3 = async ()=>{
-  await axios.get(`/api/post/crypto/tip3`).then((response)=>{
+  await axios.get(`/post/crypto/tip3`).then((response)=>{
   setPosts3(response.data)
   setLoading(false)
   }).catch((err)=>{
@@ -285,7 +285,7 @@ useEffect(()=>{
 useEffect(()=>{
   const fetchData2 = async ()=>{
  
- await axios.get(`/api/post/forex/tip3`).then((response)=>{
+ await axios.get(`/post/forex/tip3`).then((response)=>{
   setPosts(response.data)
  }).catch((err)=>{
 //  setError(err)
@@ -314,7 +314,7 @@ useEffect(()=>{
 useEffect(()=>{
   const fetchData1 = async ()=>{
  
- await axios.get(`/api/post/sports/tip3`).then((response)=>{
+ await axios.get(`/post/sports/tip3`).then((response)=>{
    setPosts1(response.data)
    setLoading(false)
  }).catch((err)=>{

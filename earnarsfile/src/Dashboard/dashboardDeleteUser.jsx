@@ -12,7 +12,7 @@ const DashboardDeleteUser = () => {
 
   const deleteGame1 = async(id)=>{
      try{
-    await axios.delete(`https://tea.earnars.com/api/user/sports/game-no/${id}`)
+    await axios.delete(`/user/sports/game-no/${id}`)
      console.log("files deleted")
      }catch(err){
        console.log(err)
@@ -22,7 +22,7 @@ const DashboardDeleteUser = () => {
   
   const deleteGame2 = async(id)=>{
      try{
-    await axios.delete(`https://tea.earnars.com/api/user/forex/game-no/${id}`)
+    await axios.delete(`/user/forex/game-no/${id}`)
      console.log("files deleted")
      }catch(err){
        console.log(err)
@@ -32,7 +32,7 @@ const DashboardDeleteUser = () => {
   
   const deleteGame3 = async(id)=>{
      try{
-    await axios.delete(`https://tea.earnars.com/api/user/crypto/game-no/${id}`)
+    await axios.delete(`/user/crypto/game-no/${id}`)
      console.log("files deleted")
      }catch(err){
        console.log(err)
@@ -43,7 +43,7 @@ const DashboardDeleteUser = () => {
   
   const deleteGame4 = async(id)=>{
      try{
-    await axios.delete(`https://tea.earnars.com/api/user/binary/game-no/${id}`)
+    await axios.delete(`/user/binary/game-no/${id}`)
      console.log("files deleted")
      }catch(err){
        console.log(err)
@@ -53,7 +53,7 @@ const DashboardDeleteUser = () => {
 useEffect(()=>{
     const getGameNo =async()=>{
     try{    
-       const res = await axios.get("https://tea.earnars.com/api/user/sports/game-no")
+       const res = await axios.get("/user/sports/game-no")
      setGameNo(res.data)
     // console.log(res.data)
     }catch(err){
@@ -67,7 +67,7 @@ getGameNo()
 useEffect(()=>{
     const getGameNo1 =async()=>{
     try{    
-       const res = await axios.get("https://tea.earnars.com/api/user/forex/game-no")
+       const res = await axios.get("/user/forex/game-no")
      setGameNo1(res.data)
     // console.log(res.data)
     }catch(err){
@@ -81,7 +81,7 @@ getGameNo1()
 useEffect(()=>{
     const getGameNo2 =async()=>{
     try{    
-       const res = await axios.get("https://tea.earnars.com/api/user/crypto/game-no")
+       const res = await axios.get("/user/crypto/game-no")
      setGameNo2(res.data)
     // console.log(res.data)
     }catch(err){
@@ -95,7 +95,7 @@ getGameNo2()
 useEffect(()=>{
     const getGameNo3 =async()=>{
     try{    
-       const res = await axios.get("https://tea.earnars.com/api/user/binary/game-no")
+       const res = await axios.get("/user/binary/game-no")
      setGameNo3(res.data)
     // console.log(res.data)
     }catch(err){
