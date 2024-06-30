@@ -1,37 +1,37 @@
-name: Main.js CI
+# name: Main.js CI
 
-on:
-  push:
-    branches: [main]
-  pull_request:
-    branches: [main]
+# on:
+#   push:
+#     branches: [main]
+#   pull_request:
+#     branches: [main]
 
-jobs:
-  build:
-    runs-on: self-hosted
+# jobs:
+#   build:
+#     runs-on: self-hosted
     
-    strategy:
-      matrix:
-        node-version: ['18.x']
+#     strategy:
+#       matrix:
+#         node-version: ['18.x']
 
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+#     steps:
+#       - name: Checkout code
+#         uses: actions/checkout@v4
         
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: ${{ matrix.node-version }}
+#       - name: Set up Node.js
+#         uses: actions/setup-node@v2
+#         with:
+#           node-version: ${{ matrix.node-version }}
 
-      - name: Install dependencies
-        run: |
-          cd server/earnarsbackend
-          npm install
+#       - name: Install dependencies
+#         run: |
+#           cd server/earnarsbackend
+#           npm install
 
-      - name: Restart services
-        run: |
-          npm update
-          pm2 stop 0
-          pm2 start server.js --env production
-          pm2 save
-          sudo service nginx restart
+#       - name: Restart services
+#         run: |
+#           npm update
+#           pm2 stop 0
+#           pm2 start server.js --env production
+#           pm2 save
+#           sudo service nginx restart
