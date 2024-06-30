@@ -20,14 +20,8 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
         run: | 
-          cd server
-          cd earnarsbackend
-      - name: "Delete nodemodules"
-        run: | 
-          rm -rf node_modules/
-      - name: "Delete nodemodules"
-        run: | 
-          npm update       
+          cd server/earnarsbackend
+          npm i       
           pm2 stop 0
           pm2 start 0
           pm2 save
