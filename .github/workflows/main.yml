@@ -15,16 +15,22 @@ jobs:
         node-version: ['18.x', '20.x']
 
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-        run: | 
+
+      - name: Install dependencies
+        run: |
           cd server/earnarsbackend
-          npm i       
+          npm install
+
+      - name: Restart services
+        run: |
           pm2 stop 1
           pm2 start 1
           pm2 save
-          sudo service nginx restart 
-    
-    
+          sudo service nginx restart
