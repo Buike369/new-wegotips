@@ -2,9 +2,11 @@ name: Main.js CI
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
   pull_request:
-    branches: [main]
+    branches:
+      - main
 
 jobs:
   build:
@@ -23,12 +25,14 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: "Delete nodemodules"
-          run: | 
-            rm -rf node_modules/
-      - name: "Delete nodemodules"
-          run: | 
-            npm update 
-      - name: 'Restart server'
-          run: |
-            pm2 restart server.js
+      - name: Delete node_modules
+        run: |
+          rm -rf node_modules/
+
+      - name: Update npm packages
+        run: |
+          npm update
+
+      - name: Restart server
+        run: |
+          pm2 restart server.js
