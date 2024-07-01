@@ -31,6 +31,7 @@ jobs:
       - name: Restart services
         run: |
           npm update
-          pm2 startup  
+          pm2 stop 1
+          pm2 start 1
           pm2 save
           sudo service nginx restart
