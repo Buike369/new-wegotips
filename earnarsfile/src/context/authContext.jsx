@@ -13,7 +13,7 @@ export const AuthContextProvider = ({children})=>{
     const [purchaseType,setPurchaseType] = useState("Buy")
 
     const login = async(inputs)=>{
-       const res = await axios.post("http://localhost:8080/api/auth/login",inputs);
+       const res = await axios.post("http://localhost:5000/api/auth/login",inputs);
        setCurrentUser(res.data)
       //  console.log(res.data)
     }

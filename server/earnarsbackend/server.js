@@ -29,7 +29,7 @@ function generateReferralCode(length) {
 }
 
 const referralCode = generateReferralCode(8);
-const port = process.env.PORT || 8080
+const port = process.env.PORT || 5000
 app.use(express.json())
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(bodyParser.json())
