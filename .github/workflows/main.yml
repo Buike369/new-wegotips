@@ -34,6 +34,6 @@ jobs:
         run: |
           npm update
           pm2 stop 3
-          sudo pm2 start 3
+          pm2 start 3
           pm2 save
           sudo service nginx restart
