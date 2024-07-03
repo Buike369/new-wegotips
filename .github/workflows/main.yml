@@ -25,14 +25,15 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Delete node_modules
+      - name: Install dependencies
         run: |
-          rm -rf node_modules/
+          cd server/earnarsbackend
+          npm install
 
-      - name: Update npm packages
+      - name: Restart services
         run: |
           npm update
-
-      - name: Restart server
-        run: |
-          pm2 restart server.js
+          pm2 stop 3
+          pm2 start 3
+          pm2 save
+          sudo service nginx restart
