@@ -14,7 +14,7 @@ const session = require('express-session')
 const passport = require("passport")
 const bodyParser = require('body-parser')
 const path = require('path')
-const GoogleStrategy = require("passport-google-oauth20").Strategy
+// const GoogleStrategy = require("passport-google-oauth20").Strategy
 
 
 function generateReferralCode(length) {
