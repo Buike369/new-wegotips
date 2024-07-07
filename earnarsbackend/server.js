@@ -38,7 +38,6 @@ app.use(bodyParser.json())
 // console.log(path.join(__dirname,"../earnarsfile"))
 var allowedOrigins = [
   "http://localhost:3000",
-
   "https://www.wegotips.com",
   "https://wegotips.com"
 ];
