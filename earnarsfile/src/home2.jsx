@@ -16,6 +16,9 @@ import "./style/background.css"
 
 const Home2=() =>{
 
+  const wegoUrl = process.env.REACT_APP_API_URL || '/api';
+
+
   const [show,setShow]= useState(false)
   const [show1,setShow1]= useState(false)
   const [show2,setShow2]= useState(false)
@@ -242,7 +245,7 @@ const Sports1 =()=>{
 useEffect(()=>{
   const fetchData4 = async ()=>{
 
-  await axios.get(`/post/binary/tip3`).then((response)=>{
+  await axios.get(`${wegoUrl}/post/binary/tip3`).then((response)=>{
 setPosts4(response.data)
 setLoading(false)
   }).catch((err)=>{
@@ -269,7 +272,7 @@ setLoading(false)
 
 useEffect(()=>{
   const fetchData3 = async ()=>{
-  await axios.get(`/post/crypto/tip3`).then((response)=>{
+  await axios.get(`${wegoUrl}/post/crypto/tip3`).then((response)=>{
   setPosts3(response.data)
   setLoading(false)
   }).catch((err)=>{
@@ -281,11 +284,11 @@ useEffect(()=>{
   fetchData3()
 },[post3])
 
-
+ 
 useEffect(()=>{
   const fetchData2 = async ()=>{
  
- await axios.get(`/post/forex/tip3`).then((response)=>{
+ await axios.get(`${wegoUrl}/post/forex/tip3`).then((response)=>{
   setPosts(response.data)
  }).catch((err)=>{
 //  setError(err)
@@ -314,7 +317,7 @@ useEffect(()=>{
 useEffect(()=>{
   const fetchData1 = async ()=>{
  
- await axios.get(`/post/sports/tip3`).then((response)=>{
+ await axios.get(`${wegoUrl}/post/sports/tip3`).then((response)=>{
    setPosts1(response.data)
    setLoading(false)
  }).catch((err)=>{
