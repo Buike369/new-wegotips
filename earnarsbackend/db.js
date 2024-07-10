@@ -5,10 +5,11 @@ const mysql = require('mysql')
    host: "localhost",
    user: "root",
      password: "Kingsley369",
-     database: "betproject"
+     database: "wego_bet"
    
 })
 
+// database: "betproject"
 // db.getConnection((err,connection)=>{
 //    if(err){
 //       console.log(err)
