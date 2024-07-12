@@ -15,10 +15,7 @@ jobs:
     strategy:
       matrix:
         node-version: ['18.x']
-    container:
-      image: node:18
-      options: --memory=4g  # Increase memory limit
-
+   
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
