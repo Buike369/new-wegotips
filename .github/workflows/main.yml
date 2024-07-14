@@ -26,7 +26,6 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: Deploy to server
-        uses: easingthemes/ssh-deploy@v2.0.0  # Adjust with the correct action
         with:
           host: ${{ secrets.DROPLET_IP }}
           username: root
