@@ -26,7 +26,6 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: Deploy to server
-        uses: wego_runner/ssh-deploy@v2.0.0  
         with:
           host: ${{ secrets.DROPLET_IP }}
           username: root
