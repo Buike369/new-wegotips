@@ -25,12 +25,6 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Deploy to server
-        with:
-          host: ${{ secrets.DROPLET_IP }}
-          username: root
-          key: ${{ secrets.SSH_KEY }}
-
       - name: Install dependencies
         run: |
           cd earnarsbackend
