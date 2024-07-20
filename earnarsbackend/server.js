@@ -13,7 +13,7 @@ const bcrypt = require('bcrypt')
 const session = require('express-session')
 const passport = require("passport")
 const bodyParser = require('body-parser')
-// const path = require('path')
+
 // const GoogleStrategy = require("passport-google-oauth20").Strategy
 
 
@@ -33,9 +33,8 @@ const port = process.env.PORT || 5000
 app.use(express.json())
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(bodyParser.json())
-// app.use(express.static(path.join(__dirname,"../earnarsfile/build")))
 
-// console.log(path.join(__dirname,"../earnarsfile"))
+
 var allowedOrigins = [
   "http://localhost:3000",
   "https://www.wegotips.com",
