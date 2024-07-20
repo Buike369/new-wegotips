@@ -39,8 +39,8 @@ app.use(bodyParser.json())
 var allowedOrigins = [
   "http://localhost:3000",
   "https://www.wegotips.com",
-  "https://wegotips.com",
-  "http://147.182.177.250/"
+  "https://wegotips.com"
+  
 ];
 app.use(
   cors({
