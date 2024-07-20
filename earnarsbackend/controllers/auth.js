@@ -2,7 +2,7 @@ const { db } = require('../db.js')
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 const nodemailer = require('nodemailer');
-const { EMAIL, PASSWORD } = require("../env.js")
+const { EMAIL } = require("../env.js")
 const Mailgen = require('mailgen')
 var validator = require("email-validator");
 const passport = require("passport")
@@ -263,8 +263,8 @@ const forgotPassword = (req, res) => {
     let config = {
         service: "gmail",
         auth: {
-            user: EMAIL,
-            pass: PASSWORD
+            user: process.env.MY_EMAIL,
+            pass: process.env.MY_PASSWORD 
         }
 
     }
