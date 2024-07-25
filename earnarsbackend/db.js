@@ -1,7 +1,7 @@
 const mysql = require('mysql')
 
  const db = mysql.createPool({
-    connectionLimit:90,
+    connectionLimit:30,
    host: process.env.DB_HOST,
    user: process.env.DB_HOST ,
    password: process.env.DB_PASSWORD ,
@@ -9,6 +9,7 @@ const mysql = require('mysql')
    
 })
 
+// console.log(process.env.DB_PASSWORD)
 // database: "betproject"
 // db.getConnection((err,connection)=>{
 //    if(err){

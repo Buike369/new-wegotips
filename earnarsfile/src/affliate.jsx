@@ -152,7 +152,7 @@ const Affiliate =()=>{
                  </div>
                 
              <div className="earnPMN">
-                <div className="inviteFr">Get $8 - Invite Your Friends to Earnars</div>
+                <div className="inviteFr">Get $8 - Invite Your Friends to Wegotips</div>
 
 
                 {/* <Link to="/login" className="ifi"> <div className="NowUpSign">Watch Now</div></Link> */}

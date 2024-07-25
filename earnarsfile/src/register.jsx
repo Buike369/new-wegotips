@@ -11,6 +11,7 @@ import SuccessN from "./success1"
 import "./style/admin.css"
 
 const Register =()=>{
+  const wegoUrl = process.env.REACT_APP_API_URL || 'https://wegotips.com/api';
 
   // const responseGoogle = async (response)=>{
   //   try{
@@ -77,7 +78,7 @@ const Register =()=>{
             setError("")
            },3000)
      }else{
-        await axios.post("http://localhost:5000/api/auth/register",inputs).then((response)=>{
+        await axios.post(`${wegoUrl}/auth/register`,inputs).then((response)=>{
             // console.log(response.data)
             // setMessage(response.data.msg)
             if(response.data === "User already exist"){

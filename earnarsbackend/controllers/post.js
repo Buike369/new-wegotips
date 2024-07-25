@@ -107,17 +107,29 @@ const getPostMid = (req, res) => {
   })
 }
 
- const getPost3=(req,res)=>{
-  const q =  `SELECT * FROM post_result_sport `;
+//  const getPost3= (req,res)=>{
+//   const q =  `SELECT * FROM post_result_sport `;
   
-  db.query(q,(err,data)=>{
-    if (err){
-      console.error(err)}
-    return (
-      // res.status(200).json(data);
-      res.send(data))
-  })
- }
+//    db.query(q,  (err,data)=>{
+//     if (err){
+//       console.error(err)}
+//     return (
+      
+//       res.send(data))
+//   })
+//  }
+const getPost3 = async (req, res) => {
+  const q = `SELECT * FROM post_result_sport`;
+
+  try {
+    const [rows, fields] = await db.query(q);
+    res.send(rows);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
+};
+
 
 
 

@@ -88,7 +88,10 @@ const handleScroll = () => {
             <div >
               
                 <a href="/" >
-                  <img src="/img/Earnars1@72x1.png" className="imghy"/>
+                  <div className="logM">
+                  <img src="/img/wego.png" className="imghy"/>
+                  <p className="logM1">Wegotips</p>
+                  </div>
                 </a>
               
             </div>

@@ -162,9 +162,16 @@ height: 300px;
     color:gold;
     font-size: 54px;
     font-weight: 500;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     position:relative;
     z-index: 6;
+    overflow: hidden;
+        white-space: nowrap;
+        width: 0;
+    animation: typingO infinite;
+        animation-duration: 1.5s;
+        animation-timing-function: steps(30, end);
+        animation-fill-mode: forwards;
 }
 .everyWhere{
     color:#dadfe7;
@@ -454,7 +461,15 @@ scrollbar-color: #007 #bada55 !important;
 .Dayword {
     text-align: center;
 }
+@keyframes typingO {
+    from {
+        width: 0
+    }
 
+    to {
+        width: 100%
+    }
+}
 @media(min-width:500px) and (max-width:768px) {
 
     .outcomeBeen1,
@@ -508,6 +523,8 @@ scrollbar-color: #007 #bada55 !important;
     }
     .weAre4{
         padding:0 10px;
+        width: 90%;
+        margin: 0 auto;
     }
         .Ems1 {
             left: -40%;
@@ -521,6 +538,7 @@ scrollbar-color: #007 #bada55 !important;
 
 .withUpto {
     font-size: 30px;
+    text-align: center;
    
 }
     .EasyTi {

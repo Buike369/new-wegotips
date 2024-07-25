@@ -67,7 +67,10 @@ const MobileHeader = () => {
       <div className="mobileH" style={{borderBottom:tr ==="/register" || tr ==="/login"  ? "1px solid #312d72":""}}>
         <div>
         <a href="/"  onClick={()=>setShow21(false)} >
-                  <img src="/img/Earnars1@72x1.png" className="emanu"/>
+            <div className="logM lome">
+                  <img src="/img/wego.png" className="emanu"/>
+                    <p className="logM1">Wegotips</p>
+                  </div>
                 </a>
         </div>
          {(tr === "/register") || (tr === "/login") || (tr === "/otp") || (tr === "/resetpassword/:id") || (tr === "/forgotpassword") || (tr === "/referral/:id") ? " " :

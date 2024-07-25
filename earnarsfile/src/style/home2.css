@@ -1171,7 +1171,27 @@ left:0px;
     padding-bottom: 60px;
     padding-top: 40px;
 }
+.bk{
+    animation: jh 4s infinite;
+    transition: all 10s;
+    max-width: 100px;
+}
 
+@keyframes jh{
+    0% {
+            fill: gold;
+            transform: rotate(0deg);
+        }
+    
+        50% {
+            fill: #fff;
+            transform: rotate(2deg);
+        }
+                 100% {
+                     fill: gold;
+                     transform: rotate(0deg);
+                 }
+}
 @media(min-width:768px) and (max-width:868px) {
     .vap {
         display: none

@@ -97,7 +97,7 @@ const Footer =()=>{
                   </div>
               </div>
               
-              <div className="Footer_Copyright">© 2023 <a href="/" className="footerHomeLink">Earnars</a>. All rights reserved.</div>
+              <div className="Footer_Copyright">© 2024 <a href="/" className="footerHomeLink">Wegotips</a>. All rights reserved.</div>
           </div>
         </div>
     )

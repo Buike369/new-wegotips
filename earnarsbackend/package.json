@@ -5,13 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "node server.js"
-  },
-  "env": {
-    "DB_HOST": "localhost",
-    "DB_USER": "root",
-    "DB_PASSWORD": "Kingsley369",
-    "DB_NAME": "wego_bet"
+    "dev": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",
@@ -31,5 +25,8 @@
     "nodemailer": "^6.9.3",
     "passport": "^0.6.0",
     "passport-google-oauth20": "^2.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
   }
 }

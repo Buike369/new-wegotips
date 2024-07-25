@@ -5,6 +5,7 @@ export const AuthContext = createContext()
 
 
 export const AuthContextProvider = ({children})=>{
+  const wegoUrl = process.env.REACT_APP_API_URL || 'https://wegotips.com/api';
     // const [currentUser,setCurrentUser] = useState(JSON.parse(localStorage.getItem("user")) || null)
     const [currentUser,setCurrentUser] = useState(JSON.parse(localStorage.getItem("user")) || null)
     const [forgotEmail,setForgotEmail] = useState((localStorage.getItem("email")) || null)
@@ -13,14 +14,14 @@ export const AuthContextProvider = ({children})=>{
     const [purchaseType,setPurchaseType] = useState("Buy")
 
     const login = async(inputs)=>{
-       const res = await axios.post("http://localhost:5000/api/auth/login",inputs);
+       const res = await axios.post(`${wegoUrl}/auth/login`,inputs);
        setCurrentUser(res.data)
       //  console.log(res.data)
     }
 
       const forgotPassword = async(email2)=>{
       //  const res = await axios.post("http://localhost:8080/api/auth/password-reset",email2);
-        const res = await axios.post("/auth/password-reset",email2);
+        const res = await axios.post(`${wegoUrl}/auth/password-reset`,email2);
 
        setForgotEmail(res.data.msg)
       //  console.log(res)
@@ -32,7 +33,7 @@ export const AuthContextProvider = ({children})=>{
    //     setCurrentUser(res.data)
    //  }
     const logout = async(inputs)=>{
-        await axios.post("/auth/logout");
+        await axios.post(`${wegoUrl}/auth/logout`);
         setCurrentUser(null)
      }
 
@@ -47,7 +48,7 @@ export const AuthContextProvider = ({children})=>{
         
       const getSubscriptionPay = async()=>{
         try{
-       const res = await axios.get(`/user/subscription-pay/${currentUser.id}`)
+       const res = await axios.get(`${wegoUrl}/user/subscription-pay/${currentUser.id}`)
         setIsPaid(res.data.pop().subscription_pay)
         }catch(err){
           console.log(err)
