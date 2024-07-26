@@ -548,7 +548,7 @@ Get accurate winning tips from professional betting tipsters across sports, fore
     <div className="gos2"><img src="/img/earnar.PNG" alt="" className="gos5" /></div>
      <div className="gos3">
       <div className="limba2">
-      <div className="ET">Earnars Token</div>
+      <div className="ET">Wegotips Token</div>
       <p className="gos4"><span className="goemJK">$ENAR</span> allows you to pay for services within the platform with ease or leverage on the ever increasing price for arbitrage purposes.</p>
         <div className="earnarC1"><button  className="earnarC" >Buy Enar</button></div>
       </div></div>
