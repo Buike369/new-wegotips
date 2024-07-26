@@ -7,6 +7,12 @@
     "start": "node server.js",
     "dev": "nodemon server.js"
   },
+  "env" :{
+    "DB_HOST" : "localhost",
+"DB_USER" : "root",
+"DB_PASSWORD" : "Kingsley369",
+"DB_NAME" : "wego_bet"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
