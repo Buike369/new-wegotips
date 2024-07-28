@@ -98,9 +98,9 @@ const handleScroll = () => {
              {locationBy ? " " :<>
             <div>
               <ul className="header_list">
-                 <li className="Affliate_Bet">
+                 {/* <li className="Affliate_Bet">
                   <a href="/token">Token</a>
-                </li>
+                </li> */}
                 <li className="Prediction_dropDown">
                   <a href="">Markets</a>
                   <div className="OverTime_View">
@@ -135,9 +135,9 @@ const handleScroll = () => {
                 <li className="Affliate_Bet">
                   <a href="/affliate">Affiliate Program</a>
                 </li>
-                <li className="Contact_Bet">
+                {/* <li className="Contact_Bet">
                   <a href="/exchange"> Buy/Sell ENAR </a>
-                </li>
+                </li> */}
                 {/* <li className="Contact_Bet vap">
                   {tr === "/" ?<a href="#Faqc">FAQ</a> :null}
                   

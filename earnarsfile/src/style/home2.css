@@ -7,6 +7,28 @@
     /* overflow: hidden; */
 
 }
+
+.postKin {
+    padding: 2px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: #000;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.carousel-button-group {
+    position: absolute;
+    right: 6%;
+
+    display: flex;
+    gap: 10px;
+    /* margin-top: 10px; */
+}
 .bkFR{
     width:100%;
     max-width: 1100px;
@@ -280,7 +302,9 @@ font-size: 16px;
     border-top-left-radius: 4px;
     color: #c1c3cb;
 }
-
+.topPL{
+    padding:0 0 0 10px !important
+}
 .Saving {
     padding: 10px;
     font-size: 28px;
@@ -730,7 +754,7 @@ font-size: 16px;
 .Rtme {
     width: 100%;
     max-width: 1130px;
-    padding: 0 10px;
+    /* padding: 0 10px; */
     margin: 0 auto;
 
 
@@ -1378,7 +1402,7 @@ left:0px;
         max-width: 720px;
         overflow-x: hidden;
         position: relative;
-        padding: 0 6px;
+        padding: 0 6px 0 0px;
         margin: 0 auto
     }
 
@@ -1509,7 +1533,7 @@ left:0px;
 
     .Rtme {
         width: 100%;
-        padding: 0 8px;
+        /* padding: 0 8px; */
     }
 
     .you {
