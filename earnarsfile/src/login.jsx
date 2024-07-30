@@ -78,7 +78,7 @@ const Login =()=>{
            <div className="Form_Div renttt page">
                <form>
                   
-                  <div className="welcome4 textAdmin">Login to Earnars</div>
+                  <div className="welcome4 textAdmin">Login to Wegotips</div>
                   <div> <input type="email" placeholder="Email" className="Full_Name inpupage page10 page11" name="email" onChange={handleChange}/></div>
                   <div className="sers"> <input type={inputs2.showPassword ? "text":"password"} placeholder="Password" className="Full_Name inpupage page10 page11" onChange ={handleChange} name="password" 
                   />
@@ -91,7 +91,7 @@ const Login =()=>{
                          <p className="adColor">Or login with</p>
                          <div className="Or_With"></div>
                      </div>
-                     <div className="Googgle1 page10 page11" >Google</div>
+                     <div className="Googgle1 page10 page11" >Sign in with Google</div>
                     
                      <p className="Have_An adColor">Don't have an account?</p>
                      <div className="LOGIN_HERE_NOW"><Link to="/register" className="p_LoGIn">Register Here</Link></div>

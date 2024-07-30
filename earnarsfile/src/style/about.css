@@ -22,7 +22,7 @@
     background-color: #171054;
         padding: 35px 20px;
         border-radius: 8px;
-        border: 1px solid #433e83;
+        border: 1px solid #2d2476;
         box-shadow: 0px 0px 3px #22232c;
         position:relative;
         z-index: 9;
@@ -35,7 +35,7 @@
     font-size: 16px;
     font-weight: 200;
     margin-bottom: 20px;
-    color:#fff
+    color:#c6c7dd
 }
 
 

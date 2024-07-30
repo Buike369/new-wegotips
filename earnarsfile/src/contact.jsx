@@ -26,13 +26,13 @@ const Contact =()=>{
                        <div className="For_general_Advert">
                            <div className="For_General_Div">
                                <p className="contact_p_c">For General Enquiries:</p>
-                               <p className="infoTrY">info@earnars.com</p>
+                               <p className="infoTrY">info@wegotips.com</p>
                                <p className="infoTrY fontWW">Or</p>
                                <p> <FontAwesomeIcon icon={faWhatsapp} className="icon_brand_size foodI" /> <span className="WhattsZ"><a href="https://wa.me/08059279660" className="phoneNm">+234 805 927 9660</a></span></p>
                            </div> 
                            <div className="For_General_Div">
                                <p className="contact_p_c">For Advert and Sponsorship:</p>
-                               <p className="infoTrY">advert@earnars.com</p>
+                               <p className="infoTrY">advert@wegotips.com</p>
                                <p className="infoTrY fontWW">Or</p>
                                <p><a href="#" className="ClickHereMe hereTo">Click here to Chat on Skype</a></p>
                            </div> 

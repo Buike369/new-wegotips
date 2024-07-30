@@ -1,8 +1,10 @@
 require('dotenv').config()
 const express = require('express')
+const multer = require('multer');
 const authRoutes = require('./routes/auth.js')
 const postRoutes = require('./routes/posts.js')
 const userRoutes = require('./routes/users.js')
+const uploadRoutes = require('./routes/uploadFile.js')
 // const paymentRoutes = require('./routes/flutterwaves.js')
 const { runJob } = require('./controllers/user.js')
 const cors = require('cors')
@@ -15,6 +17,19 @@ const passport = require("passport")
 const bodyParser = require('body-parser')
 
 // const GoogleStrategy = require("passport-google-oauth20").Strategy
+
+
+// Multer configuration
+const storage = multer.diskStorage({
+  destination: (req, file, cb) => {
+    cb(null, 'uploads/');
+  },
+  filename: (req, file, cb) => {
+    cb(null, Date.now() + '-' + file.originalname);
+  },
+});
+
+const upload = multer({ storage });
 
 
 function generateReferralCode(length) {
@@ -31,8 +46,14 @@ function generateReferralCode(length) {
 const referralCode = generateReferralCode(8);
 const port = process.env.PORT || 5000
 app.use(express.json())
+app.use('/uploads', express.static('uploads'));
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(bodyParser.json())
+app.use((req, res, next) => {
+  req.upload = upload;
+  req.db = db;
+  next();
+});
 
 
 var allowedOrigins = [
@@ -73,6 +94,7 @@ app.use((req,res,next)=>{
 app.use("/api/auth",authRoutes)
 app.use("/api/user",userRoutes)
 app.use("/api/post",postRoutes)
+app.use("/api/files", uploadRoutes)
 
 
 // app.post('/auth/google',(req,res)=>{

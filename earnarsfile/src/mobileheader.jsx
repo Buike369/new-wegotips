@@ -16,8 +16,8 @@ const MobileHeader = () => {
     const [open,setOpen]=useState("")
      const [open1,setOpen1]=useState(true)
  const [register,setRegister] = useState(false)
-    const [showMe,setShowMe] = useState(false)
-        const [showMe4,setShowMe4] = useState(false)
+    const [showMe,setShowMe] = useState(true)
+        const [showMe4,setShowMe4] = useState(true)
     const [showMe1,setShowMe1] = useState(false)
 
      const tr = window.location.pathname;

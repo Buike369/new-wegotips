@@ -54,6 +54,10 @@ const UserDashboard = () => {
        accountName:"",
         accountNo:""
     })
+
+     const [file, setFile] = useState(null);
+     const [files, setFiles] = useState([]);
+    const [uploadedFilePath, setUploadedFilePath] = useState('');
     
     const [iconShow,setIconShow]=useState('circleDisplay')
       const [network,setNetwork]=useState('airtel')
@@ -283,6 +287,19 @@ const airtimePurchase2=(e)=>{
  
 }
 
+  const formUpload = async (e) => {
+        e.preventDefault();
+        const formData = new FormData();
+        formData.append('file', file);
+          
+       await axios.post("http://localhost:5000/api/files/upload",formData).then((response)=>{
+ console.log(response)
+        }).catch((err)=>{
+          console.log(err)
+        })
+     
+    };
+
   const handleWithdrawal =(e) =>{
                     e.preventDefault()
                   
@@ -423,6 +440,21 @@ const airtimePurchase2=(e)=>{
            }
 
   },[depositCash])
+
+
+    useEffect(() => {
+        const fetchFiles = async () => {
+             await axios.get('http://localhost:5000/api/files/file').then((response)=>{
+setFiles(response.data.filePath)
+console.log(response.data)
+             }).catch((err)=>{
+ console.log(err)
+             })
+          
+        };
+
+        fetchFiles();
+    }, []);
 
    useEffect(()=>{
     const pala = ()=>{
@@ -1491,10 +1523,11 @@ const airtimePurchase2=(e)=>{
                     <div className='bAcount SetAE1'>
                         
                        <div className="WonDiv Ch45">
-                        <div><img src="/img/upload3.png" alt="" className="ch21"/></div>
+                        <div><img src={files ? files: "/img/upload3.png" } alt="" className="ch21"/></div>
                           <div>
                             <div className="uploadText uploadText1">Upload profile photo via:</div>
-                           <div><input type ="file" /></div>
+                           <div><input type ="file"  onChange={(e)=>setFile(e.target.files[0])}/></div>
+                           <div onClick={formUpload}>upload</div>
                            <div  style={{marginTop:"10px",color:"#acadd3"}}>Choose a photo from your personal computer. 3MB max.</div>
                           </div>
                        </div>

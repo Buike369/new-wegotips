@@ -122,8 +122,8 @@ const Register =()=>{
             <div className="Form_Div page">
                 <form>
       {/* {message && <div style={{color:"#fff",position:"absolute",zIndex:"500",left:"50%",right:"50%",top:"-5%",padding:"5px 10px",backgroundColor:"#20263a",width:"100%",transform:"translate(-50%,-50%)",textAlign:"center",borderRadius:"5px"}}>{message}</div>} */}
-
-                     <p className="New_Account textAdmin">Create an Account</p>
+                     <p className="New_Account textAdmin">Welcome to wegotips</p>
+                     <p style={{textAlign:"center",marginBottom:'10px'}}>Create an account with us</p>
                      
                     <div> <input type="text" placeholder="Full Name"  className="Full_Name inpupage page10 page11" onChange={handleChange} name="username"/></div>
                     <div> <input type="email" placeholder="Email" className="Full_Name inpupage page10 page11" onChange={handleChange} name="email"/></div>
@@ -148,7 +148,7 @@ const Register =()=>{
                          <div className="Or_With"></div>
                      </div>
                      {/* <GoogleLogin clientId ="451426581815-ms0de6c6i4mk58d9k5d3e44q9ipqufq7.apps.googleusercontent.com" buttonText="Login with google" onSuccess={responseGoogle} onFailure={responseGoogle} cookiePolicy = {`single_host_origin`}/> */}
-                     <div className="Googgle page10 page12"><FontAwesomeIcon icon={faGooglePlusG} className="gooleI" style={{width:"20%"}}/><div>Google</div><div  style={{width:"20%"}}><FontAwesomeIcon  className="goole" /></div></div>
+                     <div className="Googgle page10 page12"><FontAwesomeIcon icon={faGooglePlusG} className="gooleI" style={{width:"20%"}}/><div> Sign in with Google</div><div  style={{width:"20%"}}><FontAwesomeIcon  className="goole" /></div></div>
                      <p className="Already_Account adColor">Already have an account?</p>
                      <div className="LOGIN_HERE_NOW"><Link to="/login" className="p_LoGIn trems1">Login Here</Link></div>
 

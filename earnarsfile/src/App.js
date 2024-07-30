@@ -89,7 +89,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/allTips" element={<AllTips />} />
           <Route path="/premium" element={<Premium />} />
-          <Route path="/" element={<SampleHome />} />
+          {/* <Route path="/" element={<SampleHome />} /> */}
           <Route path="*" element={<Navigate to="/" />} />
           {admin === true ? <Route path="/dashboard" element={< DashboardHome />} /> : <Route path="/" element={<SampleHome />} />}
           <Route path="/contact" element={< Contact />} />

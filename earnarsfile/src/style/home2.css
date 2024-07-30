@@ -29,10 +29,11 @@
     gap: 10px;
     /* margin-top: 10px; */
 }
-.bkFR{
-    width:100%;
+
+.bkFR {
+    width: 100%;
     max-width: 1100px;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 .commT {
@@ -150,7 +151,7 @@
 .followerp {
     color: #beb6c9;
     font-weight: 200;
-        font-size: 12px;
+    font-size: 12px;
 }
 
 .followerp1 {
@@ -242,11 +243,12 @@
     border-radius: 40px;
     background-color: #0d0740;
     color: #b1afeb;
-font-size: 16px;
+    font-size: 16px;
     font-weight: 500;
-   
+
 }
-.profileLink{
+
+.profileLink {
     text-decoration: none;
 }
 
@@ -302,9 +304,11 @@ font-size: 16px;
     border-top-left-radius: 4px;
     color: #c1c3cb;
 }
-.topPL{
-    padding:0 0 0 10px !important
+
+.topPL {
+    padding: 0 0 0 10px !important
 }
+
 .Saving {
     padding: 10px;
     font-size: 28px;
@@ -425,7 +429,7 @@ font-size: 16px;
 }
 
 .popopo {
-    width:80px;
+    width: 80px;
     height: 80px;
     border-radius: 50%;
     background: inherit;
@@ -485,11 +489,11 @@ font-size: 16px;
     background: #fff;
     border-radius: 26px;
     background-image: linear-gradient(to bottom right, #302876, #100b3c);
-        box-shadow: rgb(10 11 54 / 31%) 0px 15px 25px,
-            rgb(13 7 68) 0px 5px 10px;
+    box-shadow: rgb(10 11 54 / 31%) 0px 15px 25px,
+        rgb(13 7 68) 0px 5px 10px;
     /* backdrop-filter: blur(5px); */
     /* -webkit-backdrop-filter: blur(5px); */
-    color:gold;
+    color: gold;
     cursor: pointer;
 
 }
@@ -692,14 +696,15 @@ font-size: 16px;
     margin: -14px auto 0px auto;
 
 }
-.ahh{
-    width:700px;
-    height:700px;
+
+.ahh {
+    width: 700px;
+    height: 700px;
     background-color: #171054;
     border-bottom-left-radius: 900px;
     position: absolute;
-    top:0;
-    right:-30px
+    top: 0;
+    right: -30px
 }
 
 .ifYou {
@@ -722,10 +727,10 @@ font-size: 16px;
 
 .youpin {
     width: 100%;
-    max-width:1130px;
+    max-width: 1130px;
     margin: 0 auto;
     padding: 20px 20px;
-      
+
 }
 
 .lio {
@@ -774,8 +779,8 @@ font-size: 16px;
     border-radius: 50%;
 
     background-color: #2e28a1;
-        z-index: 1;
-        filter: blur(100px);
+    z-index: 1;
+    filter: blur(100px);
     position: absolute;
 
 }
@@ -799,7 +804,7 @@ font-size: 16px;
     padding: 1px 10px;
     justify-content: center;
     gap: 30px;
-    position:relative;
+    position: relative;
     z-index: 5px;
 }
 
@@ -811,9 +816,16 @@ font-size: 16px;
     z-index: 4;
     line-height: 25px;
     margin-bottom: 10px;
-        width: 100%;
-            text-align: center;
-            max-width: 500px;
+    width: 100%;
+    text-align: center;
+    max-width: 500px;
+}
+
+.ggmj {
+    font-size: 14px;
+    font-family: Mulish;
+    color: #ababc4 !important;
+    font-weight: 500;
 }
 
 .OnRef {
@@ -919,28 +931,32 @@ font-size: 16px;
     height: 3px;
     background-color: #3a396ec2;
 }
-.liom{
+
+.liom {
     font-size: 54px;
 }
-.wanNy{
+
+.wanNy {
     width: 32%;
-        /* background-color: #0d0740; */
-        padding: 30px 20px 30px 20px;
-        border-radius: 15px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        /* box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px; */
-        flex-direction: column;
-        /* border: 1px solid #574ea5;*/
+    /* background-color: #0d0740; */
+    padding: 30px 20px 30px 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px; */
+    flex-direction: column;
+    /* border: 1px solid #574ea5;*/
 }
-.wanNy{
+
+.wanNy {
     background-color: inherit !important;
-    box-shadow:none !important;
+    box-shadow: none !important;
     border: none !important;
 }
-.likl{
-        padding: 28px 15px 20px 15px  !important;
+
+.likl {
+    padding: 28px 15px 20px 15px !important;
 }
 
 
@@ -1021,8 +1037,8 @@ font-size: 16px;
     margin-bottom: 10px;
 }
 
-.withTyb{
-    width:100%
+.withTyb {
+    width: 100%
 }
 
 
@@ -1030,7 +1046,7 @@ font-size: 16px;
     background-color: #2e295ce8;
     color: #fff;
     border-bottom: 1px solid #514f95;
-   
+
 }
 
 .Usdj {
@@ -1076,10 +1092,11 @@ font-size: 16px;
     border-radius: 3px;
     box-shadow: 1px 2px 121px #a6adc9;
 }
-.adaba{
+
+.adaba {
     padding: 6px;
     background-color: #0d0740;
-    border:1px solid #2c265e;
+    border: 1px solid #2c265e;
     border-radius: 5px;
 }
 
@@ -1088,9 +1105,10 @@ font-size: 16px;
 
     margin: 0 auto 60px auto;
 }
-.emWike{
-    position:absolute;
-left:0px;
+
+.emWike {
+    position: absolute;
+    left: 0px;
     top: 16px;
     width: 222px;
     z-index: 2;
@@ -1105,8 +1123,28 @@ left:0px;
 
     border-radius: 10px;
     position: relative;
-  
+
 }
+
+.hmr {
+    color: #fff
+}
+
+.paddingTip {
+    padding-bottom: 18px;
+}
+
+.great1 {
+    margin-top: 20px !important;
+    padding-top: 60px;
+    padding-bottom: 10px;
+    background-color: #0d0740;
+    height: auto;
+    box-shadow: none;
+    border-radius: 10px;
+    position: relative;
+}
+
 .Qac {
     width: 100%;
     max-width: 80%;
@@ -1114,70 +1152,79 @@ left:0px;
     border-bottom: 1px solid #2a2864;
     margin-top: 8px;
 }
-.tipImage{
-    width:40px;
-    height:40px;
+
+.tipImage {
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    border:2px solid #7271b3;
-    padding:2px
+    border: 2px solid #7271b3;
+    padding: 2px
 }
-.market{
+
+.market {
     margin-bottom: 20px;
 }
-  .houseRuMM:hover {
-      background-color: #171054;
-      color: #fff
-  }
-  .kingYOU{
-    overflow-y:scroll;
-    width:100%;
+
+.houseRuMM:hover {
+    background-color: #171054;
+    color: #fff
+}
+
+.kingYOU {
+    overflow-y: scroll;
+    width: 100%;
     height: 100%;
-  }
-  .visitMe3{
-  padding:6px 18px;
-  border:0;
-  outline:0;
-  border-radius:10px;
+}
+
+.visitMe3 {
+    padding: 6px 18px;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
     background-color: #171053;
-        color: #fff;
-        border: 1px solid #534f91;
-        cursor:pointer;
+    color: #fff;
+    border: 1px solid #534f91;
+    cursor: pointer;
 
 
-  }
-  .visitMe{
-    display:flex;
+}
+
+.visitMe {
+    display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 5px;
-  }
+}
 
 
-.tipPurc{
-    border:0;
+.tipPurc {
+    border: 0;
     outline: 0;
-        padding: 5px 15px;
-        border: 1px solid #302b6e;
-        width: 60px;
-        color: #fff;
-        background-color: #120b4a;
-        border-radius: 7px;
+    padding: 5px 15px;
+    border: 1px solid #302b6e;
+    width: 60px;
+    color: #fff;
+    background-color: #120b4a;
+    border-radius: 7px;
 
 }
-.cvcvcnc{
+
+.cvcvcnc {
     width: 162px !important;
-    height:162px !important
+    height: 162px !important
 }
-.GetP{
-   color:#d7d7e9;
-   width:100%;
-   padding:2px 10px;
-   max-width:600px ; 
-   font-size: 16px;
-   font-weight: 400;
- text-align: center;
-   margin:0 auto 20px auto;
+
+.GetP {
+    color: #d7d7e9;
+    width: 100%;
+    padding: 2px 10px;
+    max-width: 600px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 auto 20px auto;
 }
+
 .fit {
 
     padding: 5px 5px 5px 10px;
@@ -1195,27 +1242,37 @@ left:0px;
     padding-bottom: 60px;
     padding-top: 40px;
 }
-.bk{
+
+.bk {
     animation: jh 4s infinite;
     transition: all 10s;
     max-width: 100px;
 }
 
-@keyframes jh{
-    0% {
-            fill: gold;
-            transform: rotate(0deg);
-        }
-    
-        50% {
-            fill: #fff;
-            transform: rotate(2deg);
-        }
-                 100% {
-                     fill: gold;
-                     transform: rotate(0deg);
-                 }
+.getstart {
+    padding: 8px 10px;
+    border: 1px solid #3c2f8b;
+    border-radius: 5px;
+    color: #fff;
 }
+
+@keyframes jh {
+    0% {
+        fill: gold;
+        transform: rotate(0deg);
+    }
+
+    50% {
+        fill: #fff;
+        transform: rotate(2deg);
+    }
+
+    100% {
+        fill: gold;
+        transform: rotate(0deg);
+    }
+}
+
 @media(min-width:768px) and (max-width:868px) {
     .vap {
         display: none
@@ -1233,69 +1290,91 @@ left:0px;
 
 @media(min-width:769px)and (max-width:1024px) {
     .Aka {
-        font-size: 60px;
+        font-size: 32px;
     }
-
+.weAre4 , .withUpto {
+    font-size: 32px !important;
+}
+.ahh{
+    width:650px;
+    height:650px;
+}
     .affiliateImage {
         padding: 2px 10px 20px 10px;
         max-width: 1000px;
     }
 
 }
+
 @media(min-width:769px) {
-    .nub{
-        left:-50px
+    .nub {
+        left: -50px
     }
-        .nub1 {
-            right: -50px
-        }
-        .cardProfileDiv{
-            margin-left: 5px;
-        }
+
+    .nub1 {
+        right: -50px
+    }
+
+    .cardProfileDiv {
+        margin-left: 5px;
+    }
 }
 
 @media(max-width:768px) {
     .fugmu {
         padding: 1px 0 1px 0;
     }
-    .ahh{
-        width:400px;
-        height:400px;
+
+    .ahh {
+        width: 400px;
+        height: 400px;
         border-bottom-left-radius: 400px;
     }
-       
 
-        .topPrediction{
-            font-size: 24px;
-        }
-    .emWike{
-        display:none;
+    .paddingTip {
+        padding-bottom: 40px;
     }
-    .sportPetNe{
+
+
+    .topPrediction {
+        font-size: 24px;
+    }
+
+    .emWike {
+        display: none;
+    }
+
+    .sportPetNe {
         font-size: 17px;
     }
-        .nub {
-            left: -100px
-        }
-                .lovePa {
-                 position: relative;
-                 z-index: 2;
-                }
-                 .nub1 {
-                     right: -100px
-                 }
-        .partnerShip{
-            min-height: 140px;
-        }
-        .amakaDiv {
-            font-size: 16px;
-            font-weight: 700;
-    
-        }
-        .popopo{
-            width:70px;
-            height:70px;
-        }
+
+    .nub {
+        left: -100px
+    }
+
+    .lovePa {
+        position: relative;
+        z-index: 2;
+    }
+
+    .nub1 {
+        right: -100px
+    }
+
+    .partnerShip {
+        min-height: 140px;
+    }
+
+    .amakaDiv {
+        font-size: 16px;
+        font-weight: 700;
+
+    }
+
+    .popopo {
+        width: 70px;
+        height: 70px;
+    }
 
     .IconSpace {
         margin-left: 4px;
@@ -1372,14 +1451,17 @@ left:0px;
         max-width: 100%;
 
     }
-.wanNy{
-    padding:10px 20px 15px 20px !important;
-    margin-bottom: 2px !important;
 
-}
-.amGet{
-    min-height: auto !important;
-}
+    .wanNy {
+        padding: 10px 20px 15px 20px !important;
+        margin-bottom: 2px !important;
+
+    }
+
+    .amGet {
+        min-height: auto !important;
+    }
+
     .commT {
         width: 100%;
         max-width: 425px;
@@ -1394,9 +1476,11 @@ left:0px;
         max-width: 596px;
         margin: 0 auto;
     }
-.country{
-    font-size: 16px;
-}
+
+    .country {
+        font-size: 16px;
+    }
+
     .Forex1 {
         width: 720px;
         max-width: 720px;
@@ -1417,7 +1501,7 @@ left:0px;
         width: 100%;
         max-width: 92%;
     }
-      
+
 
     .Forex12 {
         width: 170px;
@@ -1499,7 +1583,7 @@ left:0px;
         font-size: 21px;
     }
 
-   
+
 
     .UsAbout {
 
@@ -1510,7 +1594,7 @@ left:0px;
 
     .Great {
         height: auto;
-        background: linear-gradient(206deg, #171054 20%, rgb(13 7 62) 62%, rgb(13 7 62) 76%);
+        /* background: linear-gradient(206deg, #171054 20%, rgb(13 7 62) 62%, rgb(13 7 62) 76%); */
 
         border: 1px solid #7567c9;
 
@@ -1519,6 +1603,16 @@ left:0px;
         /* max-width: 530px; */
         margin: 0 auto;
 
+    }
+
+    .great1 {
+        border: none;
+        background: linear-gradient(180deg, #171054 20%, rgb(13 7 62) 76%, rgb(13 7 62) 76%);
+        border-bottom: 1px solid #292566;
+    }
+
+    .hmr {
+        color: #fff;
     }
 
     .yuri {
@@ -1573,13 +1667,16 @@ left:0px;
 }
 
 @media(min-width:1250px) {
-    .Rtme ,.youpin{
+
+    .Rtme,
+    .youpin {
         max-width: 1200px;
 
     }
-        .header{
+
+    .header {
         max-width: 1170px;
-        }
+    }
 
 
 }
@@ -1598,7 +1695,8 @@ left:0px;
 
         padding: 10px 0px 40px 0px
     }
-    .Great{
+
+    .Great {
         margin-top: 56px;
     }
 }
