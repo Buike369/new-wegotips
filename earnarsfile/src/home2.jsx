@@ -17,7 +17,7 @@ import {faArrowRight,faArrowLeft} from "@fortawesome/free-solid-svg-icons"
 
 const Home2=() =>{
 
-  const wegoUrl = process.env.REACT_APP_API_URL || 'https://wegotips.com/api';
+  const wegoUrl = import.meta.env.REACT_APP_API_URL || 'https://wegotips.com/api';
 
 console.log(process.env.WEGOTIPS_API_URL)
   const [show,setShow]= useState(false)

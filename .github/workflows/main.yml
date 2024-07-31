@@ -30,6 +30,14 @@ jobs:
           cd earnarsbackend
           rm -rf node_modules/
           npm ci install
+          
+      - name: Build and deploy
+        env:
+          DB_HOST: ${{ secrets.DB_HOST }}
+          DB_USER: ${{ secrets.DB_USER }}
+          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+          DB_NAME: ${{ secrets.DB_NAME }}
+        run: npm run deploy
 
       - name: Restart services
         run: |
