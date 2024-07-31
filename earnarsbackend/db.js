@@ -14,22 +14,23 @@ const mysql = require('mysql')
 
 
 // database: "betproject"
-// db.getConnection((err,connection)=>{
-//    if(err){
-//       console.log(err)
-//    }else{
-//       const pat = "ALTER TABLE users MODIFY COLUMN account_number VARCHAR(255)"
-//       db.query(pat, (err, result) => {
-//          if (err) {
-//             console.log(err)
-//          }else{
+db.getConnection((err,connection)=>{
+   if(err){
+      console.log(err)
+   }else{
+    //   const pat = "ALTER TABLE users MODIFY COLUMN account_number VARCHAR(255)"
+    //   db.query(pat, (err, result) => {
+    //      if (err) {
+    //         console.log(err)
+    //      }else{
 
-//             return console.log("table created")
-//          }
-//       })
-//       connection.release();
-//    }
-// })
+    //         return console.log("table created")
+    //      }
+    //   })
+    //   connection.release();
+    console.log("successful connection")
+   }
+})
 
 module.exports = {db}
 

@@ -11,7 +11,7 @@ import SuccessN from "./success1"
 import "./style/admin.css"
 
 const Register =()=>{
-  const wegoUrl = process.env.REACT_APP_API_URL || 'https://wegotips.com/api';
+  const wegoUrl = process.env.WEGOTIPS_API_URL || 'https://wegotips.com/api';
 
   // const responseGoogle = async (response)=>{
   //   try{

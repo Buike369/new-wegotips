@@ -5,7 +5,7 @@ export const AuthContext = createContext()
 
 
 export const AuthContextProvider = ({children})=>{
-  const wegoUrl = process.env.REACT_APP_API_URL || 'https://wegotips.com/api';
+  const wegoUrl = process.env.WEGOTIPS_API_URL || 'https://wegotips.com/api';
     // const [currentUser,setCurrentUser] = useState(JSON.parse(localStorage.getItem("user")) || null)
     const [currentUser,setCurrentUser] = useState(JSON.parse(localStorage.getItem("user")) || null)
     const [forgotEmail,setForgotEmail] = useState((localStorage.getItem("email")) || null)

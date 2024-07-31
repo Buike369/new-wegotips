@@ -19,7 +19,7 @@ const Home2=() =>{
 
   const wegoUrl = process.env.REACT_APP_API_URL || 'https://wegotips.com/api';
 
-
+console.log(process.env.WEGOTIPS_API_URL)
   const [show,setShow]= useState(false)
   const [show1,setShow1]= useState(false)
   const [show2,setShow2]= useState(false)
@@ -325,7 +325,7 @@ useEffect(()=>{
   }
 
    fetchData2()
- },[])
+ },[post])
 
 // useEffect(()=>{
 //   const fetchData1 = async ()=>{
@@ -1943,7 +1943,7 @@ Get accurate winning tips from professional betting tipsters across sports, fore
                    <div>
                        <p className="millionM"  style={{color: "#7b7ee2" }} >Make $1,000 on referral commission monthly </p>
                        {/* <p className="OnRef">On Referral Commission</p> */}
-                        <div className="visitMe"><a href="/affliate"><button className="visitMe3">See More</button></a></div>
+                        <div className="visitMe"><a href="/affiliate"><button className="visitMe3">join Affiliate</button></a></div>
                    </div>
                </div>
                <div>
