@@ -16,7 +16,7 @@ const mysql = require('mysql')
 // database: "betproject"
 db.getConnection((err,connection)=>{
    if(err){
-      console.log(err)
+      console.log("connetion failed")
    }else{
     //   const pat = "ALTER TABLE users MODIFY COLUMN account_number VARCHAR(255)"
     //   db.query(pat, (err, result) => {
