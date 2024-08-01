@@ -7,7 +7,7 @@ const mysql = require('mysql')
     user: `${process.env.DB_USER}` ,
     password: `${process.env.DB_PASSWORD}` ,
      database: `${process.env.DB_NAME}`
-    // database: "betproject"
+   
   
   
    
@@ -17,7 +17,7 @@ const mysql = require('mysql')
 // database: "betproject"
 db.getConnection((err,connection)=>{
    if(err){
-      console.log("connetion failed")
+      console.log(err)
    }else{
     //   const pat = "ALTER TABLE users MODIFY COLUMN account_number VARCHAR(255)"
     //   db.query(pat, (err, result) => {
@@ -30,6 +30,7 @@ db.getConnection((err,connection)=>{
     //   })
     //   connection.release();
     console.log("successful connection")
+    con
    }
 })
 
