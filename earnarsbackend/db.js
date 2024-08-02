@@ -3,10 +3,10 @@ const mysql = require('mysql')
 
  const db = mysql.createPool({
     connectionLimit:90,
-    host: `${process.env.DB_HOST}`,
-    user: `${process.env.DB_USER}` ,
-    password: `${process.env.DB_PASSWORD}` ,
-     database: `${process.env.DB_NAME}`
+    host: 'localhost',
+    user: 'king' ,
+    password: 'King@369' ,
+     database: 'wego_bet'
    
   
   
@@ -17,7 +17,7 @@ const mysql = require('mysql')
 // database: "betproject"
 db.getConnection((err,connection)=>{
    if(err){
-      console.log(err)
+      console.error('Error connection',err)
    }else{
     //   const pat = "ALTER TABLE users MODIFY COLUMN account_number VARCHAR(255)"
     //   db.query(pat, (err, result) => {
