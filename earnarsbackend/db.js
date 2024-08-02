@@ -4,8 +4,8 @@ const mysql = require('mysql')
  const db = mysql.createPool({
     connectionLimit:10,
     host: '127.0.0.1',
-    user: 'king' ,
-    password: 'King@369' ,
+    user: 'root' ,
+    password: 'KingS@369' ,
      database: 'wego_bet',
     port: 3306
    
