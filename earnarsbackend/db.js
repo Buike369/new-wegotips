@@ -2,11 +2,12 @@ require('dotenv').config();
 const mysql = require('mysql')
 
  const db = mysql.createPool({
-    connectionLimit:90,
-    host: 'localhost',
+    connectionLimit:10,
+    host: '127.0.0.1',
     user: 'king' ,
     password: 'King@369' ,
-     database: 'wego_bet'
+     database: 'wego_bet',
+    port: 3306
    
   
   
