@@ -3,11 +3,11 @@ const mysql = require('mysql2')
 
  const db = mysql.createPool({
     connectionLimit:10,
-    host: '127.0.0.1',
-    user: 'root' ,
-    password: 'KingS@369' ,
-     database: 'wego_bet',
-    port: 3306
+    host:'127.0.0.1',
+    user:'root' ,
+    password:'KingS@369' ,
+     database:'wego_bet',
+    port:3306
    
   
   
