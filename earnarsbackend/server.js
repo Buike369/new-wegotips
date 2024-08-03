@@ -97,11 +97,7 @@ app.use("/api/post",postRoutes)
 app.use("/api/files", uploadRoutes)
 
 
-// app.post('/auth/google',(req,res)=>{
-//   const idToken = req.body.tokenId;
-//   console.log(idToken)
-// }
-// )
+
 
 
 app.listen(port,()=>{
