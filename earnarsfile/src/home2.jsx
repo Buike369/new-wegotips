@@ -313,7 +313,7 @@ useEffect(()=>{
 useEffect(()=>{
   const fetchData2 = async ()=>{
  
- await axios.get(`${wegoUrl}/post/forex/tip3`).then((response)=>{
+ await axios.get(`https://wegotips.com/api/post/forex/tip3`).then((response)=>{
   setPosts(response.data)
   console.log(response.data)
   setLoading(false)
