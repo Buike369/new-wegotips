@@ -44,7 +44,7 @@ function generateReferralCode(length) {
 }
 
 const referralCode = generateReferralCode(8);
-const port = process.env.PORT || 5000
+const port = process.env.PORT || 5001
 app.use(express.json())
 app.use('/uploads', express.static('uploads'));
 app.use(bodyParser.urlencoded({extended:true}))
