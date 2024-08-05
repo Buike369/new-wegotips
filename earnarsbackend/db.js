@@ -28,7 +28,7 @@ db.getConnection((err,connection)=>{
     //   })
     //   connection.release();
     console.log("successful connection")
-    con
+    
    }
 })
 
