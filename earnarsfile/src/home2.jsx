@@ -17,9 +17,9 @@ import {faArrowRight,faArrowLeft} from "@fortawesome/free-solid-svg-icons"
 
 const Home2=() =>{
 
-  const wegoUrl = process.env.REACT_APP_API_URL || 'https://wegotips.com/api';
+  const wegoUrl = 'https://wegotips.com/api';
 
-console.log(process.env.WEGOTIPS_API_URL)
+
   const [show,setShow]= useState(false)
   const [show1,setShow1]= useState(false)
   const [show2,setShow2]= useState(false)
@@ -313,7 +313,7 @@ useEffect(()=>{
 useEffect(()=>{
   const fetchData2 = async ()=>{
  
- await axios.get(`https://wegotips.com/api/post/forex/tip3`).then((response)=>{
+ await axios.get(`${wegoUrl}/post/forex/tip3`).then((response)=>{
   setPosts(response.data)
   console.log(response.data)
   setLoading(false)
