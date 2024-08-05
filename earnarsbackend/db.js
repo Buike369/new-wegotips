@@ -8,8 +8,6 @@ const mysql = require('mysql2')
     password: process.env.DB_PASSWORD,
     database: process.env.DB_NAME  
 })
-
-
 // database: "betproject"
 db.getConnection((err,connection)=>{
    if(err){
