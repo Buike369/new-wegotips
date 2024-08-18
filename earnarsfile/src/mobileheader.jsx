@@ -127,7 +127,7 @@ const MobileHeader = () => {
             </li>
           <li className="bgstyle"><a href="/premium" onClick={mark} className="derpm"> <span className="mackP">*</span> * Premium Prediction</a></li>
           <li className="bgstyle"><a href="/affliate" className="derpm" onClick={mark}> <span className="mackP">*</span> * Affiliate Program</a></li>
-          <li className="dpM bgstyle"><a href="/exchange" className="derpm" onClick={mark}><span className="mackP">*</span> * Buy/Sell ENAR</a></li>
+          {/* <li className="dpM bgstyle"><a href="/exchange" className="derpm" onClick={mark}><span className="mackP">*</span> * Buy/Sell ENAR</a></li> */}
           <li>
             {currentUser ? <div>
             {/* <div className="derr" onClick={()=>setShowMe1(!showMe1)}><span className="derpm appjo">{currentUser?.username}</span> <span>{showMe1?<FontAwesomeIcon icon={faAngleUp} className="PlusIcon plusIcon2" />:<FontAwesomeIcon icon={faAngleDown} className="PlusIcon plusIcon2" />}</span></div> */}

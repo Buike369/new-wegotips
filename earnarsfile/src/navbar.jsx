@@ -173,9 +173,9 @@ const handleScroll = () => {
             </div>
               ) : (
 
-                <Link to="/register">
+                <a href="/register">
                 <button className="Login">Login/Register</button>
-              </Link>
+              </a>
                
               )}
             </div>

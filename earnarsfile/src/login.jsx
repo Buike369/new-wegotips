@@ -1,6 +1,7 @@
 import React,{useState,useContext} from "react";
 import "./style/register.css";
 import "./style/login.css";
+import withTitle from './title';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEye,faEyeSlash} from '@fortawesome/free-solid-svg-icons'
 import { Link,useNavigate} from "react-router-dom";
@@ -105,4 +106,4 @@ const Login =()=>{
     )
 }
 
-export default Login;
+export default withTitle(Login, 'Login to  Wegotips');

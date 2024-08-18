@@ -6,6 +6,7 @@ import "./style/home.css";
 import "./style/home2.css"
 import AOS from 'aos';
 import "./style/sportsP.css"
+import withTitle from './title';
 import { Link} from "react-router-dom";
 import Footer from "./footer"
 import "./style/slide.css"
@@ -448,4 +449,4 @@ We do not manage users funds or bet for any user, we only forecast/predicts game
   )
 }
 
-export default SportsPage
+export default withTitle(SportsPage, 'Sports Market At  Wegotips');

@@ -1,5 +1,6 @@
 import React,{useState} from "react"
 import Footer from "./footer"
+import withTitle from './title';
 import "./style/about.css"
 import { Link} from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -55,4 +56,4 @@ const About=()=>{
     )
 }
 
-export default About;
+export default withTitle(About, 'About Us - Wegotips');

@@ -2,10 +2,12 @@ import React,{useState} from "react";
 import "./style/register.css"
 import { Link,useNavigate} from "react-router-dom";
 import axios from "axios"
+import withTitle from './title';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEye,faEyeSlash} from '@fortawesome/free-solid-svg-icons'
 import { faGooglePlusG}from '@fortawesome/free-brands-svg-icons'
 import validator from 'validator';
+import { passwordStrength } from 'check-password-strength'
 
 import SuccessN from "./success1"
 import "./style/admin.css"
@@ -38,7 +40,7 @@ const Register =()=>{
     const navigate = useNavigate()
     const[over18,setOver18]=useState(false);
     const [term,setTerm]=useState(false)
-    const [err,setError]= useState(null)
+    const [error,setError]= useState(null)
 
     const handleChange = e =>{
         setInputs(prev=>({...prev,[e.target.name]:e.target.value}))
@@ -57,8 +59,8 @@ const Register =()=>{
 
        const handleSumit = async(e)=>{
           e.preventDefault()
-     if(inputs.password.length <= 8){
-      setError("password strength is poor ")
+     if(passwordStrength(inputs.password).value === "Too weak"){
+      setError("password strength is too weak ")
             setTimeout(()=>{
             setError("")
            },3000)
@@ -67,8 +69,13 @@ const Register =()=>{
           setTimeout(()=>{
             setError("")
            },3000)
-     }else if(inputs.password.length  > 20){
-       setError("password length is too long ")
+     }else if(passwordStrength(inputs.password).value === "Weak"){
+       setError("password strength is weak ")
+            setTimeout(()=>{
+            setError("")
+           },3000)
+     }else if(passwordStrength(inputs.password).value === "Medium"){
+       setError("password strength is medium and should be greater than 10")
             setTimeout(()=>{
             setError("")
            },3000)
@@ -132,7 +139,7 @@ const Register =()=>{
                     <div className="sers"> <input type={inputs50.showPassword ? "text":"password"} placeholder="Password" className="Full_Name inpupage page10 page11" onChange ={handleChange} name="password" value={inputs.password}
                   />
                   {inputs50.showPassword ?<FontAwesomeIcon icon={faEye} className="PlusIcon plusIcon2 ser1" onClick={handleClickShowPassword}/>:<FontAwesomeIcon icon={faEyeSlash} className="PlusIcon plusIcon2 ser1" onClick={handleClickShowPassword}/> }</div>
-                  {err && <p className="errpage">{err}</p>}
+                  {error && <p className="errpage">{error}</p>}
                   {message1 && <p className="errpage" style={{color:"#fff"}}>{message1}</p>}
                   
 
@@ -150,7 +157,7 @@ const Register =()=>{
                      {/* <GoogleLogin clientId ="451426581815-ms0de6c6i4mk58d9k5d3e44q9ipqufq7.apps.googleusercontent.com" buttonText="Login with google" onSuccess={responseGoogle} onFailure={responseGoogle} cookiePolicy = {`single_host_origin`}/> */}
                      <div className="Googgle page10 page12"><FontAwesomeIcon icon={faGooglePlusG} className="gooleI" style={{width:"20%"}}/><div> Sign in with Google</div><div  style={{width:"20%"}}><FontAwesomeIcon  className="goole" /></div></div>
                      <p className="Already_Account adColor">Already have an account?</p>
-                     <div className="LOGIN_HERE_NOW"><Link to="/login" className="p_LoGIn trems1">Login Here</Link></div>
+                     <div className="LOGIN_HERE_NOW"><a href="/login" className="p_LoGIn trems1">Login Here</a></div>
 
                 </form>
             </div>
@@ -163,4 +170,4 @@ const Register =()=>{
     )
 }
 
-export default Register;
+export default withTitle(Register, 'Register with - Wegotips');

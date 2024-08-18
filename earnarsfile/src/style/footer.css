@@ -3,7 +3,7 @@
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 10px;
-    position:relative;
+    position: relative;
     z-index: 5;
 }
 
@@ -16,15 +16,16 @@
     color: #c7c3c3;
     position: relative;
     z-index: 2;
-   
+
 }
-.FootBike{
-    position:absolute;
-    top:0;
+
+.FootBike {
+    position: absolute;
+    top: 0;
     left: 0;
-    width:100%;
+    width: 100%;
     bottom: 0;
-    background-color:#060228fc ;
+    background-color: #060228fc;
 }
 
 .Footer_Div_item {
@@ -43,7 +44,7 @@
 .Footer_header_title {
     margin-bottom: 24px;
     margin-top: 25px;
-    color: #6b65bd;
+    color: #ffffff;
 }
 
 .Footer_list_space {
@@ -61,7 +62,7 @@
 }
 
 .Footer_list_space a {
-    color: #7b7b8f;
+    color: #c7c7d5;
     text-decoration: none;
 }
 
@@ -69,13 +70,15 @@
     color: #fff;
 }
 
-.FooterColor{
-    color:#7b7b8f
+.FooterColor {
+    color: #7b7b8f
 }
-.footerHomeLink{
+
+.footerHomeLink {
     color: #7b7b8f;
     text-decoration: none;
 }
+
 .footerHomeLink:hover {
     color: #fff;
 }
@@ -85,11 +88,11 @@
 }
 
 .twww {
-    color: #54536d;
+    color: #8a899f;
 }
 
 .twww:hover {
-    color: rgba(218, 214, 214, 0.838)
+    color: #fff;
 }
 
 .footer_brand_icon {
@@ -103,22 +106,26 @@
     font-size: 22px;
     margin-right: 8px;
 }
-.DesktopFooter li a{
-   font-size: 14px;
-   font-weight: 100;
+
+.DesktopFooter li a {
+    font-size: 14px;
+    font-weight: 100;
 }
+
 .visitUs {
     /* color: #7b7b8f; */
-    color:#6b65bd;
+    color: #ffffff;
 }
 
 .MobileFooter {
     display: none;
 }
+
 .MobileFooter li a {
     font-size: 14px;
     font-weight: 100;
 }
+
 @media (max-width:1024px) {
     .Footer_Div {
         max-width: 768px;

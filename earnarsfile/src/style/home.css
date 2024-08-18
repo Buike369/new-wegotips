@@ -175,10 +175,12 @@ padding: 6px 25px;
     color: gold;
     border: 1px solid #78682afa;
     cursor: pointer;
+    transition: all 2s;
     box-shadow: rgb(88 86 151 / 7%) 0px 1px 2px, rgb(88 90 153 / 7%) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgb(78 89 179 / 7%) 0px 8px 16px, rgb(114 105 183 / 7%) 0px 16px 32px, rgb(53 55 139 / 7%) 0px 32px 64px;
 }
 .Login:hover{
-    background-color:#464195;;
+    background-color:#464195;
+    transform: translateY(-3px);
     color:#fff;
     border: 1px solid #617dcd;
     /* border:1px solid #fff; */
