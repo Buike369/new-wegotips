@@ -120,7 +120,7 @@ const handleScroll = () => {
                     <div className="DoubleChancert">
                       <a className="cover_Div"></a>
                       <a href="/become-tipster">Become a Tipster</a>
-                      <a href="/">Find a Tipster</a>
+                     
                       <a href="/allTips">All Tips </a>
                       
                     

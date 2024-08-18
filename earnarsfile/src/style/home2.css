@@ -1172,8 +1172,12 @@
 
 .kingYOU {
     overflow-y: scroll;
-    width: 100%;
+    width: 90%;
     height: 100%;
+    background: #120b4a;
+    transition: all 2s;
+        padding: 12px 15px;
+            box-shadow: 0px 0px 2px #0a0c38;
 }
 
 .visitMe3 {

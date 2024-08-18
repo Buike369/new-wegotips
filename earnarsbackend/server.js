@@ -15,6 +15,8 @@ const bcrypt = require('bcrypt')
 const session = require('express-session')
 const passport = require("passport")
 const bodyParser = require('body-parser')
+const MySQLStore = require('express-mysql-session')(session);
+const  crypto = require('crypto');
 
 // const GoogleStrategy = require("passport-google-oauth20").Strategy
 
@@ -44,7 +46,36 @@ function generateReferralCode(length) {
 }
 
 const referralCode = generateReferralCode(8);
+const secretKey = crypto.randomBytes(64).toString('hex');
+const relStore = new MySQLStore({},db);
+
+
+
 const port = process.env.PORT || 5001
+app.use(session({
+  key:'user_sid',
+  secret: secretKey,
+  store: relStore,
+  resave: false,
+  saveUninitialized: false,
+  cookie: {maxAge:1800000},
+}))
+app.use((req,res,next)=>{
+  if(req.session.user && req.session.lastActivity){
+    const now = Date.now();
+    const diff = now - req.session.lastActivity;
+    const timeout = 30 * 60 * 1000;
+
+    if(diff > timeout){
+      req.session.destroy((err)=>{
+        res.status(401).json({message:'Session expired due to inactivity'})
+      });
+    }else{
+      req.session.lastActivity = now;
+    }
+  }
+  next();
+})
 app.use(express.json())
 app.use('/uploads', express.static('uploads'));
 app.use(bodyParser.urlencoded({extended:true}))

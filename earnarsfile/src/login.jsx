@@ -59,7 +59,7 @@ const Login =()=>{
     }else{
    try{
     await login(inputs)
-     navigate('/')
+     navigate('/user-dashboard')
     // await axios.post("http://localhost:8080/api/auth/login",inputs)
     // console.log("success")
    }catch(err){

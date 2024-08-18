@@ -90,7 +90,7 @@
 }
 
 .userD50 {
-    padding: 10px 10px;
+    padding: 10px 0px;
 }
 
 .dvd1 {
@@ -332,11 +332,11 @@
 }
 
 .Fa2 {
-    width: 55%;
+    width: 80%;
 }
 
 .Fa3 {
-    width: 20%;
+    width: 10%;
     text-align: right;
     color: #fff;
 }
@@ -614,7 +614,59 @@
     left:0;
     bottom:0;
     width:100%;
-    background-color: #120b4a;
+    background-color: #120b4a73;
+    z-index: 60;
+  
+}
+.footLinCU{
+    position: fixed;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    background-color: #0d0740;
+    z-index: 50;
+}
+.footLinC{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 768px;
+    padding:8px 10px;
+    margin: 0 auto;
+}
+.ppWa{
+    text-align: center;
+    font-size: 12px;
+    margin-top: 5px;
+    font-weight: 300;
+    color:#fff
+}
+.pnp{
+        padding: 5px;
+         
+            color: #fff;
+            margin-right: 8px;
+            /* border: 1px solid #32278b; */
+            cursor: pointer;
+          
+}
+.FooterMobileLink{
+    color:#fff;
+}
+.ppww{
+    font-size: 22px;
+}
+.WalletDiv{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+     width:100%
+}
+.loadMe{
+    width: 24%;
 }
 .usContact {
     text-align: center;

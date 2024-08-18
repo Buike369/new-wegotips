@@ -12,7 +12,7 @@ import Demo1 from "./Dashboard/dashboardSports"
 import Demo2 from "./Dashboard/dashboardPostResult"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import {  faPlus,faMinus, faPaperPlane,faVolleyball,faCheckToSlot, faCheckDouble} from '@fortawesome/free-solid-svg-icons'
-import {faCircleCheck,faXmark} from '@fortawesome/free-solid-svg-icons'
+import {faCircleCheck,faXmark,faWallet,faBars,faBell,faHouse} from '@fortawesome/free-solid-svg-icons'
 
 
 const UserDashboard = () => {
@@ -582,9 +582,9 @@ console.log(response.data)
       <div className='emekaUs'>
       <div>
         <div className='Fa1'>
-          <div className="prIconCl" onClick={()=>setDashboardMenu(!dashboardMenu)}>BK</div>
+          <div className="pnp" onClick={()=>setDashboardMenu(!dashboardMenu)}><FontAwesomeIcon icon={faBars} className="ppww" /></div>
            <div className='Fa2'><input type="" placeholder="Search"  className='Fa4'/></div>
-           <div className='Fa3'><a href="/" style={{color:"#fff", textDecoration:"none",fontSize:'18px',fontWeight:'700'}}>Earnars</a></div>
+           <div className='Fa3'><a href="" style={{color:"#fff"}}><FontAwesomeIcon icon={faBell} className="ppww" /></a></div>
         </div>
       </div>
       <div className='Fa10'>
@@ -2036,6 +2036,43 @@ console.log(response.data)
 
 </>
 : ""} 
+
+<div className='footLinCU'>
+   <div className='footLinC'>
+    <div className='loadMe'>
+      <a href="/" className='FooterMobileLink'>
+        <div className='WalletDiv'>
+          <FontAwesomeIcon icon={faHouse} className="ppww" />
+          <p className="ppWa">Home</p>
+        </div>
+      </a>
+      </div>
+    <div className='loadMe'>
+      <a href="" className='FooterMobileLink'>
+        <div className='WalletDiv'>
+          <FontAwesomeIcon icon={faWallet} className="ppww" />
+          <p className="ppWa">Wallet</p>
+        </div>
+      </a>
+      </div>
+    <div className='loadMe'>
+      <a href="" className='FooterMobileLink'>
+        <div className='WalletDiv'>
+          <FontAwesomeIcon icon={faWallet} className="ppww" />
+          <p className="ppWa">Wallet</p>
+        </div>
+      </a>
+      </div>
+    <div className='loadMe'>
+      <a href="" className='FooterMobileLink'>
+        <div className='WalletDiv'>
+          <FontAwesomeIcon icon={faWallet} className="ppww" />
+          <p className="ppWa">Wallet</p>
+        </div>
+      </a>
+      </div>
+   </div>
+</div>
 
     </div>
   )

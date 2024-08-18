@@ -86,8 +86,7 @@ const Register =()=>{
            },3000)
      }else{
         await axios.post(`${wegoUrl}/auth/register`,inputs).then((response)=>{
-            // console.log(response.data)
-            // setMessage(response.data.msg)
+         
             if(response.data === "User already exist"){
                setMessage1(response.data)
                  setTimeout(()=>{

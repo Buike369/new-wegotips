@@ -133,7 +133,7 @@ const MobileHeader = () => {
             {/* <div className="derr" onClick={()=>setShowMe1(!showMe1)}><span className="derpm appjo">{currentUser?.username}</span> <span>{showMe1?<FontAwesomeIcon icon={faAngleUp} className="PlusIcon plusIcon2" />:<FontAwesomeIcon icon={faAngleDown} className="PlusIcon plusIcon2" />}</span></div> */}
           {/* {showMe1?  */}
             <div className="Forexmm">
-                      <Link  className="fit" to="/user-dashboard" onClick={mark}> <span className="mackP">*</span> * My Dashboard</Link>
+                      <a  className="fit" href="/user-dashboard" onClick={mark}> <span className="mackP">*</span> * My Dashboard</a>
                    
                        {isPaid === 1? <a href="/tip" className="fit">  <span className="mackP">*</span> * My Tips(Premium)</a> :<Link onClick={()=>setRegister(!register)} className="fit" >Subscription</Link>}
                       <Link  className="fit appjo tef" to="" onClick={logout}>Log Out</Link> 

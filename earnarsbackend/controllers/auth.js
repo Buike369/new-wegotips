@@ -6,6 +6,7 @@ const { EMAIL } = require("../env.js")
 const Mailgen = require('mailgen')
 var validator = require("email-validator");
 const passport = require("passport")
+const session = require('express-session')
 const GoogleStrategy = require("passport-google-oauth20").Strategy
 
 
@@ -245,6 +246,8 @@ const login = (req, res) => {
         if (!isPasswordCorrect) return res.status(400).json({ msg: "Wrong email or Password!" })
         const token = jwt.sign({ id: data[0].id }, "jwtkey")
         const { password, ...other } = data[0];
+        req.session.user = data[0];
+        req.session.lastActivity = Date.now();
         res.cookie("access_token", token, { httpOnly: true }).status(200).json(other)
 
     })
@@ -357,12 +360,16 @@ const resetPassword =  (req, res) => {
 
 
 const logout = (req, res) => {
+    req.session.destroy((err)=>{
+        if(err){
+            return res.status(500).json({message:"Logout failed"})
+        }
     res.clearCookie("access_token", {
         sameSite: "none",
         secure: true,
 
     }).status(200).json("User has been logged out")
-
+})
 }
 
 module.exports = { register, adminLogin , adminRegister, resetPassword, register1, login, logout, forgotPassword }
