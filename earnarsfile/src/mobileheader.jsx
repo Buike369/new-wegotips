@@ -17,7 +17,7 @@ const MobileHeader = () => {
      const [open1,setOpen1]=useState(true)
  const [register,setRegister] = useState(false)
     const [showMe,setShowMe] = useState(true)
-        const [showMe4,setShowMe4] = useState(true)
+        const [showMe4,setShowMe4] = useState(false)
     const [showMe1,setShowMe1] = useState(false)
 
      const tr = window.location.pathname;
@@ -126,7 +126,7 @@ const MobileHeader = () => {
             </div>:""}
             </li>
           <li className="bgstyle"><a href="/premium" onClick={mark} className="derpm"> <span className="mackP">*</span> * Premium Prediction</a></li>
-          <li className="bgstyle"><a href="/affliate" className="derpm" onClick={mark}> <span className="mackP">*</span> * Affiliate Program</a></li>
+          <li className="bgstyle"><a href="/affiliate" className="derpm" onClick={mark}> <span className="mackP">*</span> * Affiliate Program</a></li>
           {/* <li className="dpM bgstyle"><a href="/exchange" className="derpm" onClick={mark}><span className="mackP">*</span> * Buy/Sell ENAR</a></li> */}
           <li>
             {currentUser ? <div>
@@ -139,7 +139,7 @@ const MobileHeader = () => {
                       <Link  className="fit appjo tef" to="" onClick={logout}>Log Out</Link> 
             </div>
              {/* :""} */}
-            </div> :  <Link to="/register" className="LogIn" onClick={mark}>Login/Register</Link>}
+            </div> :  <Link to="/register" className="LogIn" onClick={mark} style={{marginTop:"15px"}}>Login/Register</Link>}
            </li>
         </ul>
           </div>

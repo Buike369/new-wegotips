@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route, Navigate, Redirect,useLocation } from "re
 import Register from "./register"
 import Login from "./login";
 import WalletOverView from "./walletOverview";
-import Affliate from "./affliate"
+import Affiliate from "./affliate"
 import Profile from "./profile"
 import Referral from "./referral";
 
@@ -72,7 +72,7 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
           {currentUser ? <Route path="/wallet" element={<WalletOverView />} /> : <Route path="/" element={<SampleHome />} />}
-          <Route path="/affiliate" element={<Affliate />} />
+          <Route path="/affiliate" element={<Affiliate />} />
           {currentUser ? <Route path="/profile" element={<Profile />} /> : <Route path="/" element={<SampleHome />} />}
           {!currentUser ? <Route path="/forgotpassword" element={<ForgotPassword />} /> : <Route path="/" element={<SampleHome />} />}
           {!currentUser ? <Route path="/otp" element={<OTP />} /> : <Route path="/" element={<SampleHome />} />}
