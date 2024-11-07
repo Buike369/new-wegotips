@@ -129,6 +129,7 @@ const MobileHeader = () => {
           <li className="bgstyle"><a href="/affiliate" className="derpm" onClick={mark}> <span className="mackP">*</span> * Affiliate Program</a></li>
           {/* <li className="dpM bgstyle"><a href="/exchange" className="derpm" onClick={mark}><span className="mackP">*</span> * Buy/Sell ENAR</a></li> */}
           <li>
+            <div style={{marginTop:"15px"}}>
             {currentUser ? <div>
             {/* <div className="derr" onClick={()=>setShowMe1(!showMe1)}><span className="derpm appjo">{currentUser?.username}</span> <span>{showMe1?<FontAwesomeIcon icon={faAngleUp} className="PlusIcon plusIcon2" />:<FontAwesomeIcon icon={faAngleDown} className="PlusIcon plusIcon2" />}</span></div> */}
           {/* {showMe1?  */}
@@ -139,7 +140,8 @@ const MobileHeader = () => {
                       <Link  className="fit appjo tef" to="" onClick={logout}>Log Out</Link> 
             </div>
              {/* :""} */}
-            </div> :  <Link to="/register" className="LogIn" onClick={mark} style={{marginTop:"15px"}}>Login/Register</Link>}
+            </div> :  <Link to="/register" className="LogIn" onClick={mark} >Login/Register</Link>}
+            </div>
            </li>
         </ul>
           </div>
