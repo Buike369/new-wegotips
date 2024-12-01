@@ -26,7 +26,7 @@ const Otp =()=>{
     await forgotPassword(email)
     //  navigate('/otp')
      
-     setSuccess("Send Successfully, check ur Email ")
+     setSuccess(`Send Successfully, please check your Email ${forgotEmail}`)
      setTimeout(()=>{
           setSuccess("")
      },5000)
@@ -41,14 +41,14 @@ const Otp =()=>{
     
     return(
         <div className="BgColor" style={{backgroundColor:"#0f0b34"}}>
-            <div className="Form_Divbb">
+            <div className="ttt">
                       <div style={{padding:"0 5px"}}>
            <div className="Form_Div renttt">
                <form>
                   
                   <div className="welcome4">Email Verification</div>
-                  {success && <p style={{color:"#fff",textAlign:"center"}}>{success}</p>}
-                  <p className="codeSent">We have sent a link to your Email {forgotEmail}</p>
+                  {/* {success && <p style={{color:"#fff",textAlign:"center"}}>{success}</p>} */}
+                  {success.length > 0 ? <p style={{color:"#fff",textAlign:"center",marginBottom:"8px"}}>{success}</p> : <p className="codeSent">We have sent a link to your Email {forgotEmail}</p> }
                   {/* <p className="codeSent"> {forgotEmail}</p> */}
 
                   {/* <div className="OTPDIV1">
@@ -62,7 +62,7 @@ const Otp =()=>{
                  </div>
                  </div> */}
                   {/* <a href="/resetpassword" className="sesetP"><div  className="loginn">Verify Account</div></a> */}
-                    <div className="sesetP" onClick={handleSumit1 }><div  className="loginn">Resend Link</div></div>
+                    <a href="/login"><div className="sesetP" ><div  className="loginn">Go to  login</div></div></a>
               
          
                      <p className="Have_An">Don't receive link?<a onClick={handleSumit1 } className="sesetP"><span className="p_LoGIn">Resend Link</span></a></p>

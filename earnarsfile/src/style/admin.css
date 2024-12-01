@@ -7,6 +7,15 @@
         margin-top: 90px;
      
 }
+.pageMNM {
+
+    box-shadow: none;
+    background-color: inherit;
+    border: 1px solid #322d89;
+    color: #fff;
+
+
+}
 
 /* input:-internal-autofill-selected {
     appearance: menulist-button;

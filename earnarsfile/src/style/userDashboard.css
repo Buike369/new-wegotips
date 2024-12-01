@@ -203,6 +203,7 @@
     border: 1px dashed #6358CB;
     border-radius: 20px;
     margin-top: 30px;
+    margin-bottom: 80px;
 }
 
 .dvd23 {
@@ -357,7 +358,8 @@
 }
 
 .Fa10 {
-    padding: 20px
+    padding: 20px;
+    padding-bottom:80px
 }
 .Fa110{
     margin-top: 15px;
@@ -410,7 +412,7 @@
 }
 
 .UnLockAff {
-    color: #c2bee3;
+    color: #fff;
     text-align: center;
     font-size: 15px;
     font-weight: 300;
@@ -444,6 +446,12 @@
     margin: 0 auto;
     margin-top: 20px;
     cursor: pointer;
+}
+.UnlockAff1:hover{
+    transform: translate(0px, -3px);
+    background-color: #fff;
+    color:#000;
+    transition: transform 0.5s ease;
 }
 
 .OfReferral2 {
@@ -510,10 +518,13 @@
     width: 100px;
     color: #fff;
     background-color: #575095;
-    margin: 15px auto 0 auto
+    margin: 15px auto 0 auto;
+    cursor: pointer;
 }
 .TransferTip:hover{
-        background-color: #120b4a;
+    transform: translate(0px, -3px);
+    transition: transform 0.5s ease;
+    background-color: #120b4a;
 }
 .DataTo {
     color: #b7b4f1;
@@ -858,6 +869,10 @@ align-items: center;
 .y45{
     cursor: pointer;
 }
+.y45:hover{
+    background-color: #221b5d;
+    color:gold;
+}
 
 @media(max-width:768px){
     .userD3{
@@ -980,10 +995,13 @@ align-items: center;
     .prIconCl{
         display:none;
     }
-        .pKFin {
+        .pKFin , .WalletDiv{
             display: none;
         }
                 .PR17 {
                     display:none;
+                }
+                .loadMe{
+                    height:35px;
                 }
 }

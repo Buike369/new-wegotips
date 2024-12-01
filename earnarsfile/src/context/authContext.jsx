@@ -6,6 +6,7 @@ export const AuthContext = createContext()
 
 export const AuthContextProvider = ({children})=>{
   const wegoUrl = 'https://wegotips.com/api';
+    // const wegoUrl = 'http://localhost:5001/api';
     // const [currentUser,setCurrentUser] = useState(JSON.parse(localStorage.getItem("user")) || null)
     const [currentUser,setCurrentUser] = useState(JSON.parse(localStorage.getItem("user")) || null)
     const [forgotEmail,setForgotEmail] = useState((localStorage.getItem("email")) || null)
@@ -14,17 +15,19 @@ export const AuthContextProvider = ({children})=>{
     const [purchaseType,setPurchaseType] = useState("Buy")
 
     const login = async(inputs)=>{
-       const res = await axios.post(`${wegoUrl}/auth/login`,inputs);
-       setCurrentUser(res.data)
-      //  console.log(res.data)
+       const response = await axios.post(`${wegoUrl}/auth/login`,inputs);
+       setCurrentUser(response.data)
+       console.log(response)
     }
 
-      const forgotPassword = async(email2)=>{
+      const forgotPassword = async(email)=>{
       //  const res = await axios.post("http://localhost:8080/api/auth/password-reset",email2);
-        const res = await axios.post(`${wegoUrl}/auth/password-reset`,email2);
+        const res = await axios.post(`${wegoUrl}/auth/forgot-password`,email);
 
-       setForgotEmail(res.data.msg)
-      //  console.log(res)
+      //  setForgotEmail(res.data.message)
+       setForgotEmail(email.email)
+       console.log(res)
+       
     }
 
 
@@ -32,10 +35,14 @@ export const AuthContextProvider = ({children})=>{
    //     const res = await axios.put("/post/:id",inputs);
    //     setCurrentUser(res.data)
    //  }
-    const logout = async(inputs)=>{
-        await axios.post(`${wegoUrl}/auth/logout`);
+    const logout = async(logM)=>{
+     const p =  await axios.post(`${wegoUrl}/auth/logout`,logM);
+        // await axios.post(`${wegoUrl}/auth/logout`);
         setCurrentUser(null)
+        console.log(p)
      }
+
+ 
 
     
 

@@ -518,7 +518,7 @@ console.log(response.data)
 
    },[])
 
-
+const referralLink = `http://localhost:3000/register?referralCode=${currentUser?.user.referral_code}`;
      const card = ["sport","binary","forex","crytptocurrency","sport","binary","forex","crytptocurrency"]
   return (
     <div className='vimvi'>
@@ -530,7 +530,7 @@ console.log(response.data)
                     <div className='userD50'>
                     <div className='dvd2 dvd23'>
                     <div className='userD6'><img src="/img/dashboard-profile3.png" alt="" className='profileDImg'/></div>
-                    <div className='JohnKen1'>Samuel245</div>
+                    <div className='JohnKen1'>{currentUser?.user.username}</div>
                     <div className='JohnKen2'> <img src="/img/map-icon.png" alt=""/><span className='JohnKen3'>Nigeria</span></div>
                     <div  className='JohnKen2'><img src="/img/calendar-icon2.png" alt=""/><span className='JohnKen3'>Joined Oct, 2021</span></div>
                     <button className='EMMAN y45' onClick={()=>setSection1('userSection5')}><div className=' JohnKen5'><img src="/img/edit-icon.png" alt=""/><span className='JohnKen7'>Edit Your Profile</span></div></button> 
@@ -587,6 +587,9 @@ console.log(response.data)
            <div className='Fa3'><a href="" style={{color:"#fff"}}><FontAwesomeIcon icon={faBell} className="ppww" /></a></div>
         </div>
       </div>
+
+      {/* const referralLink = `http://localhost:3000/register?referralCode=${user.referral_code}`; */}
+    <div><a href="">{referralLink}</a></div>
       <div className='Fa10'>
 
         {section1 === "userSection"? 
@@ -1169,7 +1172,7 @@ console.log(response.data)
            <div  className="ManB1 ManB30">
             <div >
                             <div className='ManMMb2'>
-                 <div className='UnLockAff'>Unlock Your Affiliate wallet and get access to tons of opportunity to make money  </div>
+                 <div className='UnLockAff'>Unlock Your Affiliate wallet and get access to tons of opportunity to make money with <span style={{fontWeight:"600",fontSize:"20px",color:"gold"}}>₦5000</span>  </div>
                  <div className='UnlockAff1'> Click to Unlock Now</div>
               </div>
                       </div>
@@ -2061,7 +2064,7 @@ console.log(response.data)
       <a href="" className='FooterMobileLink'>
         <div className='WalletDiv'>
           <FontAwesomeIcon icon={faWallet} className="ppww" />
-          <p className="ppWa">Wallet</p>
+          <p className="ppWa">Affiliate</p>
         </div>
       </a>
       </div>
@@ -2069,7 +2072,7 @@ console.log(response.data)
       <a href="" className='FooterMobileLink'>
         <div className='WalletDiv'>
           <FontAwesomeIcon icon={faWallet} className="ppww" />
-          <p className="ppWa">Wallet</p>
+          <p className="ppWa">Tips</p>
         </div>
       </a>
       </div>

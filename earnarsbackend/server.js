@@ -2,9 +2,12 @@ require('dotenv').config()
 const express = require('express')
 const multer = require('multer');
 const authRoutes = require('./routes/auth.js')
-const postRoutes = require('./routes/posts.js')
-const userRoutes = require('./routes/users.js')
-const uploadRoutes = require('./routes/uploadFile.js')
+const tipRoutes = require('./routes/tips.js')
+const walletRoutes = require('./routes/wallet.js')
+const notificationRoutes = require('./routes/notification.js')
+// const postRoutes = require('./routes/posts.js')
+// const userRoutes = require('./routes/users.js')
+// const uploadRoutes = require('./routes/uploadFile.js')
 // const paymentRoutes = require('./routes/flutterwaves.js')
 const { runJob } = require('./controllers/user.js')
 const cors = require('cors')
@@ -125,10 +128,14 @@ app.use((req,res,next)=>{
     next()
 })
 
+
 app.use("/api/auth",authRoutes)
-app.use("/api/user",userRoutes)
-app.use("/api/post",postRoutes)
-app.use("/api/files", uploadRoutes)
+app.use("/api/notice", notificationRoutes)
+app.use("/api/tips", tipRoutes)
+app.use("/api/wallet", walletRoutes )
+// app.use("/api/user",userRoutes)
+// app.use("/api/post",postRoutes)
+// app.use("/api/files", uploadRoutes)
 
 
 

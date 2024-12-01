@@ -9,6 +9,7 @@ import {AuthContext}from "./context/authContext"
 import validator from 'validator';
 import SuccessN from "./success1"
 import "./style/admin.css"
+import axios from "axios"
 
 // import {GoogleLogin} from  'react-google-login'
 
@@ -21,11 +22,9 @@ const Login =()=>{
 
     const [inputs,setInputs]=useState({
         email:"",
-        password:"",
-       
+        password:"",  
     })
     const [inputs2,setInputs2]=useState({
-        
         showPassword: false,
     })
     const navigate = useNavigate()
@@ -59,14 +58,15 @@ const Login =()=>{
     }else{
    try{
     await login(inputs)
-     navigate('/user-dashboard')
-    // await axios.post("http://localhost:8080/api/auth/login",inputs)
-    // console.log("success")
+    // const p = await axios.post("http://localhost:5001/api/auth/login",inputs)
+    navigate('/user-dashboard')
+    // console.log(p)
    }catch(err){
-    setError(err.response.data.msg)
-      setTimeout(()=>{
-            setError("")
-           },3000)
+    // setError(err.response.data.msg)
+    //   setTimeout(()=>{
+    //         setError("")
+    //        },3000)
+    console.log(err)
    
    }  }   
     }
@@ -80,13 +80,15 @@ const Login =()=>{
                <form>
                   
                   <div className="welcome4 textAdmin">Login to Wegotips</div>
+                  <label className="KinL">Email :</label>
                   <div> <input type="email" placeholder="Email" className="Full_Name inpupage page10 page11" name="email" onChange={handleChange}/></div>
+                  <label htmlFor="" className="KinL">Password :</label>
                   <div className="sers"> <input type={inputs2.showPassword ? "text":"password"} placeholder="Password" className="Full_Name inpupage page10 page11" onChange ={handleChange} name="password" 
                   />
                   {inputs2.showPassword ?<FontAwesomeIcon icon={faEye} className="PlusIcon plusIcon2 ser1" onClick={handleClickShowPassword}/>:<FontAwesomeIcon icon={faEyeSlash} className="PlusIcon plusIcon2 ser1" onClick={handleClickShowPassword}/> }</div>
                   <div onClick={handleSumit1} className="loginn page10">Log In</div>
                   {err && <p className="errorP">{err}</p>}
-                  <p className="FofD">Forget password ? <a href="/forgotpassword" className="sesetP"><span className="ClickMe">Click Here</span></a> </p>
+                  <p className="FofD">Forget password ? <a href="/forgot-password" className="sesetP"><span className="ClickMe">Click Here</span></a> </p>
                   <div className="Or_with2">
                          <div className="Or_With"></div>
                          <p className="adColor">Or login with</p>

@@ -9,7 +9,21 @@
     max-width: 1100px;
 }
 
-
+.who{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.EWH{
+    font-size: 14px;
+    color:#b4b4c5;
+    width:100%;
+    max-width: 180px;
+    margin:0  auto;
+    text-align: center;
+    margin-bottom: 15px;
+}
 /* .AffliateBanner{
     margin: 46px auto 0 auto;
     width:100%;
@@ -247,11 +261,12 @@ position: absolute;
     margin: 100px auto 0 auto;
 }
 .Create_AccountD{
-    color:#abadb9;
+    color:#ffffff;
     text-align: center;
     font-size: 22px;
     font-weight: 700;
     margin-top: 20px;
+   
 
 }
 .logoM{
@@ -665,6 +680,9 @@ height: 500px;
     }
     .jimk{
      height: 380px;
+    }
+    .EWH{
+        max-width: 200px;
     }
     .gos3{
         height: auto;

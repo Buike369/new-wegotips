@@ -152,7 +152,7 @@ const Affiliate =()=>{
                  </div>
                 
              <div className="earnPMN">
-                <div className="inviteFr">Get $8 - Invite Your Friends to Wegotips</div>
+                <div className="inviteFr">Get 	₦3500 - Invite Your Friends to Wegotips</div>
 
 
                 {/* <Link to="/login" className="ifi"> <div className="NowUpSign">Watch Now</div></Link> */}
@@ -164,17 +164,20 @@ const Affiliate =()=>{
                        <div className="Create_account_Div"><img src="/img/login.png" className="Create_account_Div1"  alt="pics"/>
                        <p className="AccountPTag">1</p></div>
                        <div className="Create_AccountD">Create Account</div>
+                       <p className="EWH">Register to create an account with us.</p>
                    </div>
                    <div className="who">
                    <div className="Create_account_Div"><img src="/img/login2.png" className="Create_account_Div1"  alt="pics"/>
                    <p className="AccountPTag">2</p>
                    </div>
-                       <div className="Create_AccountD">Invite Your friends</div>
+                       <div className="Create_AccountD">Unlock, Invite Friends</div>
+                       <p className="EWH">Unlock your wallet and invite friends</p>
                    </div>
                    <div className="who">
                    <div className="Create_account_Div"><img src="/img/login3.png" className="Create_account_Div1" alt="pics"/>
                    <p className="AccountPTag">3</p></div>
                        <div className="Create_AccountD">Start Earning</div>
+                       <p className="EWH">Earn when referrers unlock wallets, and buy tips.</p>
                    </div>
                </div>
 
@@ -391,7 +394,7 @@ const Affiliate =()=>{
 >
  <div style={{padding:"4px 10px"}}>      
 <div className="earnSayPp">
-  <p className="partnerShip">"Through Earnars partnership program I made 250k in just two weeks by referring 20friends to the platform."</p>
+  <p className="partnerShip">"Through Wegotips partnership program I made 50k in just two weeks by referring 20 friends to the platform."</p>
   <div className="favourPath">
     <div><img src="/img/create.png" alt="" className="popopo"/></div>
      <div>
@@ -403,11 +406,11 @@ const Affiliate =()=>{
 </div> 
  <div style={{padding:"4px 10px"}}>           
 <div className="earnSayPp">
-  <p className="partnerShip">"I made Over 1 Million in Less Than 30 Days by just following Earnars.com prediction on Sports and Forex Trading.I would recommend earnars to any body any time."</p>
+  <p className="partnerShip">"I made Over 1 Million in Less Than 30 Days by just following Wegotips.com prediction on Sports,crypto and Forex Trading.I would recommend wegotips to any body any time."</p>
   <div className="favourPath">
     <div><img src="/img/create.png" alt="" className="popopo"/></div>
      <div>
-      <div className="amakaDiv">-Amaka Ngozi</div>
+      <div className="amakaDiv">-Samuel Micheal</div>
       <div className="country">Nigeria</div>
      </div>
   </div>
@@ -415,7 +418,7 @@ const Affiliate =()=>{
 </div>
 <div style={{padding:"4px 10px"}}>
 <div className="earnSayPp">
-  <p className="partnerShip">"Your company is truly upstanding and is behind its product 100%. Keep up the excellent work. Earnars is the most valuable prediction portal i have EVER come across. I love your system."</p>
+  <p className="partnerShip">"Your company is truly upstanding and is behind its product 100%. Keep up the excellent work. Wegotips is the most valuable prediction portal i have EVER come across. I love your system."</p>
   <div className="favourPath">
     <div><img src="/img/create.png" alt="" className="popopo"/></div>
      <div>
@@ -439,7 +442,7 @@ const Affiliate =()=>{
                    <p className="Each_Time_your">
                        Subscribe to our newsletter and be the first to receive news.
                    </p>
-                   <form>q-=9=
+                   <form>
                     <div className="newsInput">
                         <input type="email" placeholder="Enter Your Email"  className="newsBro"/>
                          <FontAwesomeIcon icon={faPaperPlane} className="EmailSentIcon" />

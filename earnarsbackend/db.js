@@ -1,39 +1,50 @@
 require('dotenv').config();
-const mysql = require('mysql2')
 
- const db = mysql.createPool({
-    connectionLimit:10,
-    host:`${process.env.DB_HOST}`,
-    user: `${process.env.DB_USER}`,
-    password: `${process.env.DB_PASSWORD}`,
-    database: `${process.env.DB_NAME}`
-   //  host:'127.0.0.1',
-   //  user:'buike',
-   //  password:'BuikE@369',
-   //  database:'we_go' 
-})
-// database: "betproject"
-db.getConnection((err,connection)=>{
-   if(err){
-      console.error('Error connection',err)
-   }else{
-    //   const pat = "ALTER TABLE users MODIFY COLUMN account_number VARCHAR(255)"
-    //   db.query(pat, (err, result) => {
-    //      if (err) {
-    //         console.log(err)
-    //      }else{
 
-    //         return console.log("table created")
-    //      }
-    //   })
-    //   connection.release();
-    console.log("successful connection")
-    
+const mysql = require('mysql2/promise');
+
+// Create a promise-based connection pool
+const db = mysql.createPool({
+   connectionLimit: 10,
+   host: process.env.DB_HOST,
+   user: process.env.DB_USER,
+   password: process.env.DB_PASSWORD,
+   database: process.env.DB_NAME,
+});
+
+// Check the connection
+(async () => {
+   try {
+      const connection = await db.getConnection();
+      console.log('Connected to the database.');
+      connection.release(); // Release the connection back to the pool
+   } catch (err) {
+      console.error('Database connection failed:', err);
+      process.exit(1);
    }
-})
+})();
 
-module.exports = {db}
-
-
+module.exports = { db };
 
 
+// const mysql = require('mysql2');
+
+// // Create a promise-based connection pool
+// const db = mysql.createPool({
+//    connectionLimit: 10,
+//    host: process.env.DB_HOST,
+//    user: process.env.DB_USER,
+//    password: process.env.DB_PASSWORD,
+//    database: process.env.DB_NAME,
+// });
+
+// // Check the connection
+// db.getConnection((err) => {
+//    if (err) {
+//       console.error('Database connection failed:', err);
+//       process.exit(1);
+//    }
+//    console.log('Connected to the database.');
+// });
+
+// module.exports = { db };

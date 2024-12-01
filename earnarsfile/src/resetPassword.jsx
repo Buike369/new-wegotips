@@ -2,7 +2,7 @@ import React,{useState,useContext} from "react";
 import "./style/register.css";
 import "./style/login.css";
 import "./style/resetpassword.css"
-import {useParams} from "react-router-dom";
+import {useParams,useSearchParams} from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEye,faEyeSlash} from '@fortawesome/free-solid-svg-icons'
 import { Link,useNavigate} from "react-router-dom";
@@ -15,13 +15,17 @@ import {AuthContext}from "./context/authContext"
 const ResetPassword =()=>{
 
  const pa = useParams().id;
+ const [searchParams] = useSearchParams(); // Hook to read query parameters
+    const token = searchParams.get('token'); // Extract the token
+//   const { token } = useParams();// Fetch the token from the URL params
+  
 
-     
     const [inputs,setInputs]=useState({
         password:"",
         password1:"",
        
     })
+     const [message, setMessage] = useState("");
     const [error1,setError1]=useState("")
    
 
@@ -34,7 +38,7 @@ const ResetPassword =()=>{
     const {login}=useContext(AuthContext)
     
 
-    const [err,setError]= useState(null)
+    const [error,setError]= useState(false)
 
     const handleChange = e =>{
         setInputs(prev=>({...prev,[e.target.name]:e.target.value}))
@@ -45,70 +49,71 @@ const ResetPassword =()=>{
         setInputs2(previ=>({ ...previ, showPassword: !inputs2.showPassword }));
       };
 
-    const handleSumit1 = async (e) =>{
-    e.preventDefault()
-   try{
-    await login(inputs)
-     navigate('/')
-    
-   }catch(err){
-    setError(err.response.data)
-    console.log(err)
-   }    
-    }
+       const handleSubmit = async (e) => {
+        e.preventDefault();
 
- const checkSubmit = async()=>{
-    if(inputs.password1 !== inputs.password){
-        setError1("password do not match")
-       setTimeout(()=>{
-           setError1("")
-       },3000)
-    //   setError1("password do not match")
-    }else if((inputs.password.length < 10) || (inputs.password1.length < 10)){
-        setError1("Increase password strength")
-           setTimeout(()=>{
-           setError1("")
-       },3000)
-       
-    }else{
-        if(inputs.password1 === inputs.password){
-           setCheckPassword(inputs.password) 
-           const passWord = async()=>{
-            try{
-               await axios.put(`https://tea.earnars.com/api/auth/resetpass!45!@word/${pa}`,{password:checkPassword})
-               navigate("/success")
-            }catch(err){
-                   console.log(err)
-            }
-
-           }
-
-           passWord()
+        if (!token) {
+            setError(true);
+            setMessage("Invalid or missing token.");
+             setTimeout(() => {
+                setMessage(" ")
+            }, 5000);
+            return;
         }
-    }
 
- }
+        if (inputs.password !== inputs.password1) {
+            setError(true);
+            setMessage("Passwords do not match.");
+             setTimeout(() => {
+               setMessage(" ")
+            }, 5000);
+            return;
+        }
+
+        try {
+            const response = await axios.post('http://localhost:5001/api/auth/reset-password', {
+                token,
+                inputs
+            });
+
+            setError(false);
+            setMessage(response.data.message);
+
+            // Redirect to login page after successful reset
+            setTimeout(() => {
+                navigate('/login');
+            }, 3000);
+        } catch (error) {
+            setError(true);
+            setMessage(error.response?.data?.message || "Failed to reset password. Please try again.");
+        }
+    };
+  
+
+ 
 
     return(
-        <div className="BgColor" style={{background:"#0f0b34"}}>
-            <div className="Form_Divbb">
-                <div style={{padding:"0 5px"}}>
+        <div className="BgColor" >
+            <div className="ttt">
+                <div style={{padding:"0 5px" }} className="tty">
            <div className="Form_Div renttt">
                <form>
                   
-                  <div className="welcome4">Change Password</div>
+                  <div className="welcome4">Reset Password</div>
                   {error1 && <p style={{color:"#fff"}}>{error1}</p>}
                   <p className="NewpAss">New Password</p>
-                  <div style={{marginBottom:"10px"}}> <input type= {inputs2.showPassword ? "text":"password"} placeholder="password" className="Full_Name inpupage page" name="password" onChange={handleChange}/></div>
+                  <div style={{marginBottom:"10px"}}> <input type= {inputs2.showPassword ? "text":"password"} placeholder="password" className="Full_Name inpupage pageMNM" name="password" onChange={handleChange}/></div>
                    <p className="NewpAss">Confirm Password</p>
-                  <div className="sers"> <input type={inputs2.showPassword ? "text":"password"} placeholder= "confirm_Password" className="Full_Name inpupage page" onChange ={handleChange} name="password1" 
+                  <div className="sers"> <input type={inputs2.showPassword ? "text":"password"} placeholder= "confirm_Password" className="Full_Name inpupage  pageMNM " onChange ={handleChange} name="password1" 
                   />
                   {inputs2.showPassword ?<FontAwesomeIcon icon={faEye} className="PlusIcon plusIcon2 ser1" onClick={handleClickShowPassword}/>:<FontAwesomeIcon icon={faEyeSlash} className="PlusIcon plusIcon2 ser1" onClick={handleClickShowPassword}/> }</div>
                    {/* <div className="Checkbox_div"><input type="checkbox" name="over18"  className="Bym"/> <label className="Over_18">I accept the Terms and Conditions</label></div> */}
-                     <div className="sesetP marKing" onClick={checkSubmit}> <div  className="loginn">Reset Password</div></div>
-
+                     <div className="sesetP marKing" onClick={handleSubmit}> <div  className="loginn">Reset Password</div></div>
+{message && <p style={{ color: error ? "red" : "green" }}>{message}</p>}
+            {!error && message && <p>Redirecting to login page...</p>}
                   
                </form>
+
            </div>
            </div>
            </div>

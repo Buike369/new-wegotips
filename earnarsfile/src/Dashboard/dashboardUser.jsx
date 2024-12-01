@@ -6,6 +6,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faSearch} from '@fortawesome/free-solid-svg-icons'
 
 const DashboardUser = () => {
+
+  const wegoUrl =  'http://localhost:5001/api';
   const [userInfo,setUserInfo]=useState([])
   const [sap,setSap] = useState([])
   const [searchQuery, setSearchQuery] = useState('');
@@ -24,17 +26,18 @@ const DashboardUser = () => {
  
    
   useEffect(()=>{
-    const userInfom = async ()=>{
+    const userInformation = async ()=>{
       try{
-        const res = await axios.get('/post')
+        const res = await axios.get(`${wegoUrl}/auth/all-user`)
  
-        setUserInfo(res.data)
+        setUserInfo(res.data.users)
+        console.log(res.data.users)
       
       }catch(err){
         console.log(err)
       }
     }
-    userInfom()
+    userInformation()
 
   },[])
 
@@ -119,6 +122,10 @@ const DashboardUser = () => {
         <th style={{width:"300px"}}>EMAIL</th>
         <th>STATUS</th>
         <th>ACTION</th>
+        <th>STATUS</th>
+        <th>Amount</th>
+        <th>STATUS</th>
+        <th>ACTION</th>
         
       </tr>
     </thead>
@@ -126,10 +133,17 @@ const DashboardUser = () => {
        {filteredData.map((user,id)=>(
        
       <tr key={id} className={(user.id %2 === 0)?" ADDTimeDbg":"ADDTimeDbg1"}>
-        <th className={(user.id %2 === 0)?" ADDTimeDbg":"ADDTimeDbg1"}>{user.id}</th>
+        <th className={(user.user_id %2 === 0)?" ADDTimeDbg":"ADDTimeDbg1"}>{user.user_id}</th>
         <td>{user.phone_number}</td>
         <td>{user.username}</td>
         <td>{user.email}</td>
+         <td>{user.referral_code}</td>
+          <td>{user.referred_id}</td>
+              <td>{user.is_tipster}</td>
+               <td>{user.balance}</td>
+                <td>{user.verification_token}</td>
+                 <td>{user.reset_token}</td>
+                 <td>{user.reset_token_expiry}</td>
         <td>{user.active?"Active":"Inactive"}</td>
         <td>4</td>
         

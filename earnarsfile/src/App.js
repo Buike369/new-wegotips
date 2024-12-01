@@ -24,7 +24,7 @@ import CryptoPage from "./cryptoPage"
 import BinaryPage from "./binarypage"
 import TipSterDashboard from "./tipStarDashboard"
 // import Airtime from "./airtime"
-import ForgotPassword from "./forgetpassword"
+import ForgotPassword from "./forgotpassword"
 import OTP from "./otp"
 import Success from "./success"
 import TipsterWallet from "./tipsterWallet"
@@ -47,6 +47,7 @@ import FindTipster from "./findTipster";
 import MarketPrediction from "./marketPrediction";
 import RecentPrediction from "./recentPrediction";
 import Token from "./token";
+import VerifyEmail2 from "./VerifyEmail";
 import "./App.css"
 
 import DashboardHome from "./Dashboard/dashboardHome"
@@ -70,20 +71,24 @@ function App() {
           <Route path="/" element={<SampleHome />} />
           <Route path="/token" element={<Token />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/verify" element={<VerifyEmail2/>} />
           <Route path="/login" element={<Login />} />
-          {currentUser ? <Route path="/wallet" element={<WalletOverView />} /> : <Route path="/" element={<SampleHome />} />}
+          <Route path="/wallet" element={<WalletOverView />} /> 
+          {/* {currentUser ? <Route path="/wallet" element={<WalletOverView />} /> : <Route path="/" element={<SampleHome />} />} */}
           <Route path="/affiliate" element={<Affiliate />} />
-          {currentUser ? <Route path="/profile" element={<Profile />} /> : <Route path="/" element={<SampleHome />} />}
-          {!currentUser ? <Route path="/forgotpassword" element={<ForgotPassword />} /> : <Route path="/" element={<SampleHome />} />}
-          {!currentUser ? <Route path="/otp" element={<OTP />} /> : <Route path="/" element={<SampleHome />} />}
-          {!currentUser ? <Route path="/success" element={<Success />} /> : <Route path="/" element={<SampleHome />} />}
+           <Route path="/profile" element={<Profile />} /> 
+          {/* {currentUser ? <Route path="/profile" element={<Profile />} /> : <Route path="/" element={<SampleHome />} />} */}
+          <Route path="/forgot-password" element={<ForgotPassword />} /> 
+          <Route path="/otp" element={<OTP />} /> 
+       <Route path="/success" element={<Success />} /> 
           <Route path="/referral/:id" element={<Referral />} />
-          <Route path="/resetpassword/:id" element={<ResetPassword />} />
+          <Route path="/reset-password" element={<ResetPassword />} />
           <Route path="/forex" element={<ForexPage />} />
           <Route path="/cryptocurrency" element={<CryptoPage />} />
           <Route path="/binary" element={<BinaryPage />} />
           <Route path="/sport" element={<SportPage />} />
-          {currentUser ? <Route path="/tip" element={<Mytip />} /> : <Route path="/" element={<SampleHome />} />}
+          {/* {currentUser ? <Route path="/tip" element={<Mytip />} /> : <Route path="/" element={<SampleHome />} />} */}
+         <Route path="/tip" element={<Mytip />} /> 
           <Route path="/tips" element={<Mytip />} />
           <Route path="/betcalculator" element={<Virc />} />
           <Route path="/about" element={<About />} />
@@ -91,7 +96,8 @@ function App() {
           <Route path="/premium" element={<Premium />} />
           {/* <Route path="/" element={<SampleHome />} /> */}
           <Route path="*" element={<Navigate to="/" />} />
-          {admin === true ? <Route path="/dashboard" element={< DashboardHome />} /> : <Route path="/" element={<SampleHome />} />}
+          <Route path="/dashboard" element={< DashboardHome />} /> 
+          {/* {admin === true ? <Route path="/dashboard" element={< DashboardHome />} /> : <Route path="/" element={<SampleHome />} />} */}
           <Route path="/contact" element={< Contact />} />
           <Route path="/disclaimer" element={< Disclaimer />} />
           {/* <Route path="/airtime" element={<Airtime />} /> */}

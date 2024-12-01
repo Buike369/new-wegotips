@@ -18,8 +18,19 @@ const Navbar= () => {
      setTimeout(() => {
             setRegister() 
               }, 5000);
- 
+ const logM = {sessionId:currentUser?.sessionId, token:currentUser?.user.verification_token}
 
+ console.log(currentUser?.sessionId)
+
+     const logoutButton = async(e)=>{
+       e.preventDefault()
+
+       try{
+         await logout(logM)
+       }catch(err){
+   console.log(err)
+       }
+              }
     //            useEffect(()=>{
     //   const getSubscriptionPay = async()=>{
     //     try{
@@ -133,7 +144,7 @@ const handleScroll = () => {
                 
                 </li>
                 <li className="Affliate_Bet">
-                  <a href="/affliate">Affiliate Program</a>
+                  <a href="/affiliate">Affiliate Program</a>
                 </li>
                 {/* <li className="Contact_Bet">
                   <a href="/exchange"> Buy/Sell ENAR </a>
@@ -157,15 +168,15 @@ const handleScroll = () => {
                   <a >{currentUser ? <div><img src="/img/create.png" alt=""  style={{width:"35px",height:"35px",borderRadius:"50%", border:"2px solid #6156bd",padding:"3px"}}/></div> :""}</a>
                   <ul className="paulFr">
                       <li className="padup_Guide"></li>
-                      <li className="paulmy_man">{currentUser?.username} </li>
+                      <li className="paulmy_man">{currentUser?.user.username} </li>
                       <li className="Email_Like"><div className="Email_Like2">{currentUser?.email}</div></li>
-                      <li className="paulmy_man">ID:00000{currentUser?.id}</li>
+                      <li className="paulmy_man">ID:00000{currentUser?.user.user_id}</li>
                       <a href="/user-dashboard" className="FeedDiv"><li className="LogOutDiv_UN">Dashboard</li></a>
                      
                       {isPaid === 1? <a href="/tip" className="FeedDiv"><li className="LogOutDiv_UN">Subscription</li></a> :<div onClick={()=>setRegister(!register)} className="FeedDiv" ><li className="LogOutDiv_UN">My Tips(Subscribe)</li></div>}
                      
                      
-                      {currentUser?  <Link to="" className="FeedDiv"><li className="LogOutDiv_UN AMKING" onClick={logout}>Logout</li></Link>:""}
+                      {currentUser?  <Link to="" className="FeedDiv"><li className="LogOutDiv_UN AMKING" onClick={logoutButton}>logout</li></Link>:""}
                      
                   </ul>
                 </li>

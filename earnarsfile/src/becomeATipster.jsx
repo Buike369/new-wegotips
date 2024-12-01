@@ -49,12 +49,16 @@ const BecomeATipster = () => {
                         <div className='becomeTipster61'>
                             <div className='becomeRegister'>Register Now</div>
                             <p className='becomeRegister1'>Start Selling Your Tips In Less Than 30 Seconds</p>
-                            <div className='PoNoV'><input type="email" className='becomeRegister2' placeholder="Enter Your email" />
-                            <img src="/img/message-icon.png" alt="" className='iconDevH' /></div> 
-                            <div className='PoNoV'><input type="text" className='becomeRegister2' placeholder="User Name" />
+                            <div className='PoNoV'><input type="text" className='becomeRegister2' placeholder="Full Name" />
                             <img src="/img/user-icon.png" alt="" className='iconDevH' /></div> 
+                              <div className='PoNoV'><input type="email" className='becomeRegister2' placeholder="Your Email" />
+                            <img src="/img/message-icon.png" alt="" className='iconDevH' /></div>
+                                                        <div className='PoNoV'><input type="number" className='becomeRegister2' placeholder="Phone Number" />
+                            <img src="/img/message-icon.png" alt="" className='iconDevH' /></div>
+                            {/* <div className='PoNoV'><input type="text" className='becomeRegister2' placeholder="Phone Number" />
+                            <img src="/img/user-icon.png" alt="" className='iconDevH' /></div>  */}
                             <div>
-                              <p className="from3">Choose one from our market options</p>
+                              <p className="from3">Choose one  from our market options</p>
                               <div className='from1'>
                               <div  className='from2'><input type="checkbox" /><label className='from4'>Sports</label></div>
                                <div  className='from2'><input type="checkbox" /><label className='from4'>Cryptocurrency</label></div>
@@ -62,6 +66,17 @@ const BecomeATipster = () => {
                                <div className='from1'>
                                 <div className='from2'><input type="checkbox" /><label className='from4'>Forex</label></div>
                                  <div className='from2'><input type="checkbox" /><label className='from4'>Binary</label></div>
+                                 </div>
+                            </div>
+                             <div>
+                              <p className="from3">Years  of Experience</p>
+                              <div className='from1'>
+                              <div  className='from2'><input type="checkbox" /><label className='from4'>0-2 years.</label></div>
+                               <div  className='from2'><input type="checkbox" /><label className='from4'>2-5 years</label></div>
+                               </div>
+                               <div className='from1'>
+                                <div className='from2'><input type="checkbox" /><label className='from4'>5-10 years</label></div>
+                                 <div className='from2'><input type="checkbox" /><label className='from4'>10 Years Above</label></div>
                                  </div>
                             </div>
                             <div className=''><button className='iconDevH2'>Become a Tipster</button></div>
