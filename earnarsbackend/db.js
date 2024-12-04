@@ -15,8 +15,8 @@ const db = mysql.createPool({
    host: 'localhost',
    user: 'root',
    port: 3306,
-   password: 'Kingsley369',
-   database: 'wego_data',
+   password: 'Wegotips@469',
+   database: 'wegos_data',
 });
 
 // Check the connection
