@@ -6,11 +6,17 @@ const mysql = require('mysql2/promise');
 // Create a promise-based connection pool
 const db = mysql.createPool({
    connectionLimit: 10,
-   host: process.env.DB_HOST,
-   user: process.env.DB_USER,
-   port:process.env.DB_PORT,
-   password: process.env.DB_PASSWORD,
-   database: process.env.DB_NAME,
+   // host: process.env.DB_HOST,
+   // user: process.env.DB_USER,
+   // port:process.env.DB_PORT,
+   // password: process.env.DB_PASSWORD,
+   // database: process.env.DB_NAME,
+
+   host: 'localhost',
+   user: 'emeka',
+   port: 3306,
+   password: 'Wegotips@679',
+   database: 'wegos_data',
 });
 
 // Check the connection
