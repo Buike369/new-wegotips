@@ -13,10 +13,10 @@ const db = mysql.createPool({
    // database: process.env.DB_NAME,
 
    host: 'localhost',
-   user: 'emeka',
+   user: 'root',
    port: 3306,
-   password: 'Wegotips@679',
-   database: 'wegos_data',
+   password: 'Kingsley369',
+   database: 'wego_data',
 });
 
 // Check the connection
