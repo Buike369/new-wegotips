@@ -20,7 +20,8 @@ const db = mysql.createPool({
       console.log('Connected to the database.');
       connection.release(); // Release the connection back to the pool
    } catch (err) {
-      console.error('Database connection failed:', err);
+      console.log(" connection failed", err)
+      // console.error('Database connection failed:', err);
       process.exit(1);
    }
 })();
