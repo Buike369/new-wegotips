@@ -205,7 +205,8 @@ exports.register = async (req, res) => {
         ]);
 
         // Send verification email
-        const verificationLink = `http://localhost:3000/verify?token=${verificationToken}`;
+        // const verificationLink = `http://localhost:3000/verify?token=${verificationToken}`;
+        const verificationLink = `https://wegotips.com/verify?token=${verificationToken}`;
         await sendEmail(email, 'Verify Your Email', `Click this link to verify your account: ${verificationLink}`);
 
         res.status(201).send({ message: 'User registered. Please verify your email.' });
@@ -408,7 +409,8 @@ exports.forgotPassword = async (req, res) => {
             [resetToken, expiry, email]
         );
 
-        const resetLink = `http://localhost:3000/reset-password?token=${resetToken}`;
+        // const resetLink = `http://localhost:3000/reset-password?token=${resetToken}`;
+        const resetLink = `https://wegotips.com/reset-password?token=${resetToken}`;
         await sendEmail1(email, 'Password Reset', `Reset your password using this link: ${resetLink}`);
 
         res.status(200).json({ message: "Password reset link sent" });

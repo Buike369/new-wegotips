@@ -14,7 +14,7 @@ import "./style/admin.css"
 
 const Register =()=>{
   const wegoUrl =  'https://wegotips.com/api';
-    // const wegoUrl =  'http://localhost:5001/api';
+    // const wegoUrl =  'http://localhost:5000/api';
 
 
     const [inputs,setInputs]=useState({

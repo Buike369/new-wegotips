@@ -92,13 +92,13 @@ app.use((req, res, next) => {
 
 var allowedOrigins = [
   "http://localhost:3000",
-  "http://www.wegotips.com",
-  "http://wegotips.com"
+  "https://www.wegotips.com",
+  "https://wegotips.com"
   
 ];
 
-// "https://www.wegotips.com",
-  // "https://wegotips.com",
+// "http://www.wegotips.com",
+  // "http://wegotips.com",
 app.use(
   cors({
     origin: function (origin, callback) {
