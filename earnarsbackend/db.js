@@ -6,17 +6,17 @@ const mysql = require('mysql2/promise');
 // Create a promise-based connection pool
 const db = mysql.createPool({
    connectionLimit: 10,
-   // host: process.env.DB_HOST,
-   // user: process.env.DB_USER,
-   // port:process.env.DB_PORT,
-   // password: process.env.DB_PASSWORD,
-   // database: process.env.DB_NAME,
+   host: process.env.DB_HOST,
+   port:process.env.DB_PORT,
+   user: process.env.DB_USER,
+   password: process.env.DB_PASSWORD,
+   database: process.env.DB_NAME,
 
-   host: 'localhost',
-   user: 'root',
-   port: 3306,
-   password: 'Wegotips@469',
-   database: 'wegos_data',
+   // host: 'localhost',
+   // port: 3306,
+   // user: 'root',
+   // password: 'Wegotips@469',
+   // database: 'wegos_data',
 });
 
 // Check the connection
@@ -26,8 +26,8 @@ const db = mysql.createPool({
       console.log('Connected to the database.');
       connection.release(); // Release the connection back to the pool
    } catch (err) {
-      console.log(" connection failed", err)
-      // console.error('Database connection failed:', err);
+
+      console.error('Database connection failed:', err);
       process.exit(1);
    }
 })();
