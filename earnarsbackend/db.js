@@ -13,6 +13,7 @@ const db = mysql.createPool({
    database: process.env.DB_NAME,
 
    // host: 'localhost',
+   // host: process.env.DB_HOST,
    // port: 3306,
    // user: 'root',
    // password: 'Wegotips@469',
