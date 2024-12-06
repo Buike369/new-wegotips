@@ -97,8 +97,8 @@ var allowedOrigins = [
   
 ];
 
-// "http://www.wegotips.com",
-  // "http://wegotips.com",
+
+
 app.use(
   cors({
     origin: function (origin, callback) {
