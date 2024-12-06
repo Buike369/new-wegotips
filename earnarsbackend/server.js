@@ -93,7 +93,8 @@ app.use((req, res, next) => {
 var allowedOrigins = [
   "http://localhost:3000",
   "https://www.wegotips.com",
-  "https://wegotips.com"
+  "https://wegotips.com",
+  "http://wegotips.com"
   
 ];
 
