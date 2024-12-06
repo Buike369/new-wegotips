@@ -1,5 +1,53 @@
 name: Main.js CI
 
+# on:
+#   push:
+#     branches:
+#       - main
+#   pull_request:
+#     branches:
+#       - main
+
+# jobs:
+#   build:
+#     runs-on: self-hosted
+    
+#     strategy:
+#       matrix:
+#         node-version: ['18.x']
+   
+#     steps:
+#       - name: Checkout code
+#         uses: actions/checkout@v4
+        
+#       - name: Set up Node.js
+#         uses: actions/setup-node@v2
+#         with:
+#           node-version: ${{ matrix.node-version }}
+
+#       - name: Install dependencies
+#         run: |
+#           cd earnarsbackend
+#           rm -rf node_modules/
+#           npm ci install
+          
+#       - name: Export environment variables
+#         env:
+#           DB_HOST: ${{ secrets.DB_HOST }}
+#           DB_PORT: ${{ secrets.DB_PORT }}
+#           DB_USER: ${{ secrets.DB_USER }}
+#           DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+#           DB_NAME: ${{ secrets.DB_NAME }}
+#         run: echo "Environment variables set."
+
+#       - name: Restart services
+#         run: |
+#           npm update
+#           pm2 stop 0
+#           pm2 start 0
+#           pm2 save
+#           sudo service nginx restartname: Main.js CI
+
 on:
   push:
     branches:
@@ -31,6 +79,28 @@ jobs:
           rm -rf node_modules/
           npm ci install
           
+      - name: Preserve .env and deploy new backend files
+        run: |
+          BACKEND_DIR="earnarsbackend"
+          
+          # Preserve the .env file
+          if [ -f "$BACKEND_DIR/.env" ]; then
+            mv "$BACKEND_DIR/.env" /tmp/.env_backup
+          fi
+          
+          # Remove all other files in the backend directory
+          rm -rf "$BACKEND_DIR"/*
+          
+          # Restore the .env file
+          if [ -f /tmp/.env_backup ]; then
+            mv /tmp/.env_backup "$BACKEND_DIR/.env"
+          fi
+          
+          # Copy new backend files
+          cp -r ./backend/* "$BACKEND_DIR/"
+          
+          echo "Backend files updated successfully."
+
       - name: Export environment variables
         env:
           DB_HOST: ${{ secrets.DB_HOST }}
@@ -47,3 +117,7 @@ jobs:
           pm2 start 0
           pm2 save
           sudo service nginx restart
+
+
+
+
