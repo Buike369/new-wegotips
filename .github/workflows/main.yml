@@ -28,8 +28,12 @@ jobs:
       - name: Install dependencies
         run: |
           cd earnarsbackend
+          
+          # Remove node_modules directory if it exists
           rm -rf node_modules/
-          npm ci install
+          
+          # Install dependencies using npm ci
+          npm ci
 
       - name: Clean up and deploy new backend files
         run: |
@@ -45,27 +49,43 @@ jobs:
             exit 1
           fi
 
-          # Preserve the .env file
+          # Preserve the .env and package.json files
           if [ -f "$BACKEND_DIR/.env" ]; then
             echo "Backing up .env file..."
             mv "$BACKEND_DIR/.env" /tmp/.env_backup
           fi
 
-          # Remove all files in the backend directory except the .env file
-          echo "Removing all files except .env..."
-          find "$BACKEND_DIR" -type f ! -name ".env" -exec rm -f {} +
+          if [ -f "$BACKEND_DIR/package.json" ]; then
+            echo "Preserving package.json file..."
+            mv "$BACKEND_DIR/package.json" /tmp/package.json_backup
+          fi
 
-          # Restore the .env file
+          # Remove all files in the backend directory except .env and package.json
+          echo "Removing all files except .env and package.json..."
+          find "$BACKEND_DIR" -type f ! -name ".env" ! -name "package.json" -exec rm -f {} +
+
+          # Restore the .env and package.json files
           if [ -f /tmp/.env_backup ]; then
             echo "Restoring .env file..."
             mv /tmp/.env_backup "$BACKEND_DIR/.env"
           fi
 
-          # Copy new backend files to the backend directory
-          echo "Deploying new backend files..."
-          cp -r ./earnarsbackend/* "$BACKEND_DIR/"
+          if [ -f /tmp/package.json_backup ]; then
+            echo "Restoring package.json file..."
+            mv /tmp/package.json_backup "$BACKEND_DIR/package.json"
+          fi
 
-          echo "Backend files updated successfully."
+          # Copy new backend files from the source directory to the actual backend folder
+          echo "Deploying new backend files..."
+          cp -r ./backend/* "$BACKEND_DIR/"
+
+          # Install dependencies for the backend
+          echo "Installing backend dependencies..."
+          cd "$BACKEND_DIR"
+          rm -rf node_modules/
+          npm ci  # This installs dependencies as defined in package-lock.json
+
+          echo "Backend files updated and dependencies installed successfully."
 
       - name: Export environment variables
         env:
