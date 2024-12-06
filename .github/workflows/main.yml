@@ -19,7 +19,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-        
+
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
@@ -30,24 +30,34 @@ jobs:
           cd earnarsbackend
           rm -rf node_modules/
           npm ci install
-          
+
       - name: Preserve .env and deploy new backend files
         run: |
           BACKEND_DIR="earnarsbackend"
           
+          # Debug the current directory and list files
+          echo "Current directory: $(pwd)"
+          ls -la
+
+          # Ensure backend directory exists
+          if [ ! -d ./backend ]; then
+            echo "Error: Backend directory './backend/' does not exist."
+            exit 1
+          fi
+
           # Preserve the .env file
           if [ -f "$BACKEND_DIR/.env" ]; then
             mv "$BACKEND_DIR/.env" /tmp/.env_backup
           fi
-          
+
           # Remove all other files in the backend directory
           rm -rf "$BACKEND_DIR"/*
-          
+
           # Restore the .env file
           if [ -f /tmp/.env_backup ]; then
             mv /tmp/.env_backup "$BACKEND_DIR/.env"
           fi
-          
+
           # Copy new backend files
           cp -r ./backend/* "$BACKEND_DIR/"
           
@@ -69,7 +79,3 @@ jobs:
           pm2 start 0
           pm2 save
           sudo service nginx restart
-
-
-
-
