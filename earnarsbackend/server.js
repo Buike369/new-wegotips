@@ -54,7 +54,7 @@ const relStore = new MySQLStore({},db);
 
 
 
-const port = process.env.PORT || 5001
+const port = process.env.PORT || 5002
 app.use(session({
   key:'user_sid',
   secret: secretKey,
