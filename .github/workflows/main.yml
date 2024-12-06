@@ -31,10 +31,10 @@ jobs:
           rm -rf node_modules/
           npm ci install
 
-      - name: Clean and deploy new backend files
+      - name: Clean up and deploy new backend files
         run: |
           BACKEND_DIR="earnarsbackend"
-
+          
           # Debug the current directory and list files
           echo "Current directory: $(pwd)"
           ls -la
@@ -47,19 +47,23 @@ jobs:
 
           # Preserve the .env file
           if [ -f "$BACKEND_DIR/.env" ]; then
+            echo "Backing up .env file..."
             mv "$BACKEND_DIR/.env" /tmp/.env_backup
           fi
 
-          # Remove all files in the backend directory but keep the directory itself
-          find "$BACKEND_DIR" -type f -exec rm -f {} +
+          # Remove all files in the backend directory except the .env file
+          echo "Removing all files except .env..."
+          find "$BACKEND_DIR" -type f ! -name ".env" -exec rm -f {} +
 
           # Restore the .env file
-          if [ -f /tmp/.env_backup" ]; then
+          if [ -f /tmp/.env_backup ]; then
+            echo "Restoring .env file..."
             mv /tmp/.env_backup "$BACKEND_DIR/.env"
           fi
 
           # Copy new backend files to the backend directory
-          cp -r ./backend/* "$BACKEND_DIR/"
+          echo "Deploying new backend files..."
+          cp -r ./earnarsbackend/* "$BACKEND_DIR/"
 
           echo "Backend files updated successfully."
 
@@ -79,4 +83,3 @@ jobs:
           pm2 start 0
           pm2 save
           sudo service nginx restart
-
