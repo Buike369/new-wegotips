@@ -5,7 +5,8 @@ export const AuthContext = createContext()
 
 
 export const AuthContextProvider = ({children})=>{
-  const wegoUrl = 'https://wegotips.com/api';
+  // const wegoUrl = 'https://wegotips.com/api';
+  const wegoUrl = '/api';
     // const wegoUrl = 'http://localhost:5001/api';
     // const [currentUser,setCurrentUser] = useState(JSON.parse(localStorage.getItem("user")) || null)
     const [currentUser,setCurrentUser] = useState(JSON.parse(localStorage.getItem("user")) || null)

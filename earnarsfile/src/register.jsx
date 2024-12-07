@@ -13,7 +13,8 @@ import SuccessN from "./success1"
 import "./style/admin.css"
 
 const Register =()=>{
-  const wegoUrl =  'https://wegotips.com/api';
+  // const wegoUrl =  'https://wegotips.com/api';
+   const wegoUrl =  '/api';
     // const wegoUrl =  'http://localhost:5000/api';
 
 
