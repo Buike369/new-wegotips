@@ -9,7 +9,7 @@ const db = mysql.createPool({
    host: 'localhost',
    port: 3306,
    user: "root",
-   password: "Wegotips@469",
+   password: "Wegotips@369",
    database: "wegos_data",
 
    // host: 'localhost',
