@@ -11,6 +11,7 @@ import { passwordStrength } from 'check-password-strength'
 
 import SuccessN from "./success1"
 import "./style/admin.css"
+import SEO from './SEO'
 
 const Register =()=>{
   // const wegoUrl =  'https://wegotips.com/api';
@@ -135,11 +136,13 @@ const Register =()=>{
     }, []);
     
     return(
+      <>
+      <SEO title="Register Now to Unlock Daily Earning Opportunities" description="Sign up today and start earning daily with expert predictions for crypto, forex, derivatives, and sports. Join now and seize your financial opportunities" keywords="Register for Daily Earnings, Sign Up for Market Predictions, Join to Earn Daily, Create Account for Crypto Tips, Forex and Sports Predictions Registration, Register for Expert Trading Insights, Sign Up for Derivatives Forecasts, Start Earning Daily Now, Easy Registration for Predictions, Join for Profitable Tips Today "/>
         <div className="BgColor" >
 
             <div className="formDivPAd">
             
-      
+      <div style={{width:"100%",maxWidth:"450px"}}>
               <div style={{padding:"0px 7px"}} className="DivForming">
             <div className="Form_Div page">
                 <form>
@@ -147,30 +150,31 @@ const Register =()=>{
                      <p className="New_Account textAdmin">Create an account with wegotips</p>
                      {/* <p style={{textAlign:"center",marginBottom:'10px'}}>Create an account with us</p> */}
                      <label  className="KinL">Username :</label>
-                    <div> <input type="text" placeholder="Username"  className="Full_Name inpupage page10 page11" onChange={handleChange} name="username" required/></div>
+                    <div> <input type="text" placeholder=""  className="Full_Name inpupage page10 page11" onChange={handleChange} name="username" required/></div>
                                       {usernameMessage && <p className="errpage">{usernameMessage}</p>}
                                       <label  className="KinL">Email :</label>
-                    <div> <input type="email" placeholder="Email" className="Full_Name inpupage page10 page11" onChange={handleChange} name="email" required/></div>
+                    <div> <input type="email" placeholder="" className="Full_Name inpupage page10 page11" onChange={handleChange} name="email" required/></div>
                                       {emailMessage && <p className="errpage">{emailMessage}</p>}
                 
  <label htmlFor=""  className="KinL">Password :</label>
-                    <div className="sers"> <input type={inputs50.showPassword ? "text":"password"} placeholder="Password" className="Full_Name inpupage page10 page11" onChange ={handleChange} name="password" value={inputs.password} required/>
+                    <div className="sers"> <input type={inputs50.showPassword ? "text":"password"} placeholder="" className="Full_Name inpupage page10 page11" onChange ={handleChange} name="password" value={inputs.password} required/>
 
 
                   {inputs50.showPassword ?<FontAwesomeIcon icon={faEye} className="PlusIcon plusIcon2 ser1" onClick={handleClickShowPassword}/>:<FontAwesomeIcon icon={faEyeSlash} className="PlusIcon plusIcon2 ser1" onClick={handleClickShowPassword}/> }</div>
                   <label className="KinL" htmlFor="">Referral Code ( Optional ) :</label>
-                                      <div> <input type="text" placeholder="referral_code" className="Full_Name inpupage page10 page11" onChange={handleChange} name="referralCode"  readOnly={!!inputs.referralCode} value={inputs.referralCode}/></div>
+                                      <div> <input type="text" placeholder="" className="Full_Name inpupage page10 page11" onChange={handleChange} name="referralCode"  readOnly={!!inputs.referralCode} value={inputs.referralCode}/></div>
                                       {emailMessage && <p className="errpage">{emailMessage}</p>}
                   {error && <p className="errpage">{error}</p>}
                   {passwordMessage && <p className="errpage">{passwordMessage}</p>}
                   {message1 && <p className="errpage" style={{color:"#fff"}}>{message1}</p>}
                   
 
-                     <div className="Checkbox_div"><input type="checkbox" name="over18" onChange={handleChange1} className="Bym"/> <label className="Over_18 adColor">By checking this box you declare that you are over 18yrs of age.</label></div>
+                     {/* <div className="Checkbox_div"><input type="checkbox" name="over18" onChange={handleChange1} className="Bym"/> <label className="Over_18 adColor">By checking this box you declare that you are over 18yrs of age.</label></div> */}
                     
-                    <div className="Checkbox_div"> <input type="checkbox" className="Bym" name="term" onChange={handleChange2}/><p className="Over_18 adColor">By checking this box you agree to all our Terms & Conditions.Click to  <a href="/termscondition" className="trems1">here</a> to read.</p></div>
+                    {/* <div className="Checkbox_div"> <input type="checkbox" className="Bym" name="term" onChange={handleChange2}/><p className="Over_18 adColor">By checking this box you agree to all our Terms & Conditions.Click to  <a href="/termscondition" className="trems1">here</a> to read.</p></div> */}
 
-                     <button disabled={!over18 || !term || (inputs.password.length === 0) || (inputs.password.length === 0) || (inputs.email.length === 0)} className={over18 && term && (inputs.password.length > 0) && (inputs.password.length > 0) && (inputs.email.length > 0) ? " RegisterM regmin":"RegisterM page10 page11"} onClick={handleSubmit}>{loading ? "Registering..." : "Register"}</button>
+                     <button disabled={(inputs.password.length === 0) || (inputs.username.length === 0) || (inputs.email.length === 0)} className={ (inputs.password.length > 0) && (inputs.password.length > 0) && (inputs.email.length > 0) ? " RegisterM regmin":"RegisterM page10 page11"} onClick={handleSubmit}>{loading ? "Registering..." : "Register"}</button>
+                       {/* <button disabled={!over18 || !term || (inputs.password.length === 0) || (inputs.password.length === 0) || (inputs.email.length === 0)} className={over18 && term && (inputs.password.length > 0) && (inputs.password.length > 0) && (inputs.email.length > 0) ? " RegisterM regmin":"RegisterM page10 page11"} onClick={handleSubmit}>{loading ? "Registering..." : "Register"}</button> */}
                      <div className="Or_with2">
                          <div className="Or_With"></div>
                          <p className="adColor">Or register with</p>
@@ -186,11 +190,14 @@ const Register =()=>{
             </div>
             </div>
             </div>
+            </div>
 
             {message  &&  <SuccessN succ={message}/> }
 
         </div>
+        </>
     )
 }
 
-export default withTitle(Register, 'Register with - Wegotips');
+// export default withTitle(Register, 'Register with - Wegotips');
+export default Register;

@@ -1,4 +1,5 @@
-require('dotenv').config();
+const path = require('path')
+require('dotenv').config({ path: path.resolve(__dirname, '../.env')});
 
 
 const mysql = require('mysql2/promise');
@@ -6,18 +7,16 @@ const mysql = require('mysql2/promise');
 // Create a promise-based connection pool
 const db = mysql.createPool({
    connectionLimit: 10,
-   host: 'localhost',
-   port: 3306,
-   user: "emeka",
-   password: "Wegotips@679",
-   database: "wegos_data",
+   host: process.env.DB_HOST,
+   port: process.env.DB_PORT, 
+   user: process.env.DB_USER,
+   password: process.env.DB_PASSWORD,
+   database: process.env.DB_NAME,
 
    // host: 'localhost',
-   // host: process.env.DB_HOST,
-   // port: 3306,
    // user: 'root',
-   // password: 'Wegotips@469',
-   // database: 'wegos_data',
+   // password: 'Kingsley369',
+   // database: 'wego_data',
 });
 
 // Check the connection

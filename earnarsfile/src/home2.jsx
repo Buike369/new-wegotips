@@ -13,6 +13,8 @@ import axios from "axios";
 import { useLocation } from "react-router-dom"
 import "./style/background.css"
 import {faArrowRight,faArrowLeft} from "@fortawesome/free-solid-svg-icons"
+import SEO from './SEO'
+import OrganizationSchema from "./OrgSchema";
 
 
 const Home2=() =>{
@@ -362,6 +364,9 @@ useEffect(()=>{
   
 
     return (
+      <>
+      <SEO title=" Daily Earnings Made Easy with Expert Market Predictions" description="wegotips offer good prediction for different market like crypto, forest trading, derivatives, and sports." keywords="Earning daily, sports, forest trading, cryptocurrency, derivative, Accurate Market Predictions, Reliable Crypto Forecasts, Profitable Forex Tips, Winning Sports Picks, Expert Trading Insights, Trading Market Insights, Sports Analytics Predictions, Derivatives Trading Strategies, Forex Signal Service, Crypto Market Analysis, Sports Betting Predictions, Derivatives Insights, Forex Trading Tips, Crypto Forecasting,Market Predictions, WeGotTips Predictions " />
+      <OrganizationSchema/>
       <div  className="HomPageBg">
         <div className="ahh"></div>
       <div className="Home_Bg_Bg" >
@@ -2265,6 +2270,7 @@ Get accurate winning tips from professional betting tipsters across sports, fore
                </div>
       <Footer />
       </div>
+      </>
     );
 }
 
