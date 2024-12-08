@@ -3,6 +3,7 @@ import { useNavigate, useSearchParams } from 'react-router-dom';
 import axios from 'axios';
 
 const VerifyEmail = () => {
+    const wegoUrl = '/api';
     const [searchParams] = useSearchParams();
     const [message, setMessage] = useState("");
     const [error, setError] = useState(false);
@@ -18,7 +19,7 @@ const VerifyEmail = () => {
             }
 
             try {
-                const response = await axios.get(`http://localhost:5001/api/auth/verify?token=${token}`);
+                const response = await axios.get(`${wegoUrl}/auth/verify?token=${token}`);
                 setMessage(response.data.message);
                 setTimeout(() => {
                     navigate('/login');
