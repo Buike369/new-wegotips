@@ -209,7 +209,7 @@ exports.register = async (req, res) => {
         const verificationLink = `https://wegotips.com/verify?token=${verificationToken}`;
         await sendEmail(email, 'Verify Your Email', `Click this link to verify your account: ${verificationLink}`);
 
-        res.status(201).send({ message: 'User registered. Please verify your email.' });
+        res.status(201).send({ message: 'Registration Successful, Please verify your email address by clicking on the link sent to your email.' });
     } catch (err) {
         console.error(err);
         res.status(500).send({ message: 'An error occurred during registration.' });
