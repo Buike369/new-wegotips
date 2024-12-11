@@ -61,6 +61,12 @@ function App() {
   // const isLoginRoute = location.pathname;
   const tr = window.location.pathname;
   // const navigate = useLocation();
+
+  // Protected Route Component
+  const ProtectedRoute = ({ children }) => {
+    return currentUser ? children : <Navigate to="/" />;
+  };
+
   return (
     <div className="kingsley_the_coder">
       <BrowserRouter>
@@ -115,7 +121,16 @@ function App() {
           <Route path="/market-predictions" element={<MarketPrediction />} />
           <Route path="/recent-predictions" element={<RecentPrediction />} />
           {/* {currentUser ? <Route path="/user-dashboard" element={<UserDashBoard />} /> : <Route path="/" element={<SampleHome />} />} */}
-          <Route path="/user-dashboard" element={<UserDashBoard />} /> 
+          {/* <Route path="/user-dashboard" element={<UserDashBoard />} />  */}
+          {/* Protected Route */}
+          <Route
+            path="/user-dashboard"
+            element={
+              <ProtectedRoute>
+                <UserDashBoard />
+              </ProtectedRoute>
+            }
+          />
 
 
 

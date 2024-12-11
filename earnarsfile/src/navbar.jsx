@@ -20,7 +20,7 @@ const Navbar= () => {
               }, 5000);
  const logM = {sessionId:currentUser?.sessionId, token:currentUser?.user.verification_token}
 
- console.log(currentUser?.sessionId)
+//  console.log(currentUser?.sessionId)
 
      const logoutButton = async(e)=>{
        e.preventDefault()

@@ -10,6 +10,7 @@ import validator from 'validator';
 import SuccessN from "./success1"
 import "./style/admin.css"
 import axios from "axios"
+import SEO from './SEO'
 
 // import {GoogleLogin} from  'react-google-login'
 
@@ -62,15 +63,17 @@ const Login =()=>{
     navigate('/user-dashboard')
     // console.log(p)
    }catch(err){
-    // setError(err.response.data.msg)
-    //   setTimeout(()=>{
-    //         setError("")
-    //        },3000)
-    console.log(err)
+    setError(err.response.data.message)
+      setTimeout(()=>{
+            setError("")
+           },3000)
+    // console.log(err)
    
    }  }   
     }
     return(
+        <>
+              <SEO title="Login | Access Your Account on Wegotips" description="Log in to access expert market predictions and tips for sports, crypto, derivatives, and forex trading." keywords="Login, Market Predictions, Sports Tips, Crypto Insights, Forex Trading Tips, Derivatives Analysis, Data-Driven Forecasts, Trading Advice "/>
         <div className="BgColor" >
           
           
@@ -105,7 +108,8 @@ const Login =()=>{
         
              
         </div>
+        </>
     )
 }
 
-export default withTitle(Login, 'Login to  Wegotips');
+export default Login;

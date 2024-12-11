@@ -23,7 +23,7 @@ const Success =()=>{
                   <div className="OTPDIV1">
                
                  </div>
-                  <a href="/login" className="sesetP"><div  className="loginn">Verify Account</div></a>
+                  <a href="/login" className="sesetP"><div  className="loginn">login Now</div></a>
               
          
                      

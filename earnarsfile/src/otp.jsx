@@ -32,7 +32,10 @@ const Otp =()=>{
      },5000)
     
    }catch(err){
-    setError(err.response.data.msg)
+    setError(err.response.data.message)
+     setTimeout(()=>{
+         setError("")
+     },3000)
     // console.log(err.response.data.msg)
    } 
      

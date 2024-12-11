@@ -629,8 +629,9 @@
     left:0;
     bottom:0;
     width:100%;
-    background-color: #120b4a73;
-    z-index: 60;
+    background-color: #120c553b;
+        z-index: 60;
+        backdrop-filter: blur(12px);
   
 }
 .footLinCU{

@@ -13,6 +13,7 @@ import {AuthContext}from "./context/authContext"
 
 
 const ResetPassword =()=>{
+     const wegoUrl =  '/api';
 
  const pa = useParams().id;
  const [searchParams] = useSearchParams(); // Hook to read query parameters
@@ -25,6 +26,7 @@ const ResetPassword =()=>{
         password1:"",
        
     })
+     
      const [message, setMessage] = useState("");
     const [error1,setError1]=useState("")
    
@@ -71,7 +73,7 @@ const ResetPassword =()=>{
         }
 
         try {
-            const response = await axios.post('http://localhost:5001/api/auth/reset-password', {
+            const response = await axios.post(`${wegoUrl}/auth/reset-password`, {
                 token,
                 inputs
             });

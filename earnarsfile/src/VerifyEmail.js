@@ -37,9 +37,9 @@ const VerifyEmail = () => {
 
     return (
         <div style={{ textAlign: 'center', marginTop: '50px' }}>
-            <h1>{error ? "Verification Failed" : "Email Verified"}</h1>
-            <p>{message}</p>
-            {!error && <p>Redirecting to login page...</p>}
+            <h1 style={{ color: "#fff", textAlign: "center", fontSize:"30px", fontWeight:"600", marginBottom:"20px"}}>{error ? "Verification Failed" : "Email Verified"}</h1>
+            <p style={{ color: "#fff", textAlign: "center" }}>{message}</p>
+            {!error && <p style={{color:"#fff", textAlign:"center"}}>Redirecting to login page...</p>}
         </div>
     );
 };

@@ -40,7 +40,7 @@ export const AuthContextProvider = ({children})=>{
      const p =  await axios.post(`${wegoUrl}/auth/logout`,logM);
         // await axios.post(`${wegoUrl}/auth/logout`);
         setCurrentUser(null)
-        console.log(p)
+        
      }
 
  

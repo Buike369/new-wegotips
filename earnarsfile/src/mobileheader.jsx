@@ -21,6 +21,7 @@ const MobileHeader = () => {
     const [showMe1,setShowMe1] = useState(false)
 
      const tr = window.location.pathname;
+     const logM = {sessionId:currentUser?.sessionId, token:currentUser?.user.verification_token}
     
     const [feedBack,setFeedBack]=useState("")
     window.onscroll =()=>{
@@ -60,6 +61,16 @@ const MobileHeader = () => {
          document.body.classList.remove('cac')
 
       }
+
+       const logoutBu = async(e)=>{
+       e.preventDefault()
+
+       try{
+         await logout(logM)
+       }catch(err){
+   console.log(err)
+       }
+              }
   return (
     <div className={show22}>
      <div className={feedBack}>
@@ -137,7 +148,7 @@ const MobileHeader = () => {
                       <a  className="fit" href="/user-dashboard" onClick={mark}> <span className="mackP">*</span> * My Dashboard</a>
                    
                        {isPaid === 1? <a href="/tip" className="fit">  <span className="mackP">*</span> * My Tips(Premium)</a> :<Link onClick={()=>setRegister(!register)} className="fit" >Subscription</Link>}
-                      <Link  className="fit appjo tef" to="" onClick={logout}>Log Out</Link> 
+                      <Link  className="fit appjo tef" to="" onClick={logoutBu}>Log Out</Link> 
             </div>
              {/* :""} */}
             </div> :  <Link to="/register" className="LogIn" onClick={mark} >Login/Register</Link>}

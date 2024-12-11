@@ -530,7 +530,8 @@ const referralLink = `http://localhost:3000/register?referralCode=${currentUser?
                     <div className='userD50'>
                     <div className='dvd2 dvd23'>
                     <div className='userD6'><img src="/img/dashboard-profile3.png" alt="" className='profileDImg'/></div>
-                    <div className='JohnKen1'>{currentUser?.user.username}</div>
+                    {/* {currentUser?.user.username} */}
+                    <div className='JohnKen1'>Bk</div>
                     <div className='JohnKen2'> <img src="/img/map-icon.png" alt=""/><span className='JohnKen3'>Nigeria</span></div>
                     <div  className='JohnKen2'><img src="/img/calendar-icon2.png" alt=""/><span className='JohnKen3'>Joined Oct, 2021</span></div>
                     <button className='EMMAN y45' onClick={()=>setSection1('userSection5')}><div className=' JohnKen5'><img src="/img/edit-icon.png" alt=""/><span className='JohnKen7'>Edit Your Profile</span></div></button> 
@@ -1694,9 +1695,10 @@ const referralLink = `http://localhost:3000/register?referralCode=${currentUser?
 {dashboardMenu ?
 <div className="pKFin">
         <div className="kingYOU">
+          <div style={{marginBottom:"15px"}}><FontAwesomeIcon icon={faXmark} className="ravs" onClick={()=>setDashboardMenu(!dashboardMenu)}/></div>
    <div className='Fa4'>
     <div  className="Fa41">
-          <div className="prIconCl" onClick={()=>setDashboardMenu(!dashboardMenu)}>BK</div>
+          <div className="prIconCl" >BK</div>
           <p className='NameBB'>samuel345</p>
           </div>
            <div className='Fa'>

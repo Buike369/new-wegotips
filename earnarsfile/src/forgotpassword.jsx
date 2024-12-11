@@ -13,7 +13,8 @@ import validator from 'validator';
 
 
 const ForgotPassword =()=>{
-  const wegoUrl = 'https://wegotips.com/api';
+  // const wegoUrl = 'https://wegotips.com/api';
+  const wegoUrl = '/api';
   // const wegoUrl = 'http://localhost:5001/api';
 
     const [OTP,setOtp]=useState("")
