@@ -12,7 +12,8 @@ import Demo1 from "./Dashboard/dashboardSports"
 import Demo2 from "./Dashboard/dashboardPostResult"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import {  faPlus,faMinus, faPaperPlane,faVolleyball,faCheckToSlot, faCheckDouble} from '@fortawesome/free-solid-svg-icons'
-import {faCircleCheck,faXmark,faWallet,faBars,faBell,faHouse} from '@fortawesome/free-solid-svg-icons'
+import {faCircleCheck,faXmark,faWallet,faBars,faBell,faHouse} from '@fortawesome/free-solid-svg-icons';
+import ReferralLinkPage from "./referralLinkPage"
 
 
 const UserDashboard = () => {
@@ -116,6 +117,10 @@ const [dashboardMenu,setDashboardMenu] = useState(false)
  }
   const Goma5 =()=>{
   setSection1('userSection5')
+  setDashboardMenu(!dashboardMenu)
+ }
+  const Refers =()=>{
+  setSection1('referralLink')
   setDashboardMenu(!dashboardMenu)
  }
   const Goma6 =()=>{
@@ -518,7 +523,7 @@ console.log(response.data)
 
    },[])
 
-const referralLink = `http://localhost:3000/register?referralCode=${currentUser?.user.referral_code}`;
+// const referralLink = `http://localhost:3000/register?referralCode=${currentUser?.user.referral_code}`;
      const card = ["sport","binary","forex","crytptocurrency","sport","binary","forex","crytptocurrency"]
   return (
     <div className='vimvi'>
@@ -552,6 +557,7 @@ const referralLink = `http://localhost:3000/register?referralCode=${currentUser?
                              <div className='dvd1 JohnKen5 ' onClick={()=>setSection1('userSection1')}  style={{backgroundColor:section1 === "userSection1" ? "#0d0740": "", borderLeft: section1 === "userSection1" ? "2px solid #5157ab":"" }}><img src="/img/subscriptions.png" alt=""/> <span className='JohnKen7' >My Tips</span></div>
                         <div className='dvd1 JohnKen5'  onClick={()=>setSection1('userSection4')}  style={{backgroundColor:section1 === "userSection4" ? "#0d0740": "", borderLeft: section1 === "userSection4" ? "2px solid #5157ab":"" }}><img src="/img/settings.png" alt=""/> <span className='JohnKen7'>Pricing</span></div>
                           <div className='dvd1 JohnKen5 ' onClick={()=>setSection1('userSection5')}  style={{backgroundColor:section1 === "userSection5" ? "#0d0740": "", borderLeft: section1 === "userSection5" ? "2px solid #5157ab":"" }}><img src="/img/settings.png" alt=""/> <span className='JohnKen7'>Setting</span></div>
+                                                 <div className='dvd1 JohnKen5 ' onClick={()=>setSection1('referralLink')}  style={{backgroundColor:section1 === "referralLink" ? "#0d0740": "", borderLeft: section1 === "referralLink" ? "2px solid #5157ab":"" }}><img src="/img/settings.png" alt=""/> <span className='JohnKen7'>Refer A User</span></div>
                           </div>
                           </>
                           :
@@ -590,7 +596,7 @@ const referralLink = `http://localhost:3000/register?referralCode=${currentUser?
       </div>
 
       {/* const referralLink = `http://localhost:3000/register?referralCode=${user.referral_code}`; */}
-    <div><a href="">{referralLink}</a></div>
+    {/* <div><a href="">{referralLink}</a></div> */}
       <div className='Fa10'>
 
         {section1 === "userSection"? 
@@ -1680,6 +1686,9 @@ const referralLink = `http://localhost:3000/register?referralCode=${currentUser?
                   </> :""}
 
                          </div> </>: ""}
+                         
+{section1 === "referralLink"? <>
+                  <ReferralLinkPage/> </>: ""}
                          {section1 === "userSection6" ?<>
                          <Demo1/>
                          </>:""}
@@ -1721,6 +1730,10 @@ const referralLink = `http://localhost:3000/register?referralCode=${currentUser?
                              <div className='dvd1 JohnKen5 ' onClick={Goma3}  style={{backgroundColor:section1 === "userSection1" ? "#0d0740": "", borderLeft: section1 === "userSection1" ? "2px solid #5157ab":"" }}><img src="/img/subscriptions.png" alt=""/> <span className='JohnKen7' >My Tips</span></div>
                         <div className='dvd1 JohnKen5'  onClick={Goma4}  style={{backgroundColor:section1 === "userSection4" ? "#0d0740": "", borderLeft: section1 === "userSection4" ? "2px solid #5157ab":"" }}><img src="/img/settings.png" alt=""/> <span className='JohnKen7'>Pricing</span></div>
                           <div className='dvd1 JohnKen5 ' onClick={Goma5}  style={{backgroundColor:section1 === "userSection5" ? "#0d0740": "", borderLeft: section1 === "userSection5" ? "2px solid #5157ab":"" }}><img src="/img/settings.png" alt=""/> <span className='JohnKen7'>Setting</span></div>
+                          <div className='dvd1 JohnKen5 ' onClick={Refers}  style={{backgroundColor:section1 === "referralLink" ? "#0d0740": "", borderLeft: section1 === "referralLink" ? "2px solid #5157ab":"" }}><img src="/img/settings.png" alt=""/> <span className='JohnKen7'>Refer A User</span></div>
+                          
+                          
+
                           </div>
                           </>
                           :
