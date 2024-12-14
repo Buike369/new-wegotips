@@ -143,7 +143,12 @@ const Home2=() =>{
    const [post3,setPosts3] = useState([])
    const [post4,setPosts4] = useState([])
   const cat = useLocation().search
-  
+
+  const topPredictedMarket = ["emeka","emeka","emeka","emeka","emeka"]
+  const topPredictedMarket1 = ["emeka","emeka","emeka","emeka","emeka"]
+  const topPredictedMarket2 = ["emeka","emeka","emeka","emeka","emeka"]
+  const topPredictedMarket3 = ["emeka","emeka","emeka","emeka","emeka"]
+  const topRecentTips = ["emeka","emeka","emeka","emeka","emeka"]
 
 
 
@@ -1309,7 +1314,7 @@ Get accurate winning tips from professional betting tipsters across sports, fore
              data-aos-easing="linear" >
 
               
-                 <div className="topPrediction">Top Predictions</div>
+                 <div className="topPrediction">Top Predicted Markets</div>
                   <div  className="GetP">Discover the top predictions predicted by our expert tipsters.</div>
                  <div style={{padding: "1px  10px"}}>
               <div className="UponT" >
@@ -1349,8 +1354,8 @@ Get accurate winning tips from professional betting tipsters across sports, fore
     <tbody>
        
        
-     
-        <tr  className="ADDTimeDbg " >
+     {topPredictedMarket.map((app,id)=>(
+        <tr  className="ADDTimeDbg " key={id}>
         <th className=" ADDTimeDbg">09/11/2023</th>
         <td>13:00pm</td>
           <td>Champions league</td>
@@ -1359,65 +1364,11 @@ Get accurate winning tips from professional betting tipsters across sports, fore
         <td>1.72</td>
         <td>10,000</td>
          <td><img src="/img/good.png" alt="" /></td>
-         <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
-    
-        
-      </tr>
-      <tr  className="ADDTimeDbg ">
-        <th className="ADDTimeDbg">09/11/2023</th>
-        <td>13:00am</td>
-          <td>France League1</td>
-        <td>PSG Vs Strasbourg</td>
-        <td>1x</td>
-        <td>1.56</td>
-        <td>5,000</td>
-         <td><img src="/img/good.png" alt="" /></td>
-         <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
-        
-      </tr>
-
-            <tr  className="ADDTimeDbg ">
-        <th className="ADDTimeDbg">09/11/2023</th>
-        <td>13:00am</td>
-          <td>France League1</td>
-        <td>PSG Vs Strasbourg</td>
-        <td>1x</td>
-        <td>1.56</td>
-        <td>5,000</td>
-         <td><img src="/img/good.png" alt="" /></td>
-         <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
-        
-      </tr>
-
-            <tr  className="ADDTimeDbg ">
-        <th className="ADDTimeDbg">09/11/2023</th>
-        <td>13:00am</td>
-          <td>France League1</td>
-        <td>PSG Vs Strasbourg</td>
-        <td>1x</td>
-        <td>1.56</td>
-        <td>5,000</td>
-         <td><img src="/img/good.png" alt="" /></td>
-         <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
-        
-      </tr>
-            <tr  className="ADDTimeDbg ">
-        <th className="ADDTimeDbg">09/11/2023</th>
-        <td>13:00am</td>
-          <td>France League1</td>
-        <td>PSG Vs Strasbourg</td>
-        <td>1x</td>
-        <td>1.56</td>
-        <td>5,000</td>
-         <td><img src="/img/good.png" alt="" /></td>
-         <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
-        
-      </tr>
-  
-        
+         <td><a href="/view-profile" style={{color:"#fff",display:"flex",flexDirection:"column",alignItems:"center"}}><img src="/img/create.png" alt="" className="tipImage"/><p>View</p></a></td>
       
-   
-     
+      </tr>
+      ))}
+
     </tbody>
   </table>
 </div>
@@ -1439,14 +1390,12 @@ Get accurate winning tips from professional betting tipsters across sports, fore
         <th style={{width:"80px"}}>Stop Loss</th>
          <th style={{width:"80px"}}>Result</th>
          <th style={{width:"80px"}}>Tipster</th>
-        
-                
+               
       </tr>
     </thead>
     <tbody>
-       
-       
-     
+         
+     {topPredictedMarket1.map((app,id)=>(
       <tr  className="ADDTimeDbg ADDTimeDbg22">
         <th className=" ADDTimeDbg">09/11/2023</th>
         <td>NGN/USD</td>
@@ -1455,63 +1404,12 @@ Get accurate winning tips from professional betting tipsters across sports, fore
         <td>1.899765</td>
         <td>1.456378</td>
          <td><img src="/img/good.png" alt="" /></td>
-        <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
+        <td><a href="/view-profile" style={{color:"#fff",display:"flex",flexDirection:"column",alignItems:"center"}}><img src="/img/create.png" alt="" className="tipImage"/><p>View</p></a></td>
        
         
       </tr>
-      <tr  className="ADDTimeDbg ADDTimeDbg22">
-        <th className="ADDTimeDbg">09/11/2023</th>
-        <td>CED/USD</td>
-          <td>Short(buy)</td>
-        <td>1.678787</td>
-        <td>1.678787</td>
-        <td>1.678787</td>
-         <td><img src="/img/good.png" alt="" /></td>
-        <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
-       
-        
-      </tr>
-         <tr  className="ADDTimeDbg ADDTimeDbg22">
-        <th className="ADDTimeDbg">09/11/2023</th>
-        <td>CED/USD</td>
-          <td>Short(buy)</td>
-        <td>1.678787</td>
-        <td>1.678787</td>
-        <td>1.678787</td>
-         <td><img src="/img/good.png" alt="" /></td>
-        <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
-       
-        
-      </tr>
-         <tr  className="ADDTimeDbg ADDTimeDbg22">
-        <th className="ADDTimeDbg">09/11/2023</th>
-        <td>CED/USD</td>
-          <td>Short(buy)</td>
-        <td>1.678787</td>
-        <td>1.678787</td>
-        <td>1.678787</td>
-         <td><img src="/img/good.png" alt="" /></td>
-        <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
-       
-        
-      </tr>
-         <tr  className="ADDTimeDbg ADDTimeDbg22">
-        <th className="ADDTimeDbg">09/11/2023</th>
-        <td>CED/USD</td>
-          <td>Short(buy)</td>
-        <td>1.678787</td>
-        <td>1.678787</td>
-        <td>1.678787</td>
-         <td><img src="/img/good.png" alt="" /></td>
-        <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
-       
-        
-      </tr>
-  
-        
-      
-   
-     
+     ))}
+    
     </tbody>
   </table>
 </div>
@@ -1543,7 +1441,7 @@ Get accurate winning tips from professional betting tipsters across sports, fore
     <tbody>
        
        
-     
+     {topPredictedMarket2.map((app,id)=>(
       <tr  className="ADDTimeDbg ADDTimeDbg22">
         <th className=" ADDTimeDbg">09/11/2023</th>
         <td>BTC/USD</td>
@@ -1552,63 +1450,12 @@ Get accurate winning tips from professional betting tipsters across sports, fore
         <td>76000.00</td>
         <td>29500.00</td>
          <td><img src="/img/good.png" alt="" /></td>
-        <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
+        <td><a href="/view-profile" style={{color:"#fff",display:"flex",flexDirection:"column",alignItems:"center"}}><img src="/img/create.png" alt="" className="tipImage"/><p>View</p></a></td>
        
         
       </tr>
-        <tr  className="ADDTimeDbg ADDTimeDbg22">
-        <th className=" ADDTimeDbg">09/11/2023</th>
-        <td>BTC/USD</td>
-          <td>Long(buy)</td>
-        <td>30000.05</td>
-        <td>76000.00</td>
-        <td>29500.00</td>
-         <td><img src="/img/good.png" alt="" /></td>
-        <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
-       
-        
-      </tr>
-        <tr  className="ADDTimeDbg ADDTimeDbg22">
-        <th className=" ADDTimeDbg">09/11/2023</th>
-        <td>BTC/USD</td>
-          <td>Long(buy)</td>
-        <td>30000.05</td>
-        <td>76000.00</td>
-        <td>29500.00</td>
-         <td><img src="/img/good.png" alt="" /></td>
-        <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
-       
-        
-      </tr>
-        <tr  className="ADDTimeDbg ADDTimeDbg22">
-        <th className=" ADDTimeDbg">09/11/2023</th>
-        <td>BTC/USD</td>
-          <td>Long(buy)</td>
-        <td>30000.05</td>
-        <td>76000.00</td>
-        <td>29500.00</td>
-         <td><img src="/img/good.png" alt="" /></td>
-        <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
-       
-        
-      </tr>
-      <tr  className="ADDTimeDbg ADDTimeDbg22">
-        <th className="ADDTimeDbg">09/11/2023</th>
-        <td>ETH/USD</td>
-          <td>Long(buy)</td>
-        <td>1750.05</td>
-        <td>15000.00</td>
-        <td>1650.00</td>
-         <td><img src="/img/good.png" alt="" /></td>
-        <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
-       
-        
-      </tr>
-  
-        
+     ))}
       
-   
-     
     </tbody>
   </table>
 </div>
@@ -1635,73 +1482,17 @@ Get accurate winning tips from professional betting tipsters across sports, fore
     <tbody>
        
        
-      
+      {topPredictedMarket3.map((app,id)=>(
          <tr  className="ADDTimeDbg ADDTimeDbg22">
         <th className=" ADDTimeDbg">09/11/2023</th>
         <td>GBP/USD</td>
           <td>Long(buy)</td>
           <td><img src="/img/good.png" alt="" /></td>
-           <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
-        
-       
+           <td><a href="/view-profile" style={{color:"#fff",display:"flex",flexDirection:"column",alignItems:"center"}}><img src="/img/create.png" alt="" className="tipImage"/><p>View</p></a></td>
         
       </tr>
-      <tr  className="ADDTimeDbg ADDTimeDbg22">
-        <th className="ADDTimeDbg">09/11/2023</th>
-        <td>GBP/USD</td>
-          <td>Short(buy)</td>
-          <td><img src="/img/good.png" alt="" /></td>
-           <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
-       
-       
-        
-      </tr>
-  <tr  className="ADDTimeDbg ADDTimeDbg22">
-        <th className="ADDTimeDbg">09/11/2023</th>
-        <td>GBP/USD</td>
-          <td>Short(buy)</td>
-          <td><img src="/img/good.png" alt="" /></td>
-           <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
-       
-       
-        
-      </tr>
-      <tr  className="ADDTimeDbg ADDTimeDbg22">
-        <th className="ADDTimeDbg">09/11/2023</th>
-        <td>GBP/USD</td>
-          <td>Short(buy)</td>
-          <td><img src="/img/good.png" alt="" /></td>
-           <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
-       
-       
-        
-      </tr>
-  <tr  className="ADDTimeDbg ADDTimeDbg22">
-        <th className="ADDTimeDbg">09/11/2023</th>
-        <td>GBP/USD</td>
-          <td>Short(buy)</td>
-          <td><img src="/img/good.png" alt="" /></td>
-           <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
-       
-       
-        
-      </tr>
-  
-  <tr  className="ADDTimeDbg ADDTimeDbg22">
-        <th className="ADDTimeDbg">09/11/2023</th>
-        <td>GBP/USD</td>
-          <td>Short(buy)</td>
-          <td><img src="/img/good.png" alt="" /></td>
-           <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
-       
-       
-        
-      </tr>
-  
-        
-      
+      ))}
    
-     
     </tbody>
   </table>
 </div>
@@ -1715,17 +1506,7 @@ Get accurate winning tips from professional betting tipsters across sports, fore
               
                </div>
 
-             
-{/* <div className="limba">
-<div className="gos">
-  <div className="gos1">
-    <div className="gos2"><div className="jimk"><img src="/img/earnv.jpeg" alt="" className="gos5" /></div></div>
-     <div className="gos3"><div className="limba2">
-      <div className="ET">Earnars Token</div>
-      <p className="gos4"><span className="goemJK">$ENAR</span> allows you to pay for services within the platform with ease or leverage on the ever increasing price for arbitrage purposes.</p></div></div>
-  </div>
-</div>
-</div> */}
+
 
 
 
@@ -1783,7 +1564,7 @@ Get accurate winning tips from professional betting tipsters across sports, fore
         <td>1.72</td>
         <td>+20.45</td>
         <td>+3%</td>
-         <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
+         <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/><p>View</p></a></td>
         
       </tr>
       ))} 
@@ -1831,7 +1612,7 @@ Get accurate winning tips from professional betting tipsters across sports, fore
         <td>1.678787</td>
         <td>1.899765</td>
         <td>1.456378</td>
-         <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
+         <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/><p>View</p></a></td>
        
         
       </tr>
@@ -1875,7 +1656,7 @@ Get accurate winning tips from professional betting tipsters across sports, fore
         <td>12.0500</td>
         <td>8.5000</td>
        
-          <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
+          <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/><p>View</p></a></td>
        
         
       </tr>
@@ -1912,7 +1693,7 @@ Get accurate winning tips from professional betting tipsters across sports, fore
         <th className=" ADDTimeDbg">09/11/2023</th>
        
           <td>Long(buy)</td>
-           <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/></a></td>
+           <td><a href="/view-profile"><img src="/img/create.png" alt="" className="tipImage"/><p>View</p></a></td>
         
        
         
@@ -1946,7 +1727,7 @@ Get accurate winning tips from professional betting tipsters across sports, fore
            <div className="Make15">
                <div>
                    <div>
-                       <p className="millionM"  style={{color: "#7b7ee2" }} >Make $1,000 on referral commission monthly </p>
+                       <p className="millionM"  style={{color: "#7b7ee2" }} >Make ₦3500 on referral commission monthly </p>
                        {/* <p className="OnRef">On Referral Commission</p> */}
                         <div className="visitMe"><a href="/affiliate"><button className="visitMe3">join Affiliate</button></a></div>
                    </div>

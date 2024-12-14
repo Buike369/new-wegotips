@@ -131,7 +131,7 @@ const MobileHeader = () => {
           {showMe4? 
             <div className="Forexmm">
                       <a  className="fit" href="/become-tipster" onClick={mark}> <span className="mackP1">*</span> Become a Tipster</a>
-                      <a  className="fit" href="/find-tipster" onClick={mark}><span className="mackP1">*</span> Find a Tipster</a>
+                      {/* <a  className="fit" href="/find-tipster" onClick={mark}><span className="mackP1">*</span> Find a Tipster</a> */}
                       <a  className="fit" href="/allTips" onClick={mark}> <span className="mackP1">*</span> All Tips</a>
                       
             </div>:""}

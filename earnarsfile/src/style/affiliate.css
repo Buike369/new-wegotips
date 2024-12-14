@@ -155,16 +155,21 @@ position: absolute;
     margin: 30px auto 20px auto;
     position:relative;
     z-index: 10;
+    background-color: #0d0740;
+    border: 1px solid #2d2476;
+    border-radius: 200px;
 }
 .newsBro{
-    width: 100%;
+    width: 83%;
         padding: 18px 18px 18px 24px;
         font-size: 16px;
         background-color: #0d0740;
         border: 0;
         outline: 0;
-        border: 1px solid #2d2476;
-        border-radius: 200px;
+        border-top-left-radius: 200px;
+        border-bottom-left-radius: 200px;
+        /* border: 1px solid #2d2476; */
+       
         position: relative;
         z-index: 14;
         color:#fff;

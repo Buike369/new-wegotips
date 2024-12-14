@@ -120,7 +120,7 @@ const BecomeATipster = () => {
                         <p className='bettors1' >03</p>
                     </div>
                     <div className='AddTip'>Get Paid</div>
-                    <p className='itWell'>60% of every Sale is given directly to you. Assuming a market players buys the minimum bronze membership.</p>
+                    <p className='itWell'>60% of every Sale is given directly to you. Assuming a market players buys a  tip from tipsters.</p>
                     </div>
                
             </div>
@@ -133,7 +133,7 @@ const BecomeATipster = () => {
                     <div  className='beb6'>
                         <p className='SkilledBet'>Skilled market players earn money through selling tips</p>
                         <h2 className='SkilledBet2'>Serious Tips For Serious Market Players</h2>
-                        <p className='SkilledBet3'>You can earn an unlimited amount. Earnars is full of serious market players. Market players who are happy to pay for tips because they know our tipsters provide a high return on investment for them. If you’re serious about your tips, you need to find the serious market players, and earnars is the place for you</p>
+                        <p className='SkilledBet3'>You can earn an unlimited amount. <a href="/" style={{color:"#fff"}}>Wegotips</a> is full of serious market players. Market players who are happy to pay for tips because they know our tipsters provide a high return on investment for them. If you’re serious about your tips, you need to find the serious market players, and <a href="/" style={{color:"#fff"}}>wegotips</a> is the place for you</p>
                     </div>
                 </div>
             </div>
@@ -175,7 +175,7 @@ const BecomeATipster = () => {
          {/* <div className="divUnder1"></div> */}
          <div className=" marginMu fadama ">
          <Carousel
-  swipeable={false}
+  swipeable={true}
   draggable={false}
   showDots={false}
   responsive={responsive2}
@@ -196,7 +196,7 @@ const BecomeATipster = () => {
 >
  <div style={{padding:"4px 10px"}}>      
 <div className="earnSayPp">
-  <p className="partnerShip">"Through Earnars partnership program I made 250k in just two weeks by referring 20friends to the platform."</p>
+  <p className="partnerShip">"Through Wegotips partnership program I made 20k in just two weeks by referring 20friends to the platform."</p>
   <div className="favourPath">
     <div><img src="/img/create.png" alt="" className="popopo"/></div>
      <div>
@@ -208,7 +208,7 @@ const BecomeATipster = () => {
 </div> 
  <div style={{padding:"4px 10px"}}>           
 <div className="earnSayPp">
-  <p className="partnerShip">"I made Over 1 Million in Less Than 30 Days by just following Earnars.com prediction on Sports and Forex Trading.I would recommend earnars to any body any time."</p>
+  <p className="partnerShip">"I made Over 1 Million in Less Than 30 Days by just following Wegotips.com prediction on Sports and Forex Trading.I would recommend wegotips to any body any time."</p>
   <div className="favourPath">
     <div><img src="/img/create.png" alt="" className="popopo"/></div>
      <div>
@@ -220,7 +220,7 @@ const BecomeATipster = () => {
 </div>
 <div style={{padding:"4px 10px"}}>
 <div className="earnSayPp">
-  <p className="partnerShip">"Your company is truly upstanding and is behind its product 100%. Keep up the excellent work. Earnars is the most valuable prediction portal i have EVER come across. I love your system."</p>
+  <p className="partnerShip">"Your company is truly upstanding and is behind its product 100%. Keep up the excellent work. Wegotips is the most valuable prediction portal i have EVER come across. I love your system."</p>
   <div className="favourPath">
     <div><img src="/img/create.png" alt="" className="popopo"/></div>
      <div>

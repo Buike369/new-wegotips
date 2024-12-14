@@ -2,7 +2,7 @@ import React,{useState} from "react"
 import "./style/footer.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faAngleDown,faAngleUp} from '@fortawesome/free-solid-svg-icons'
-import {faFacebook,faTwitter,faLinkedin,faTelegram,faYoutube,}from '@fortawesome/free-brands-svg-icons'
+import {faFacebook,faXTwitter,faLinkedin,faTelegram,faYoutube,}from '@fortawesome/free-brands-svg-icons'
 
 const Footer =()=>{
 
@@ -20,15 +20,50 @@ const Footer =()=>{
       }
     return(
         <div className="Footer_Bg_Color" style={{backgroundImage:"url(/img/comesK.svg)"}}>
+           
             <div className="FootBike"></div>
               
           <div className="Footer_Div">
+            <div style={{marginBottom:"30px"}} className="styleF">
+                <div className="joinC">Join Our Community</div>
+                <p className="VOSH">visit our social handles and  stay updated.</p>
+                <div>
+                    <a href="" style={{color:"#fff"}}>
+                    <div className="SCI">
+                        <div className=""><FontAwesomeIcon icon={faTelegram} className="icon_brand_size" /></div>
+                        <div className="">
+                            <p  className="CNa">Telegram</p>
+                            <p className="kilok">Join our active Telegram  Community</p>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="https://twitter.com/EranarsC?t=PS1iorx90FTh_zG6FMqHVg&s=09" style={{color:"#fff"}}>
+                    <div className="SCI">
+                        <div className=""><FontAwesomeIcon icon={faXTwitter} className="icon_brand_size" /></div>
+                        <div className="">
+                            <p className="CNa">x</p>
+                            <p className="kilok">Follow us for the latest updates</p>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="https://www.facebook.com/Earnarshub?mibextid=ZbWKwL" style={{color:"#fff"}}>
+                        <div className="SCI">
+                            <div className=""><FontAwesomeIcon icon={faFacebook} className="icon_brand_size" /></div>
+                        <div className="">
+                            <p className="CNa">Facebook</p>
+                            <p className="kilok">Follow  our facebook page</p>
+                        </div>
+                        </div>
+                        </a>
+                </div>
+
+            </div>
               <div className="Footer_Div_item">
                   <div>
                       <ul className="MobileFooter">
                           <li className="Footer_header_title   titleFott" onClick={dropdown1}><span>NAVIGATION </span><span>{footerShow?<FontAwesomeIcon icon={faAngleUp} className="PlusIcon plusIcon2" />:<FontAwesomeIcon icon={faAngleDown} className="PlusIcon plusIcon2" />}</span></li>
                           {footerShow ? (<div>
-                          <li className="Footer_list_space"><a href="#">CoinMarketCap</a></li>
+                          <li className="Footer_list_space"><a href="https://coinmarketcap.com"  target="_blank" rel="noopener noreferrer">CoinMarketCap</a></li>
                           <li className="Footer_list_space"><a href="https://www.livescore.com/en/" target="_blank" rel="noopener noreferrer">LiveScores</a></li>
                           <li className="Footer_list_space"><a href="https://www.forexfactory.com/calendar" target="_blank" rel="noopener noreferrer">Forex Calender</a></li>
                           <li className="Footer_list_space"><a href="https://www.coingecko.com" target="_blank" rel="noopener noreferrer">Coingecko</a></li>
@@ -38,7 +73,7 @@ const Footer =()=>{
                       <ul className="DesktopFooter">
                           <li className="Footer_header_title" >NAVIGATION</li>
                           
-                          <li className="Footer_list_space"><a href="#">CoinMarketCap</a></li>
+                          <li className="Footer_list_space"><a href="https://coinmarketcap.com"  target="_blank" rel="noopener noreferrer">CoinMarketCap</a></li>
                           <li className="Footer_list_space"><a href="https://www.livescore.com/en/" target="_blank" rel="noopener noreferrer">LiveScores</a></li>
                           <li className="Footer_list_space"><a href="https://www.forexfactory.com/calendar" target="_blank" rel="noopener noreferrer">Forex Calender</a></li>
                           <li className="Footer_list_space"><a href="https://www.coingecko.com" target="_blank" rel="noopener noreferrer">Coingecko</a></li>
@@ -49,8 +84,8 @@ const Footer =()=>{
                   <ul className="MobileFooter">
                           <li className="Footer_header_title titleFott" onClick={dropdown}><span>COMPANY </span><span>{footerShow1?<FontAwesomeIcon icon={faAngleUp} className="PlusIcon plusIcon2" />:<FontAwesomeIcon icon={faAngleDown} className="PlusIcon plusIcon2" />}</span></li>
                           {footerShow1 ? (<div>
-                          <li className="Footer_list_space"><a href="/termscondition">Terms & Conditions</a></li>
-                          <li className="Footer_list_space"><a href="/disclaimer">Disclaimer</a></li>
+                          {/* <li className="Footer_list_space"><a href="/termscondition">Terms & Conditions</a></li> */}
+                          {/* <li className="Footer_list_space"><a href="/disclaimer">Disclaimer</a></li> */}
                           <li className="Footer_list_space"><a href="/about">About Us</a></li>
                           <li className="Footer_list_space"><a href="/contact">Contact Us</a></li>
                           </div>) : ("")}
@@ -58,8 +93,8 @@ const Footer =()=>{
 
                       <ul className="DesktopFooter">
                           <li className="Footer_header_title">About Us</li>
-                          <li className="Footer_list_space"><a href="/termscondition">Terms & Conditions</a></li>
-                          <li className="Footer_list_space"><a href="/disclaimer">Disclaimer</a></li>
+                          {/* <li className="Footer_list_space"><a href="/termscondition">Terms & Conditions</a></li> */}
+                          {/* <li className="Footer_list_space"><a href="/disclaimer">Disclaimer</a></li> */}
                           <li className="Footer_list_space"><a href="/about">About Us</a></li>
                           <li className="Footer_list_space"><a href="/contact">Contact Us</a></li>
                       </ul>
@@ -81,16 +116,16 @@ const Footer =()=>{
                   <div>
                   <ul>
                           <li className="Footer_header_title">LEGAL</li>
-                                  <li className="Footer_list_space"><a href="#">Terms</a></li>
+                                  <li className="Footer_list_space"><a href="/termscondition">Terms & Condition</a></li>
+                                      <li className="Footer_list_space"><a href="/disclaimer">Disclaimer</a></li>
                           <li className="Footer_list_space"><a href="#">Privacy</a></li>
-                          <li><div className ="visitUs">Visit Our Social Handles</div>
+                          <li className="LKIN"><div className ="visitUs">Visit Our Social Handles</div>
                           <i className="fa fa-facebook footerGo"></i>
                           </li>
-                          <li><ul className="footer_brand_icon">
+                          <li className="LKIN"><ul className="footer_brand_icon">
                               <li><a href="https://www.facebook.com/Earnarshub?mibextid=ZbWKwL" className="twww"><FontAwesomeIcon icon={faFacebook} className="icon_brand_size"/></a></li>
-                              <li><a href="https://twitter.com/EranarsC?t=PS1iorx90FTh_zG6FMqHVg&s=09" className="twww"><FontAwesomeIcon icon={faTwitter} className="icon_brand_size" /></a></li>
-                            
-                              {/* <li><a href="https://t.me/earnarshub" className="twww"><FontAwesomeIcon icon={faTelegram} className="icon_brand_size" /></a></li> */}
+                              <li><a href="https://twitter.com/EranarsC?t=PS1iorx90FTh_zG6FMqHVg&s=09" className="twww"><FontAwesomeIcon icon={faXTwitter} className="icon_brand_size" /></a></li>
+
                               <li><a href="https://www.youtube.com/@Earnars" className="twww"><FontAwesomeIcon icon={faYoutube} className="icon_brand_size" /></a></li>
                               </ul></li>
                       </ul>
