@@ -49,6 +49,8 @@ import RecentPrediction from "./recentPrediction";
 import Token from "./token";
 import VerifyEmail2 from "./VerifyEmail";
 import "./App.css"
+import DepositForm from "./deposit"
+import Callback from "./callback"
 
 import DashboardHome from "./Dashboard/dashboardHome"
 // import { Link, useLocation } from "react-router-dom";
@@ -122,6 +124,9 @@ function App() {
           <Route path="/recent-predictions" element={<RecentPrediction />} />
           {/* {currentUser ? <Route path="/user-dashboard" element={<UserDashBoard />} /> : <Route path="/" element={<SampleHome />} />} */}
           {/* <Route path="/user-dashboard" element={<UserDashBoard />} />  */}
+
+          <Route path="/deposit" element={<DepositForm />} />
+          <Route path="/payment-callback" element={<Callback />} />
           {/* Protected Route */}
           <Route
             path="/user-dashboard"

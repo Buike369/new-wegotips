@@ -1,10 +1,13 @@
-import React, {useState,useEffect,useContext} from  'react'
+import React, {useState,useEffect,useContext,useRef} from  'react'
 import Footer from "./footer"
 import "./style/userDashboard.css"
 import "./style/walletOverView.css"
 import "./style/exchange.css"
 import axios from "axios"
+import AOS from 'aos';
 import Mytip from "./mytip"
+import HomePage from "./userDashboardHome"
+import MarketPage from "./userDashboardMarket"
 import { useFlutterwave, closePaymentModal } from 'flutterwave-react-v3';
 import { AuthContext } from './context/authContext';
 import ReactPaginate from 'react-paginate';
@@ -12,11 +15,13 @@ import Demo1 from "./Dashboard/dashboardSports"
 import Demo2 from "./Dashboard/dashboardPostResult"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import {  faPlus,faMinus, faPaperPlane,faVolleyball,faCheckToSlot, faCheckDouble} from '@fortawesome/free-solid-svg-icons'
-import {faCircleCheck,faXmark,faWallet,faBars,faBell,faHouse} from '@fortawesome/free-solid-svg-icons';
+import {faCircleCheck,faXmark,faWallet,faBars,faBell,faHouse,faUsers,faUserPen,faPen} from '@fortawesome/free-solid-svg-icons';
 import ReferralLinkPage from "./referralLinkPage"
+import { useNavigate } from "react-router-dom";
 
 
 const UserDashboard = () => {
+
   const [wallets,setWallets] = useState("main")
     const [wallet,setWallet]=useState('wallets')
     const [subscription,setSubscription]=useState('')
@@ -55,9 +60,32 @@ const UserDashboard = () => {
        accountName:"",
         accountNo:""
     })
+    const [responseMessage,setResponseMessage] = useState('')
+ const navigate = useNavigate();
+    const [bankInformationD,setBankInformationD] = useState(true)
+     const [personalInformationD,setPersonalInformationD] = useState(true)
+          const [emailInformationD,setEmailInformationD] = useState(true)
+
+               const [personalInformation,setPersonalInformation] = useState(
+                {
+                  user_id:11,
+                  fullname:'',
+                  phonenumber:'',
+                  country:'',
+                  address:'',
+                  state:'',
+                  city:'',
+                  zip:''
+                }
+               )
+
+
+
+               
 
      const [file, setFile] = useState(null);
      const [files, setFiles] = useState([]);
+       const [shouldLoadScript, setShouldLoadScript] = useState(false);
     const [uploadedFilePath, setUploadedFilePath] = useState('');
     
     const [iconShow,setIconShow]=useState('circleDisplay')
@@ -68,7 +96,10 @@ const UserDashboard = () => {
         amount:"",
         network:network
       })
-const [section1, setSection1] = useState("userSection")
+       const [personalInfo, setPersonalInfo] = useState(null);
+  const [pError, setPError] = useState('');
+        const divRef = useRef(null);
+const [section1, setSection1] = useState("homePage")
 const [accountSetting, setAccountSetting] = useState("edit")
 const [section2, setSection2] = useState("AffiliateSection")
 const [section3, setSection3] = useState("tipsterOver")
@@ -93,6 +124,10 @@ const [dashboardMenu,setDashboardMenu] = useState(false)
     );
     setItemOffset(newOffset);
   };
+
+  const handleChangeForPersonalInfo = e =>{
+        setPersonalInformation(prev=>({...prev, [e.target.name]:e.target.value}))
+    }
 
 
  const Goma =()=>{
@@ -171,6 +206,8 @@ const [dashboardMenu,setDashboardMenu] = useState(false)
      })
  } 
 
+  
+
 
   const lan =()=>{
        setModal5(!modal5)
@@ -193,7 +230,10 @@ const [dashboardMenu,setDashboardMenu] = useState(false)
      }
 
 
-
+const lag =()=>{
+  setSection1('marketPage')
+  navigate()
+}
 
 
      const handleChanges4 =(e)=>{
@@ -207,7 +247,7 @@ const [dashboardMenu,setDashboardMenu] = useState(false)
         amount:""
      })
  } 
- const ego = [{amount:depositCash.amount,id:currentUser.id,mainA:mainWallet},depositCash.customer]
+ const ego = [{amount:depositCash.amount,id:5,mainA:mainWallet},depositCash.customer]
 
   const depositT =()=>{
      setDeposit('depositMe')
@@ -224,6 +264,8 @@ const [dashboardMenu,setDashboardMenu] = useState(false)
     setTransfer("")
      document.body.classList.add('hou')
 }
+
+console.log(personalInformation)
  const transferT =()=>{
     setWithdraw('')
     setDeposit('')
@@ -270,7 +312,7 @@ const airtimePurchase2=(e)=>{
     e.preventDefault()
    console.log(airtimeInfo)
     
-   const pass =[airtimeInfo,{main:mainWallet,id:currentUser.id}]
+   const pass =[airtimeInfo,{main:mainWallet,id:5}]
 
    if((airtimeInfo.amount === "") || (airtimeInfo. mobileNumber === "")){
       console.log("amount or phone_number field is empty")
@@ -310,7 +352,7 @@ const airtimePurchase2=(e)=>{
                   
                     if(parseInt(mainWallet) > parseInt(withdrawalInfo.withdrawalAmount )){
                         const mainWallet1 = mainWallet;
-                        const mon1 = [withdrawalInfo,{main:mainWallet1,id:currentUser.id}]   
+                        const mon1 = [withdrawalInfo,{main:mainWallet1,id:5}]   
          
                    axios.post("/user/withdrawal",mon1).then((response)=>{
                               setMessage5(response.data.msg)
@@ -346,7 +388,7 @@ const airtimePurchase2=(e)=>{
                         },3000)
                     }else{
                        
-                    axios.post("/user/transfer",{amountTransferred:amount1,main:mainWallet,affliateAmount:affliateWallet,id:currentUser.id}).then((response)=>{
+                    axios.post("/user/transfer",{amountTransferred:amount1,main:mainWallet,affliateAmount:affliateWallet,id:5}).then((response)=>{
 
                     }).catch((err)=>{
                             console.log(err)
@@ -378,7 +420,7 @@ const airtimePurchase2=(e)=>{
      }else{
           
             axios.post("/user/subscription",{
-            id:currentUser.id,amount:subscriptionAmount,mainWallet:mainWallet
+            id:5,amount:subscriptionAmount,mainWallet:mainWallet
            }).then((response)=>{
              setMessage("Subscription was successful")
               setTimeout(()=>{
@@ -402,9 +444,9 @@ const airtimePurchase2=(e)=>{
     currency: 'NGN',
     payment_options: 'card,mobilemoney,ussd',
     customer: {
-      email: currentUser.email,
-       phone_number:currentUser.phone_number,
-      name: currentUser.username,
+      email: 'chukwubuikekingsley369@getMainColorOfGraphicItem.com',
+       phone_number: '07060243960',
+      name: 'kingsley',
     },
     customizations: {
       title: 'Deposit',
@@ -414,6 +456,26 @@ const airtimePurchase2=(e)=>{
   };
 
   const handleFlutterPayment = useFlutterwave(config);
+
+const handleSubmitForPersonalInfo = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post('http://localhost:5000/api/payment/personal_information', personalInformation);
+      setResponseMessage(response.data.message);
+      setPersonalInformation({
+        user_id: '',
+        fullname: '',
+        phonenumber: '',
+        country: '',
+        address: '',
+        state: '',
+        city: '',
+        zip: '',
+      });
+    } catch (error) {
+      setResponseMessage('Error: ' + error.response?.data?.message || 'An error occurred.');
+    }
+  };
 
 
   const flut =()=>{
@@ -463,7 +525,7 @@ console.log(response.data)
 
    useEffect(()=>{
     const pala = ()=>{
-  axios.get(`/user/main-wallet/${currentUser?.id}`).then((response)=>{
+  axios.get(`/user/main-wallet/5}`).then((response)=>{
      setMainWallet(response.data[0].amount)
   }).catch((err)=>{
     // setError(err)
@@ -476,7 +538,7 @@ console.log(response.data)
      useEffect(()=>{
     const pala1 =()=>{
    
-  axios.get(`/user/affiliate-wallet/${currentUser?.id}`).then((response)=>{
+  axios.get(`/user/affiliate-wallet/5`).then((response)=>{
    setAffliateWallet(response.data[0].amount)
   }).catch((err)=>{
 //   setError(err)
@@ -488,7 +550,7 @@ console.log(response.data)
 
    useEffect(()=>{
     const pala2 = ()=>{
-  axios.get(`/user/referral-user/${currentUser?.id}`).then((response)=>{
+  axios.get(`/user/referral-user/5`).then((response)=>{
    setReferrals2(response.data)
   }).catch((err)=>{
      setError(err)
@@ -501,7 +563,7 @@ console.log(response.data)
   useEffect(()=>{
     const pala3 = ()=>{
       
-    axios.get(`/user/wallet-overview/${currentUser.id}`).then((response)=>{
+    axios.get(`/user/wallet-overview/5`).then((response)=>{
      setWalletOverview(response.data)
     }).catch((err)=>{
  setError(err)
@@ -513,7 +575,7 @@ console.log(response.data)
 
   useEffect(()=>{
       const getSubscriptionStatus =()=>{
-    axios.get(`/user/subscription-status/${currentUser.id}`).then((response)=>{
+    axios.get(`/user/subscription-status/5`).then((response)=>{
    setSubActive(response.data.pop().status)
     }).catch((err)=>{
  console.log(err)
@@ -525,6 +587,59 @@ console.log(response.data)
 
 // const referralLink = `http://localhost:3000/register?referralCode=${currentUser?.user.referral_code}`;
      const card = ["sport","binary","forex","crytptocurrency","sport","binary","forex","crytptocurrency"]
+
+ useEffect(() => {
+    if (divRef.current) {
+      divRef.current.scrollTop = 0; // Reset scroll position
+    }
+  }, [section1]);
+
+       useEffect(()=>{
+    AOS.init({once: true});
+  },[])
+
+ const currentUrl = window.location.href;
+
+  useEffect(() => {
+    const currentUrl = window.location.href;
+
+    // Check the URL condition
+    if (currentUrl.includes("user-dashboard")) {
+      setShouldLoadScript(true);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (shouldLoadScript) {
+      const script = document.createElement('script');
+      script.src = "C:\Users\Dell\Desktop\productionQ\wego\earnarsfile\public\index.html\https://embed.tawk.to/6759247faf5bfec1dbda2498/default"; // URL of your script
+      script.async = true;
+      document.body.appendChild(script);
+
+      return () => {
+        // Cleanup the script if needed
+        document.body.removeChild(script);
+      };
+    }
+  }, [shouldLoadScript]);
+
+
+  useEffect(()=>{
+    const handleFetch = async () => {
+    try {
+      const response = await axios.get(`http://localhost:5000/api/payment/personal_information/11`);
+      console.log(response)
+      setPersonalInfo(response.data);
+      setPError('');
+    } catch (error) {
+      setPError('Error: ' + error.response?.data?.message || 'An error occurred.');
+      setPersonalInfo(null);
+    }
+  }
+  
+
+  handleFetch()
+  },[personalInfo])
   return (
     <div className='vimvi'>
 
@@ -533,7 +648,7 @@ console.log(response.data)
               <div className='userD5'>
                 <div className=''>
                     <div className='userD50'>
-                    <div className='dvd2 dvd23'>
+                    <div className='dvd2 dvd23' style={{marginBottom:"20px"}}>
                     <div className='userD6'><img src="/img/dashboard-profile3.png" alt="" className='profileDImg'/></div>
                     {/* {currentUser?.user.username} */}
                     <div className='JohnKen1'>Bk</div>
@@ -555,9 +670,10 @@ console.log(response.data)
                            <div className='dvd1 JohnKen5 ' onClick={()=>setSection1('userSection7')}><img src="/img/settings.png" alt=""/> <span className='JohnKen7'>Post Result</span></div>
                            
                              <div className='dvd1 JohnKen5 ' onClick={()=>setSection1('userSection1')}  style={{backgroundColor:section1 === "userSection1" ? "#0d0740": "", borderLeft: section1 === "userSection1" ? "2px solid #5157ab":"" }}><img src="/img/subscriptions.png" alt=""/> <span className='JohnKen7' >My Tips</span></div>
-                        <div className='dvd1 JohnKen5'  onClick={()=>setSection1('userSection4')}  style={{backgroundColor:section1 === "userSection4" ? "#0d0740": "", borderLeft: section1 === "userSection4" ? "2px solid #5157ab":"" }}><img src="/img/settings.png" alt=""/> <span className='JohnKen7'>Pricing</span></div>
+                        <div className='dvd1 JohnKen5'  onClick={()=>setSection1('userSection4')}  style={{backgroundColor:section1 === "userSection4" ? "#0d0740": "", borderLeft: section1 === "userSection4" ? "2px solid #5157ab":"" }}><FontAwesomeIcon icon={faUsers} className="ppww" /><span className='JohnKen7'>Pricing</span></div>
+                        <div className='dvd1 JohnKen5 ' onClick={()=>setSection1('referralLink')}  style={{backgroundColor:section1 === "referralLink" ? "#0d0740": "", borderLeft: section1 === "referralLink" ? "2px solid #5157ab":"" }}><FontAwesomeIcon icon={faUsers} className="ppww" style={{fontSize:"18px"}}/><span className='JohnKen7'>Refer A User</span></div>
                           <div className='dvd1 JohnKen5 ' onClick={()=>setSection1('userSection5')}  style={{backgroundColor:section1 === "userSection5" ? "#0d0740": "", borderLeft: section1 === "userSection5" ? "2px solid #5157ab":"" }}><img src="/img/settings.png" alt=""/> <span className='JohnKen7'>Setting</span></div>
-                                                 <div className='dvd1 JohnKen5 ' onClick={()=>setSection1('referralLink')}  style={{backgroundColor:section1 === "referralLink" ? "#0d0740": "", borderLeft: section1 === "referralLink" ? "2px solid #5157ab":"" }}><img src="/img/settings.png" alt=""/> <span className='JohnKen7'>Refer A User</span></div>
+                             <div className='dvd1 JohnKen5 ' onClick={()=>setSection1('userSection5')}  style={{backgroundColor:section1 === "userSection5" ? "#0d0740": "", borderLeft: section1 === "userSection5" ? "2px solid #5157ab":"" }}><img src="/img/settings.png" alt=""/> <span className='JohnKen7'>Logout</span></div>
                           </div>
                           </>
                           :
@@ -568,8 +684,9 @@ console.log(response.data)
                        <div className='dvd1 JohnKen5 'onClick={()=>setSection1('userSection3')}><img src="" alt=""/> <span className='JohnKen5' > Affiliate Wallet</span></div>
             
                              <div className='dvd1 JohnKen5 '><img src="/img/subscriptions.png" alt=""/> <span className='JohnKen5'>My Tips</span></div>
+
+                          
                           <div className='dvd1 JohnKen5 '><img src="/img/settings.png" alt=""/> <span className='JohnKen5'>Setting</span></div>
-                          <div className='dvd1 JohnKen5 '><img src="" alt=""/> <span className='JohnKen5'>Become a Tipster</span></div>
                            </div>
                           </>}
                     
@@ -601,7 +718,8 @@ console.log(response.data)
 
         {section1 === "userSection"? 
         <>
-        <div className="ManB">
+        <div className='kkkl'>
+        <div className="ManB" >
            <div  className="ManB1 ManB30">
              <div className='mainVm34'>
               <div className='likeYou'>
@@ -645,6 +763,7 @@ console.log(response.data)
             </div>
           
         </div>
+
 
     <div className='ManUm'>
 
@@ -698,11 +817,31 @@ console.log(response.data)
         ))}
         </div>
         </div>
+        </div>
+        </>
+        :""}
+
+         {section1 === "homePage"? 
+        <>
+       
+       <HomePage/>
+   
+
+ 
+        </>
+        :""}
+
+          {section1 === "marketPage"? 
+        <>
+       <MarketPage/>
+
+ 
         </>
         :""}
         {section1 === "userSection1" ?
         <>
-        <div className='ManUm'>
+        <div className='kkkl'>
+        <div className='ManUm '>
           <div className='allNewTips ManUm1'>
 
             <div className="youpin">
@@ -827,10 +966,12 @@ console.log(response.data)
 
         </div>
         </div>
+        </div>
         </> :""}
            {section1 === "userSection2"? 
     
     <>
+    <div className='kkkl'>
     <div className="BKOver2">
     <div className='BKOver'>
       <div className="BkOver1"  style={{backgroundColor: section3 === "tipsterOver" ? "#fff" :"#0d0740", color: section3 === "tipsterOver" ? "#000" :"gold"}}  onClick={()=>setSection3("tipsterOver")}>Wallet Overview</div>
@@ -1144,11 +1285,13 @@ console.log(response.data)
         </div>
         </> :""}
         </div>
+        </div>
         </>
         :""}
 
          {section1 === "userSection3"? 
         <>
+          <div className='kkkl'>
           <div className="BKOver2">
     <div className='BKOver'>
       <div className="BkOver1" style={{backgroundColor: section2 === "AffiliateSection" ? "#fff" :"#0d0740", color: section2 === "AffiliateSection" ? "#000" :"#fff"}} onClick={()=>setSection2('AffiliateSection')}>Affiliate Overview</div>
@@ -1451,6 +1594,7 @@ console.log(response.data)
         </>
 
          :""}
+         </div>
         </>
         :""}
         {section1 === "userSection4"? <>
@@ -1501,10 +1645,10 @@ console.log(response.data)
                    <div className='bAcount'>
                     <div className="goms40">
              <div className='Mu1 goms'>
-                     <div className=' dvd1 JohnKen5 minYU'  onClick={()=>setAccountSetting("edit")}><img src="/img/dashboard-icon1.png" alt=""/> <span className='JohnKen7'>Edit Profile</span></div>
-                      <div className=' dvd1 JohnKen5 minYU' onClick={()=>setAccountSetting("Notification")} ><img src="/img/dashboard-icon1.png" alt=""/> <span className='JohnKen7'>Notification</span></div>
+                     <div className='dvd1 JohnKen5 minYU' style={{borderBottom: accountSetting === "edit" ? "2px solid #504893" : ""}} onClick={()=>setAccountSetting("edit")}><FontAwesomeIcon icon={faUserPen} className="ppww" /> <span className='JohnKen7'>Edit Profile</span></div>
+                      <div className=' dvd1 JohnKen5 minYU' style={{borderBottom: accountSetting === "Notification" ? "2px solid #504893" : ""}} onClick={()=>setAccountSetting("Notification")} ><FontAwesomeIcon icon={faPen} className="ppww" style={{fontSize:"15px"}}/><span className='JohnKen7'>Notification</span></div>
                       
-                        <div className=' dvd1 JohnKen5 minYU' onClick={()=>setAccountSetting("MemberShip")} ><img src="/img/dashboard-icon1.png" alt=""/> <span className='JohnKen7'>Membership</span></div>
+                        <div className=' dvd1 JohnKen5 minYU' style={{borderBottom: accountSetting === "MemberShip" ? "2px solid #504893" : ""}} onClick={()=>setAccountSetting("MemberShip")} ><FontAwesomeIcon icon={faPen} className="ppww" style={{fontSize:"15px"}}/> <span className='JohnKen7'>Membership</span></div>
                        
                     
              </div>
@@ -1513,12 +1657,12 @@ console.log(response.data)
                   <div>
                     <div className='SetAE'>Account Settings</div>
                     <div className='bAcount SetAE1'>
-                       <div className='ddE'>Email Address</div>
-                       <div className=''><input type="email" placeholder='enter your email' className='ddE1'/></div>
-                       <div><button className='Ch'>Save Changes</button></div>
+                      <div className='ddE'>Email Address</div> 
+                       {emailInformationD ===  false ? <div className=''><input type="email" placeholder='enter your email' className='ddE1'/></div> : <div><p style={{fontSize:"18px",margin:"4px 0px 8px  0px",color:"#7f86ef54",fontWeight:"600"}}>chukwubuikekingsley369@gmail.com</p></div>}
+                       {emailInformationD ===  false ? <div><button className='Ch'>Save Changes</button></div> : <div><button className='Ch' onClick={()=>setEmailInformationD(false)}>Edit</button></div>}
                     </div>
                   </div>
-                   <div>
+                   {/* <div>
                     <div className='SetAE'>Change Password</div>
                     <div className='bAcount SetAE1'>
                        <div className='ddE'>New Password</div>
@@ -1527,9 +1671,9 @@ console.log(response.data)
                        <div className=''><input type="email" placeholder='enter your email' className='ddE1'/></div>
                        <div><button className='Ch'>Confirm</button></div>
                     </div>
-                  </div>
+                  </div> */}
                    <div>
-                    <div className='SetAE'>Change Profile Photo</div>
+                    <div className='SetAE'> Profile Photo</div>
                     <div className='bAcount SetAE1'>
                         
                        <div className="WonDiv Ch45">
@@ -1544,56 +1688,114 @@ console.log(response.data)
                     </div>
                   </div>
                      <div>
-                    <div className='SetAE'>Personal Information</div>
+                   {personalInformationD ===  false ? 
+                   <>
+                   <div className='SetAE'>Add Personal Information</div> 
                     <div className='bAcount SetAE1'>
                       <div className='WonDiv'>
                         <div className="jum">
                        <div className='ddE'>Full name</div>
-                       <div className=''><input type="text" placeholder='enter your email' className='ddE1'/></div>
+                     <div className=''><input type="text" placeholder='enter your fullName' className='ddE1' name="fullname" onChange={handleChangeForPersonalInfo}/></div> 
                        </div>
                        <div className="jum">
                        <div className='ddE'>Phone number</div>
-                       <div className=''><input type="number" placeholder='enter your email' className='ddE1'/></div>
+                        <div className=''><input type="number" placeholder='enter your phone number' className='ddE1' name="phonenumber" onChange={handleChangeForPersonalInfo}/></div>
                        </div>
                        </div>
                         <div className='WonDiv'>
                         <div className="jum">
                        <div className='ddE'>Country</div>
-                       <div className=''><input type="email" placeholder='enter your email' className='ddE1'/></div>
+                         <div className=''><input type="text" placeholder='enter your country' className='ddE1' name="country" onChange={handleChangeForPersonalInfo}/></div> 
                        </div>
                        <div className="jum">
                        <div className='ddE'>Address</div>
-                       <div className=''><input type="text" placeholder='enter your email' className='ddE1'/></div>
+                        <div className=''><input type="text" placeholder='enter your Address' className='ddE1' name="address" onChange={handleChangeForPersonalInfo}/></div> 
                        </div>
                        </div>
                         <div className='WonDiv'>
                         <div className="jum">
                        <div className='ddE'>State/Province</div>
-                       <div className=''><input type="text" placeholder='enter your email' className='ddE1'/></div>
+                        <div className=''><input type="text" placeholder='enter your state' className='ddE1' name="state" onChange={handleChangeForPersonalInfo}/></div> 
                        </div>
                        <div className="jum">
                        <div className='ddE'>City</div>
-                       <div className=''><input type="text" placeholder='enter your email' className='ddE1'/></div>
+                        <div className=''><input type="text" placeholder='enter your city' className='ddE1' name="state" onChange={handleChangeForPersonalInfo}/></div>
                        </div>
                        </div>
                         <div className='WonDiv'>
                         <div className="jum">
                        <div className='ddE'>ZIP or postal code</div>
-                       <div className=''><input type="text" placeholder='enter your email' className='ddE1'/></div>
+                                                 <div className=''><input type="text" placeholder='zip or postal code' className='ddE1' name="zip" onChange={handleChangeForPersonalInfo}/></div> 
                        </div>
                       
                        </div>
-                       <div><button className='Ch'>Save Changes</button></div>
+                      <div><button className='Ch'onClick={handleSubmitForPersonalInfo}>Save Changes</button></div> 
                     </div>
-                    <div className='SetAE'>Add Bank Information</div>
+                    </>
+                    :
+                   <>
+                    {personalInfo &&
+                 <div>
+                  
+                    <div className='SetAE'>Personal Information</div>
+                    {personalInfo.map((app,id)=>(
+                    <div className='bAcount SetAE1'key={id}>
+                      <div className='WonDiv'>
+                        <div className="jum">
+                       <div className='ddE'>Full name</div>
+                      <div><p style={{fontSize:"18px",margin:"4px 0px 8px  0px",color:"#7f86ef54",fontWeight:"600"}}>{app.fullname}</p></div>
+                       </div>
+                       <div className="jum">
+                       <div className='ddE'>Phone number</div>
+                        <div><p style={{fontSize:"18px",margin:"4px 0px 8px  0px",color:"#7f86ef54",fontWeight:"600"}}>{app.phonenumber}</p></div>
+                       </div>
+                       </div>
+                        <div className='WonDiv'>
+                        <div className="jum">
+                       <div className='ddE'>Country</div>
+                        <div><p style={{fontSize:"18px",margin:"4px 0px 8px  0px",color:"#7f86ef54",fontWeight:"600"}}>{app.country}</p></div>
+                       </div>
+                       <div className="jum">
+                       <div className='ddE'>Address</div>
+                         <div><p style={{fontSize:"18px",margin:"4px 0px 8px  0px",color:"#7f86ef54",fontWeight:"600"}}>{app.address}</p></div>
+                       </div>
+                       </div>
+                        <div className='WonDiv'>
+                        <div className="jum">
+                       <div className='ddE'>State/Province</div>
+                        <div><p style={{fontSize:"18px",margin:"4px 0px 8px  0px",color:"#7f86ef54",fontWeight:"600"}}>{app.state}</p></div>
+                       </div>
+                       <div className="jum">
+                       <div className='ddE'>City</div>
+                         <div><p style={{fontSize:"18px",margin:"4px 0px 8px  0px",color:"#7f86ef54",fontWeight:"600"}}>{app.city}</p></div>
+                       </div>
+                       </div>
+                        <div className='WonDiv'>
+                        <div className="jum">
+                       <div className='ddE'>ZIP or postal code</div>
+                         <div><p style={{fontSize:"18px",margin:"4px 0px 8px  0px",color:"#7f86ef54",fontWeight:"600"}}>{app.zip}</p></div>
+                       </div>
+                      
+                       </div>
+                    <div><button className='Ch' onClick={()=>setPersonalInformationD(false)}>Edit</button></div>
+                    </div>
+                    ))}
+
+  </div>
+  }
+  </>
+                    }
+
+
+                     {bankInformationD ===  false ?<div className='SetAE'>Add Bank Information</div> : <div className='SetAE'>Bank Information</div>}
                     <div className='bAcount SetAE1'>
                        <div className='ddE'>Bank Name</div>
-                       <div className=''><input type="text" placeholder='enter your email' className='ddE1'/></div>
+                       {bankInformationD ===  false ? <div className=''><input type="text" placeholder='enter your bank name' className='ddE1'/></div> : <div><p style={{fontSize:"18px",margin:"4px 0px 8px  0px",color:"#7f86ef54",fontWeight:"600"}}>FirstBank</p></div>}
                        <div className='ddE'>Account Name</div>
-                       <div className=''><input type="text" placeholder='enter your email' className='ddE1'/></div>
+                       {bankInformationD ===  false ? <div className=''><input type="text" placeholder='enter your account  name' className='ddE1'/></div> : <div><p style={{fontSize:"18px",margin:"4px 0px 8px  0px",color:"#7f86ef54",fontWeight:"600"}}>Chukwubuike John</p></div>}
                        <div className='ddE'>Account Number</div>
-                       <div className=''><input type="number" placeholder='enter your email' className='ddE1'/></div>
-                       <div><button className='Ch'>Confirm</button></div>
+                       {bankInformationD ===  false ? <div className=''><input type="number" placeholder='enter your account number' className='ddE1'/></div> : <div><p style={{fontSize:"18px",margin:"4px 0px 8px  0px",color:"#7f86ef54",fontWeight:"600"}}>4051278725</p></div>}
+                       {bankInformationD ===  false ? <div><button className='Ch' >Confirm</button></div>:<div><button className='Ch' onClick={()=>setBankInformationD(false)}>Edit</button></div>}
                     </div>
                   </div>
                   </> :""}
@@ -2060,40 +2262,58 @@ console.log(response.data)
 <div className='footLinCU'>
    <div className='footLinC'>
     <div className='loadMe'>
-      <a href="/" className='FooterMobileLink'>
-        <div className='WalletDiv'>
+      <div className='FooterMobileLink'>
+        <div  className='WalletDiv' onClick={()=>setSection1('homePage')}>
           <FontAwesomeIcon icon={faHouse} className="ppww" />
           <p className="ppWa">Home</p>
         </div>
-      </a>
+      </div>
       </div>
     <div className='loadMe'>
-      <a href="" className='FooterMobileLink'>
-        <div className='WalletDiv'>
+      <div className='FooterMobileLink'>
+        <div className='WalletDiv'  onClick={()=>navigate(setSection1('userSection2'))}>
           <FontAwesomeIcon icon={faWallet} className="ppww" />
-          <p className="ppWa">Wallet</p>
+          <p className="ppWa">Main</p>
         </div>
-      </a>
+      </div>
+      </div>
+       <div className='loadMe'>
+      <div className='FooterMobileLink polokm' style={{position:'relative'}}>
+        <div style={{position:"absolute",top:"-32px",width:"50px",height:"50px",left:"50%",transform:'translate(-50%, -50%)'}}>
+          <div style={{background:"#0d0740",transform:'rotate(44.7deg)',display:"flex",justifyContent:"center",alignItems:"center",borderRadius:"5px",padding:"4px ", boxShadow:'2px 2px 2px 2px #332c73', width:"100%", height:"100%"}}>
+            <div style={{padding:"8px",borderRadius:"5px",background:"#0d0740",width:"100%"}}>
+        <div className='WalletDiv'  onClick={lag} style={{transform:"rotate(-44.7deg)"}}  >
+
+          <FontAwesomeIcon icon={faWallet} className="ppww" />
+          {/* <p className="ppWa">Main</p> */}
+        </div>
+        </div>
+        </div>
+        </div>
+      </div>
       </div>
     <div className='loadMe'>
-      <a href="" className='FooterMobileLink'>
-        <div className='WalletDiv'>
+      <div className='FooterMobileLink'>
+        <div className='WalletDiv' onClick={()=>navigate(setSection1('userSection3'))}>
           <FontAwesomeIcon icon={faWallet} className="ppww" />
           <p className="ppWa">Affiliate</p>
         </div>
-      </a>
+      </div>
       </div>
     <div className='loadMe'>
       <a href="" className='FooterMobileLink'>
         <div className='WalletDiv'>
           <FontAwesomeIcon icon={faWallet} className="ppww" />
-          <p className="ppWa">Tips</p>
+          <p className="ppWa">My Tips</p>
         </div>
       </a>
       </div>
    </div>
 </div>
 
+
+
+ <p></p>
     </div>
   )
 }

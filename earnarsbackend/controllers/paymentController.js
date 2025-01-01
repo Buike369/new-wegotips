@@ -1,4 +1,5 @@
-
+require('dotenv').config();
+// require('dotenv').config({ path: path.resolve(__dirname, '../.env') });
 const Flutterwave = require('flutterwave-node-v3');
 const flw = new Flutterwave(process.env.FLW_PUBLIC_KEY, process.env.FLW_SECRET_KEY);
 

@@ -1,0 +1,48 @@
+/* Scrollable container */
+.horizontal-scroll-container {
+    display: flex;
+    overflow-x: auto;
+    /* Horizontal scroll */
+    white-space: nowrap;
+    /* Prevent wrapping */
+    gap: 10px;
+    /* Space between items */
+    padding: 10px;
+    scroll-behavior: smooth;
+    /* Smooth scroll */
+    margin-top: 20px;
+}
+
+/* Scrollbar Styling (Optional) */
+.horizontal-scroll-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.horizontal-scroll-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.horizontal-scroll-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Individual items */
+.scroll-item {
+    flex: 0 0 auto;
+        /* Prevent shrinking */
+        /* width: 150px; */
+        /* Width of each item */
+        height: 30px;
+        /* Height of each item */
+        /* background-color: #0d0740; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid #ddd; */
+        /* border-radius: 8px; */
+        font-weight: bold;
+        padding:0px 5px;
+        color:#d5d7de;
+        font-size: 20px;
+}

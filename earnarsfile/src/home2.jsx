@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faPlus,faMinus, faPaperPlane,faVolleyball,faCheckToSlot, faCheckDouble} from '@fortawesome/free-solid-svg-icons'
 import AOS from 'aos';
 import "./style/home2.css"
-import "./style/home.css"
+
 import axios from "axios";
 import { useLocation } from "react-router-dom"
 import "./style/background.css"
@@ -1310,8 +1310,7 @@ Get accurate winning tips from professional betting tipsters across sports, fore
 
             <div className="containerT">
 
-               <div className="youpin carU "data-aos="fade-up" data-aos-duration="3000"
-             data-aos-easing="linear" >
+               <div className="youpin carU " >
 
               
                  <div className="topPrediction">Top Predicted Markets</div>
